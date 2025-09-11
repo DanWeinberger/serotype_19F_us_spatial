@@ -5,15 +5,28 @@ library(tigris)
 library(sf)
 library(tidyverse)
 library(INLA)
+library(spdep)
 options(tigris_use_cache = TRUE)  # cache shapefiles locally
 
 #All counties in ABCs
 #Exclude Erie, NY county because only has pediatric cases
 #For CA exclude Contra Costa and Alameda because only have <18
-
+#Tennessee has 5 disjointed areas: counties 157, 113, (021,)
+#CA islands: 2 census tracts are islands and filtered out
 abcs_counties <- readxl::read_excel('./Data/ABCsCountyFIPS.xlsx') %>%
-  filter(!(county %in% c('ERIE', 'ALAMEDA','CONTRA COSTA')))
-
+  filter(!(county %in% c('ERIE', 'ALAMEDA','CONTRA COSTA'))) %>%
+  mutate(abc_region = if_else(STATE=="NY" & countyfips %in% c("037", "051", "055", "069", "073", "117", "123"), 'NY_1',
+                              if_else(STATE=="NY" , 'NY_2', 
+                                      if_else(STATE=="TN"  & countyfips %in% c("021", "037", "043", "147", "149", "165", "187", "189"), 'TN_1',
+                                        if_else(STATE=="TN"  & countyfips %in% c("065"), 'TN_2',
+                                                if_else(STATE=="TN"  & countyfips %in% c("113"), 'TN_3',
+                                                        if_else(STATE=="TN"  & countyfips %in% c("157"), 'TN_4',
+                                                                if_else(STATE=="TN"  & countyfips %in% c("001",'009','057','089','093','105','145','155','173'), 'TN_5',
+                                                      STATE
+  )))))))
+  )
+  
+  
 #Define states in ABCs
 states <- c('CA','CO','CT','GA','MN','NY',  'MD', 'NM', 'OR' ,'TN')
 
@@ -30,47 +43,20 @@ tract_shp <- lapply(tracts_abc_states, function(X) st_make_valid(X)
 tract_shp_abcs <- lapply(tract_shp,function(X){
     shp_abc <- X %>%
     mutate(county_fips = paste0(STATE, COUNTY)) %>%
-      dplyr::filter(county_fips %in% abcs_counties$FIPS)
+      dplyr::filter(county_fips %in% abcs_counties$FIPS & !(GEO_ID %in% c("1400000US06075017902","1400000US06075980401") ))
     return(shp_abc)
 })
 
-#tract_list
+#Create a master shape file
 all_tract <- bind_rows(tract_shp_abcs)
 
 write_sf(all_tract, './Data/shapefiles/all_census_tracts.shp')
 
+
 # Identify and remove islands
-nb <- poly2nb(shp, queen = TRUE)
-islands <- which(card(nb) == 0)
+nb_all <- lapply(tract_shp_abcs, function(X) spdep::poly2nb(X, queen = TRUE))
 
-cat("Original polygons:", nrow(shp), "\n")
-cat("Islands found:", length(islands), "\n")
 
-if(length(islands) > 0) {
-  cat("Island regions:", shp$l2_code[islands], "\n")
-  
-  # Store information about removed islands
-  removed_islands <- data.frame(
-    original_row = islands,
-    l2_code = shp$l2_code[islands],
-    reason_removed = "island_no_neighbors",
-    stringsAsFactors = FALSE
-  )
-  
-  # Remove islands
-  shp_clean <- shp[-islands, ]
-} else {
-  shp_clean <- shp
-  removed_islands <- data.frame(
-    original_row = integer(0),
-    l2_code = character(0),
-    reason_removed = character(0),
-    stringsAsFactors = FALSE
-  )
-}
-
-# Create final INLA graph
-nb_clean <- poly2nb(shp_clean, queen = TRUE)
-nb2INLA("../Data/MDR.graph.commune", nb_clean)
+#nb2INLA("../Data/MDR.graph.commune", nb_clean)
 
 
