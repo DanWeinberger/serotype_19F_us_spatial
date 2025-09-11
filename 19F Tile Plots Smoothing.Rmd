@@ -1,0 +1,112 @@
+---
+title: "19F Tile Plots"
+author: "Stephen G Mugel"
+date: "2025-09-11"
+output: html_document
+---
+
+```{r}
+##### Outcome Relative Prop 19F to baseline 2006-2009 ----
+### By 5-year age group
+
+trend.19F <- spn %>% group_by(CAL_YR, agegroup5yr) %>% summarize(N_IPD = n(), N_19F = sum(serotype19f == "19F")) %>% mutate(prop.19F =(N_19F/ N_IPD), agegrouporder = as.numeric(agegroup5yr))
+
+baseline.trend.19F <- trend.19F %>% filter(CAL_YR < 2010) %>% group_by(agegroup5yr) %>% summarize(N_IPDbaseline = mean(N_IPD), N_19Fbaseline = mean(N_19F))
+
+# test tile plot on raw data
+ggplot(trend.19F, aes(x = CAL_YR, y = agegroup5yr, fill = (N_IPD))) +
+  geom_tile() +
+  scale_fill_gradient(low = "white", high = "red") +  # Color gradient
+  labs(title = "N_IPD", x = "Year", y = "Age Group") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))  # Rotate x-axis labels
+
+ggplot(trend.19F, aes(x = CAL_YR, y = agegroup5yr, fill = (N_19F/N_IPD))) +
+  geom_tile() +
+  scale_fill_gradient(low = "white", high = "red") +  # Color gradient
+  labs(title = "Proportion 19F", x = "Year", y = "Age Group") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))  # Rotate x-axis labels
+
+# Spatial smoother on a tile plot 
+gamtest1 <- mgcv::gam((prop.19F) ~ te(CAL_YR, agegrouporder, fx = TRUE), data = trend.19F, family = binomial, method = "REML")
+#summary(gamtest1)
+#plot(gamtest1)
+length(unique(trend.19F$agegrouporder))
+
+pred_grid <- expand.grid(CAL_YR = unique(trend.19F$CAL_YR),
+                         agegrouporder = unique(trend.19F$agegrouporder)) %>% left_join(trend.19F %>% ungroup() %>% distinct(agegroup5yr, agegrouporder), by = "agegrouporder")
+
+pred_grid$fit <- predict(gamtest1, newdata = pred_grid, type = "response")
+
+ggplot(pred_grid, aes(x = CAL_YR, y = agegroup5yr, fill = fit)) +
+  geom_tile() +
+  scale_fill_gradient(low = "white", high = "red") +  # Color gradient
+  labs(title = "Proportion 19F, smoothed", x = "Year", y = "Age Group") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))  # Rotate x-axis labels
+
+# tensor was too smooth
+# specify knots 
+```
+
+```{r}
+### Raw 19F proportions
+trend.19F.basecomp <- trend.19F %>% filter(CAL_YR >= 2010) %>% left_join(baseline.trend.19F, by = "agegroup5yr") %>% mutate(prop.to.baseline = N_19F / N_19Fbaseline,
+                                                                                                                            prop.prop.to.baseline = (N_19F / (N_IPD + 0.05) / (N_19Fbaseline / (N_IPDbaseline + 0.05))))
+
+## ## ## 19F compared to baseline
+ggplot(trend.19F.basecomp, aes(x = CAL_YR, y = agegroup5yr, fill = prop.to.baseline)) +
+  geom_tile() +
+  scale_fill_gradient(low = "white", high = "red") +  # Color gradient
+  labs(title = "Annual 19F compared to baseline (2006 - 2009)", x = "Year", y = "Age Group") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))  # Rotate x-axis labels
+
+# Spatial smoother on a tile plot 
+gam.prop19Ftobaseline <- mgcv::gam((prop.to.baseline) ~ s(CAL_YR) + s(agegrouporder) + te(CAL_YR, agegrouporder, fx = TRUE), data = trend.19F.basecomp, method = "REML")
+#summary(gamtest1)
+#plot(gamtest1)
+
+pred_grid <- expand.grid(CAL_YR = unique(trend.19F.basecomp$CAL_YR),
+                         agegrouporder = unique(trend.19F.basecomp$agegrouporder)) %>% left_join(trend.19F.basecomp %>% ungroup() %>% distinct(agegroup5yr, agegrouporder), by = "agegrouporder")
+
+pred_grid$fit <- predict(gam.prop19Ftobaseline, newdata = pred_grid, type = "response")
+
+ggplot(pred_grid, aes(x = CAL_YR, y = agegroup5yr, fill = fit)) +
+  geom_tile() +
+  scale_fill_gradient(low = "white", high = "red") +  # Color gradient
+  labs(title = "Annual 19F compared to baseline (2006 - 2009), smoothed", x = "Year", y = "Age Group") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))  # Rotate x-axis labels
+
+```
+
+```{r}
+## ## ## Prop19F to a Prop19F in baseline
+ggplot(trend.19F.basecomp, aes(x = CAL_YR, y = agegroup5yr, fill = prop.prop.to.baseline)) +
+  geom_tile() +
+  scale_fill_gradient(low = "white", high = "red") +  # Color gradient
+  labs(title = "Prop 19F compared to baseline (2006 - 2009)", x = "Year", y = "Age Group") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))  # Rotate x-axis labels
+
+# Spatial smoother on a tile plot 
+gam.propprop19Ftobaseline <- mgcv::gam((prop.prop.to.baseline) ~ s(CAL_YR) + s(agegrouporder) + te(CAL_YR, agegrouporder, fx = TRUE), data = trend.19F.basecomp, method = "REML")
+#summary(gamtest1)
+#plot(gamtest1)
+
+pred_grid <- expand.grid(CAL_YR = unique(trend.19F.basecomp$CAL_YR),
+                         agegrouporder = unique(trend.19F.basecomp$agegrouporder)) %>% left_join(trend.19F.basecomp %>% ungroup() %>% distinct(agegroup5yr, agegrouporder), by = "agegrouporder")
+
+pred_grid$fit <- predict(gam.propprop19Ftobaseline, newdata = pred_grid, type = "response")
+
+ggplot(pred_grid, aes(x = CAL_YR, y = agegroup5yr, fill = fit)) +
+  geom_tile() +
+  scale_fill_gradient(low = "white", high = "red") +  # Color gradient
+  labs(title = "Prop 19F compared to baseline (2006 - 2009), smoothed", x = "Year", y = "Age Group") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))  # Rotate x-axis labels
+
+```
+
