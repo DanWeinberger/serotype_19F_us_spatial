@@ -55,8 +55,9 @@ write_sf(all_tract, './Data/shapefiles/all_census_tracts.shp')
 
 # Identify and remove islands
 nb_all <- lapply(tract_shp_abcs, function(X) spdep::poly2nb(X, queen = TRUE))
+names(nb_all) <- states
 
-
+lapply(states, function(X)  nb2INLA(paste0("./Data/neighbor_files/",X,".MDR.graph.commune"), nb_all[[X]]))
 #nb2INLA("../Data/MDR.graph.commune", nb_clean)
 
 
