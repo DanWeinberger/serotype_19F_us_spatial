@@ -59,7 +59,7 @@ for (s in states) {
       y = "Age Group",
       fill = "Total IPD cases"
     ) +
-    theme_bw() +
+    theme_classic() +
     theme(axis.text.x = element_text(angle = 45, hjust = 1))
   
   filename_p1 <- paste0("SmoothTilePlots/totalipd_raw_", s, ".png")
@@ -103,7 +103,7 @@ for (s in states) {
       y = "Age Group",
       fill = "Total IPD cases (smoothed)"
     ) +
-    theme_bw() +
+    theme_classic() +
     theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
   filename_p2 <- paste0("SmoothTilePlots/totalipd_smooth_", s, ".png")
@@ -136,7 +136,7 @@ for (s in states) {
       y = "Age Group",
       fill = "Proportion 19F"
     ) +
-    theme_bw() +
+    theme_classic() +
     theme(axis.text.x = element_text(angle = 45, hjust = 1))
   
   filename_p3 <- paste0("SmoothTilePlots/prop19F_raw_", s, ".png")
@@ -179,7 +179,7 @@ for (s in states) {
       y = "Age Group",
       fill = "Proportion 19F (smoothed)"
     ) +
-    theme_bw() +
+    theme_classic() +
     theme(axis.text.x = element_text(angle = 45, hjust = 1))
   
   filename_p4 <- paste0("SmoothTilePlots/prop19F_smooth_", s, ".png")
@@ -212,7 +212,7 @@ for (s in states) {
       y = "Age Group",
       fill = "19F cases/baseline cases"
     ) +
-    theme_bw() +
+    theme_classic() +
     theme(axis.text.x = element_text(angle = 45, hjust = 1))
   
   filename_p5 <- paste0("SmoothTilePlots/cases19ftobaseline_raw_", s, ".png")
@@ -255,7 +255,7 @@ for (s in states) {
       y = "Age Group",
       fill = "19F cases/baseline cases (smoothed)"
     ) +
-    theme_bw() +
+    theme_classic() +
     theme(axis.text.x = element_text(angle = 45, hjust = 1))
   
   filename_p6 <- paste0("SmoothTilePlots/cases19ftobaseline_smoothed_", s, ".png")
@@ -288,7 +288,7 @@ for (s in states) {
       y = "Age Group",
       fill = "19F prop/baseline prop"
     ) +
-    theme_bw() +
+    theme_classic() +
     theme(axis.text.x = element_text(angle = 45, hjust = 1))
   
   filename_p7 <- paste0("SmoothTilePlots/prop19ftobaseline_raw_", s, ".png")
@@ -331,7 +331,7 @@ for (s in states) {
       y = "Age Group",
       fill = "19F prop/baseline prop (smoothed)"
     ) +
-    theme_bw() +
+    theme_classic() +
     theme(axis.text.x = element_text(angle = 45, hjust = 1))
   
   filename_p8 <- paste0("SmoothTilePlots/prop19ftobaseline_smoothed_", s, ".png")
