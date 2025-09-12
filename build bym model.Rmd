@@ -185,6 +185,10 @@ beta_year_mod1 <- fe_year_mod1[, "mean"]
 beta_year_l_mod1 <- fe_year_mod1[, "0.025quant"]
 beta_year_u_mod1 <- fe_year_mod1[, "0.975quant"]
 
+year_grid <- seq(min(data$year, na.rm = TRUE), max(data$year, na.rm = TRUE), by = 1)
+
+t0 <- min(data$year, na.rm = TRUE)
+
 or_df <- tibble(year = year_grid) |>
   mutate(diff = year - t0,
          effect = exp(beta_year_mod1 * diff),
