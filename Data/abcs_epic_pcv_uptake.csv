@@ -1,0 +1,2471 @@
+age,county_name,N_patients,pct_pcv,suppressed,fips
+age_1_2y,"SANDIEGO,CA",7047,66.7,0,06073
+age_1_2y,"FRESNO,CA",5606,58.3,0,06019
+age_1_2y,"LOSANGELES,CA",4551,58.7,0,06037
+age_1_2y,"COBB,GA",4165,67.8,0,13067
+age_1_2y,"ALAMEDA,CA",3845,73.4,0,06001
+age_1_2y,"MONROE,NY",3539,68.4,0,36055
+age_1_2y,"KINGS,NY",3961,43.5,0,36047
+age_1_2y,"FULTON,GA",3867,59.8,0,13121
+age_1_2y,"RIVERSIDE,CA",3747,55.4,0,06065
+age_1_2y,"DENVER,CO",3780,80.1,0,08031
+age_1_2y,"SANTACLARA,CA",3366,76.2,0,06085
+age_1_2y,"HENNEPIN,MN",3067,59,0,27053
+age_1_2y,"MULTNOMAH,OR",3310,68,0,41051
+age_1_2y,"ELPASO,CO",3432,43.7,0,08041
+age_1_2y,"ORANGE,CA",3557,66.8,0,06059
+age_1_2y,"ARAPAHOE,CO",3381,72.9,0,08005
+age_1_2y,"SANBERNARDINO,CA",3074,57.3,0,06071
+age_1_2y,"CONTRACOSTA,CA",2704,73.1,0,06013
+age_1_2y,"HARTFORD,CT",2303,67.3,0,09003
+age_1_2y,"DEKALB,GA",2766,58.7,0,13089
+age_1_2y,"GWINNETT,GA",2479,54.2,0,13135
+age_1_2y,"WASHINGTON,OR",2504,77.2,0,41067
+age_1_2y,"ADAMS,CO",2372,75,0,08001
+age_1_2y,"SUFFOLK,NY",2171,51.2,0,36103
+age_1_2y,"WELD,CO",2376,72.6,0,08123
+age_1_2y,"QUEENS,NY",2135,49.3,0,36081
+age_1_2y,"SANMATEO,CA",1900,81.5,0,06081
+age_1_2y,"NASSAU,NY",2012,51.3,0,36059
+age_1_2y,"RAMSEY,MN",1844,74,0,27123
+age_1_2y,"KERN,CA",1861,59.7,0,06029
+age_1_2y,"MONTEREY,CA",1895,79.3,0,06053
+age_1_2y,"SANFRANCISCO,CA",1851,66.5,0,06075
+age_1_2y,"LARIMER,CO",1859,74,0,08069
+age_1_2y,"CLACKAMAS,OR",1714,66.1,0,41005
+age_1_2y,"HALL,GA",1873,54.6,0,13139
+age_1_2y,"JEFFERSON,CO",1768,75.4,0,08059
+age_1_2y,"DESCHUTES,OR",1584,55.7,0,41017
+age_1_2y,"STEARNS,MN",1479,54.2,0,27145
+age_1_2y,"SACRAMENTO,CA",1501,62.8,0,06067
+age_1_2y,"BALTIMORECITY,MD",1557,73.1,0,24510
+age_1_2y,"BOULDER,CO",1508,71.9,0,08013
+age_1_2y,"BROOME,NY",1342,62.1,0,36007
+age_1_2y,"BALTIMORE,MD",1366,67,0,24005
+age_1_2y,"HAMILTON,TN",1451,47,0,47065
+age_1_2y,"SONOMA,CA",1241,79,0,06097
+age_1_2y,"ANOKA,MN",1190,66.7,0,27003
+age_1_2y,"ALBANY,NY",1318,65.2,0,36001
+age_1_2y,"CHEROKEE,GA",1211,56.1,0,13057
+age_1_2y,"DAKOTA,MN",1129,59.9,0,27037
+age_1_2y,"DOUGLAS,CO",1114,71,0,08035
+age_1_2y,"NEWYORK,NY",1164,49.7,0,36061
+age_1_2y,"SAINTLOUIS,MN",958,64.2,0,NA
+age_1_2y,"PAULDING,GA",1052,62.3,0,13223
+age_1_2y,"NEWHAVEN,CT",858,56.8,0,09009
+age_1_2y,"LINN,OR",956,69.9,0,41043
+age_1_2y,"DOUGLAS,GA",936,67.3,0,13097
+age_1_2y,"CLAYTON,GA",837,58.5,0,13063
+age_1_2y,"NEWLONDON,CT",671,61.8,0,09011
+age_1_2y,"MADERA,CA",772,55.4,0,06039
+age_1_2y,"WASHINGTON,MN",718,74.4,0,27163
+age_1_2y,"HENRY,GA",731,52.9,0,13151
+age_1_2y,"CLAY,MN",621,73.1,0,27027
+age_1_2y,"SANJOAQUIN,CA",737,41.9,0,06077
+age_1_2y,"SOLANO,CA",732,65.8,0,06095
+age_1_2y,"MARIN,CA",584,64.9,0,06041
+age_1_2y,"MARION,OR",683,54.8,0,41047
+age_1_2y,"STEUBEN,NY",594,66.3,0,36101
+age_1_2y,"TULARE,CA",656,45.3,0,06107
+age_1_2y,"ONTARIO,NY",596,73.3,0,36069
+age_1_2y,"MERCED,CA",606,50.5,0,06047
+age_1_2y,"MIDDLESEX,CT",519,72.3,0,09007
+age_1_2y,"ONONDAGA,NY",543,75.1,0,36067
+age_1_2y,"RENSSELAER,NY",605,59.3,0,36083
+age_1_2y,"SARATOGA,NY",574,55.7,0,36091
+age_1_2y,"SHERBURNE,MN",531,57.4,0,27141
+age_1_2y,"FAIRFIELD,CT",580,58.6,0,09001
+age_1_2y,"SULLIVAN,TN",564,62.4,0,47163
+age_1_2y,"FORSYTH,GA",501,50.3,0,13117
+age_1_2y,"HUMBOLDT,CA",473,67.9,0,06023
+age_1_2y,"ONEIDA,NY",467,58.2,0,36065
+age_1_2y,"WAYNE,NY",481,68.8,0,36117
+age_1_2y,"CHEMUNG,NY",492,80.1,0,36015
+age_1_2y,"ANNEARUNDEL,MD",520,54.4,0,24003
+age_1_2y,"WASHINGTON,TN",525,69.5,0,47179
+age_1_2y,"RICHMOND,GA",553,40,0,13245
+age_1_2y,"JACKSON,GA",440,59.1,0,13157
+age_1_2y,"PUEBLO,CO",516,60.7,0,08101
+age_1_2y,"BARROW,GA",452,52.9,0,13013
+age_1_2y,"KANDIYOHI,MN",417,50.8,0,27067
+age_1_2y,"MADISON,TN",479,55.5,0,47113
+age_1_2y,"OTTERTAIL,MN",407,63.1,0,27111
+age_1_2y,"WRIGHT,MN",433,49.9,0,27171
+age_1_2y,"TOLLAND,CT",376,66.5,0,09013
+age_1_2y,"PRINCEGEORGES,MD",528,55.5,0,NA
+age_1_2y,"WINDHAM,CT",390,59.7,0,09015
+age_1_2y,"HARFORD,MD",435,45.5,0,24025
+age_1_2y,"GREENE,TN",419,56.1,0,47059
+age_1_2y,"BELTRAMI,MN",398,71.6,0,27007
+age_1_2y,"HABERSHAM,GA",421,58.4,0,13137
+age_1_2y,"MONTGOMERY,MD",486,58.6,0,24031
+age_1_2y,"COOS,OR",390,64.9,0,41011
+age_1_2y,"LANE,OR",383,62.1,0,41039
+age_1_2y,"WICOMICO,MD",393,53.4,0,24045
+age_1_2y,"CHISAGO,MN",342,71.6,0,27025
+age_1_2y,"SAINTLAWRENCE,NY",360,90.3,0,NA
+age_1_2y,"COLUMBIA,GA",395,42.8,0,13073
+age_1_2y,"TROUP,GA",382,58.1,0,13285
+age_1_2y,"CHENANGO,NY",295,73.9,0,36017
+age_1_2y,"BARTOW,GA",352,56.5,0,13015
+age_1_2y,"ORANGE,NY",319,35.4,0,36071
+age_1_2y,"SANTABARBARA,CA",314,82.8,0,06083
+age_1_2y,"ITASCA,MN",332,68.7,0,27061
+age_1_2y,"BRONX,NY",333,47.4,0,36005
+age_1_2y,"TIOGA,NY",311,74.3,0,36107
+age_1_2y,"CROWWING,MN",246,55.3,0,27035
+age_1_2y,"BENTON,MN",315,54,0,27009
+age_1_2y,"ERIE,NY",374,57,0,36029
+age_1_2y,"LOWNDES,GA",368,28.3,0,13185
+age_1_2y,"NAPA,CA",295,75.9,0,06055
+age_1_2y,"WHITFIELD,GA",314,44.6,0,13313
+age_1_2y,"KINGS,CA",323,55.4,0,06031
+age_1_2y,"CARROLL,GA",313,63.3,0,13045
+age_1_2y,"MESA,CO",298,51.7,0,08077
+age_1_2y,"SANTACRUZ,CA",285,69.5,0,06087
+age_1_2y,"POLK,MN",294,66.7,0,27119
+age_1_2y,"BECKER,MN",275,62.9,0,27005
+age_1_2y,"BENTON,OR",287,52.6,0,41003
+age_1_2y,"LIVINGSTON,NY",242,66.9,0,36051
+age_1_2y,"WALTON,GA",290,54.8,0,13297
+age_1_2y,"UMATILLA,OR",299,66.9,0,41059
+age_1_2y,"BROOMFIELD,CO",278,73.4,0,08014
+age_1_2y,"OTSEGO,NY",238,66.8,0,36077
+age_1_2y,"LITCHFIELD,CT",204,52.5,0,09005
+age_1_2y,"DELAWARE,NY",236,72,0,36025
+age_1_2y,"NEWTON,GA",274,54.4,0,13217
+age_1_2y,"COLUMBIA,OR",242,58.7,0,41009
+age_1_2y,"YOLO,CA",262,64.9,0,06113
+age_1_2y,"CECIL,MD",246,44.3,0,24015
+age_1_2y,"JACKSON,OR",250,44,0,41029
+age_1_2y,"LINCOLN,OR",243,60.9,0,41041
+age_1_2y,"BRADLEY,TN",295,45.1,0,47011
+age_1_2y,"GORDON,GA",247,59.9,0,13129
+age_1_2y,"MENDOCINO,CA",250,79.6,0,06045
+age_1_2y,"DORCHESTER,MD",224,75.4,0,24019
+age_1_2y,"STANISLAUS,CA",203,39.4,0,06099
+age_1_2y,"SULLIVAN,NY",205,40.5,0,36105
+age_1_2y,"YAMHILL,OR",254,65,0,41071
+age_1_2y,"STEPHENS,GA",242,52.9,0,13257
+age_1_2y,"ALLEGANY,NY",229,79.5,0,36003
+age_1_2y,"KLAMATH,OR",228,53.9,0,41035
+age_1_2y,"COWETA,GA",242,45.9,0,13077
+age_1_2y,"MALHEUR,OR",216,77.8,0,41045
+age_1_2y,"JEFFERSON,OR",226,58.8,0,41031
+age_1_2y,"WASHINGTON,MD",198,48,0,24043
+age_1_2y,"CROOK,OR",211,45.5,0,41013
+age_1_2y,"COLUMBIA,NY",209,64.1,0,36021
+age_1_2y,"RICHMOND,NY",241,34.9,0,36085
+age_1_2y,"SHELBY,TN",198,51,0,47157
+age_1_2y,"SCOTT,MN",197,55.3,0,27139
+age_1_2y,"MORRISON,MN",201,63.2,0,27097
+age_1_2y,"GENESEE,NY",195,61,0,36037
+age_1_2y,"DAWSON,GA",210,54.8,0,13085
+age_1_2y,"DYER,TN",193,80.8,0,47045
+age_1_2y,"HAWKINS,TN",201,58.2,0,47073
+age_1_2y,"WALKER,GA",212,50,0,13295
+age_1_2y,"CARTER,TN",202,66.3,0,47019
+age_1_2y,"ULSTER,NY",171,49.7,0,36111
+age_1_2y,"MILLELACS,MN",200,67,0,27095
+age_1_2y,"SPALDING,GA",196,52,0,13255
+age_1_2y,"CLINTON,NY",163,63.2,0,36019
+age_1_2y,"TODD,MN",198,52,0,27153
+age_1_2y,"NOBLES,MN",188,84,0,27105
+age_1_2y,"CASS,MN",185,58.4,0,27021
+age_1_2y,"CAROLINE,MD",151,43.7,0,24011
+age_1_2y,"WHITE,GA",157,54.8,0,13311
+age_1_2y,"FAYETTE,GA",167,49.7,0,13113
+age_1_2y,"CARLTON,MN",178,65.2,0,27017
+age_1_2y,"CLARKE,GA",186,61.3,0,13059
+age_1_2y,"WINONA,MN",170,72.4,0,27169
+age_1_2y,"FLOYD,GA",187,58.3,0,13115
+age_1_2y,"ROCKDALE,GA",159,42.8,0,13247
+age_1_2y,"TALBOT,MD",153,50.3,0,24041
+age_1_2y,"FRANKLIN,GA",164,56.1,0,13119
+age_1_2y,"LUMPKIN,GA",143,58.7,0,13187
+age_1_2y,"HERKIMER,NY",135,66.7,0,36043
+age_1_2y,"HOWARD,MD",147,58.5,0,24027
+age_1_2y,"ISANTI,MN",162,64.2,0,27059
+age_1_2y,"SCHENECTADY,NY",153,69.3,0,36093
+age_1_2y,"GREENE,NY",156,57.1,0,36039
+age_1_2y,"BANKS,GA",157,49,0,13011
+age_1_2y,"ROUTT,CO",157,77.7,0,08107
+age_1_2y,"FRANKLIN,NY",136,66.9,0,36033
+age_1_2y,"HUBBARD,MN",132,58.3,0,27057
+age_1_2y,"CORTLAND,NY",97,60.8,0,36023
+age_1_2y,"ROSEAU,MN",139,69.1,0,27135
+age_1_2y,"GARRETT,MD",132,53.8,0,24023
+age_1_2y,"MURRAY,GA",140,33.6,0,13213
+age_1_2y,"CHARLES,MD",129,45,0,24017
+age_1_2y,"CATOOSA,GA",147,48.3,0,13047
+age_1_2y,"DOUGLAS,MN",131,67.9,0,27041
+age_1_2y,"GIBSON,TN",136,43.4,0,47053
+age_1_2y,"SCHOHARIE,NY",130,69.2,0,36095
+age_1_2y,"WADENA,MN",119,46.2,0,27159
+age_1_2y,"WASHINGTON,NY",113,47.8,0,36115
+age_1_2y,"POLK,GA",116,52.6,0,13233
+age_1_2y,"HOUSTON,MN",110,80,0,27055
+age_1_2y,"REDWOOD,MN",119,47.9,0,27127
+age_1_2y,"NIAGARA,NY",90,57.8,0,36063
+age_1_2y,"ALLEGANY,MD",87,47.1,0,24001
+age_1_2y,"ORLEANS,NY",105,50.5,0,36073
+age_1_2y,"CHAVES,NM",105,60,0,35005
+age_1_2y,"HART,GA",98,60.2,0,13147
+age_1_2y,"WESTCHESTER,NY",98,32.7,0,36119
+age_1_2y,"CARROLL,TN",83,66.3,0,47017
+age_1_2y,"OCONEE,GA",86,69.8,0,13219
+age_1_2y,"WARREN,NY",88,45.5,0,36113
+age_1_2y,"WORCESTER,MD",90,46.7,0,24047
+age_1_2y,"MUSCOGEE,GA",97,55.7,0,13215
+age_1_2y,"HOODRIVER,OR",92,75,0,41027
+age_1_2y,"QUEENANNES,MD",99,44.4,0,NA
+age_1_2y,"PENNINGTON,MN",75,64,0,27113
+age_1_2y,"FULTON,NY",100,41,0,36035
+age_1_2y,"WASCO,OR",90,66.7,0,41065
+age_1_2y,"BERNALILLO,NM",89,47.2,0,35001
+age_1_2y,"RABUN,GA",85,44.7,0,13241
+age_1_2y,"SENECA,NY",76,55.3,0,36099
+age_1_2y,"PICKENS,GA",75,34.7,0,13227
+age_1_2y,"YATES,NY",80,73.8,0,36123
+age_1_2y,"POLK,OR",84,54.8,0,41053
+age_1_2y,"SEQUATCHIE,TN",77,37.7,0,47153
+age_1_2y,"WYOMING,NY",81,58,0,36121
+age_1_2y,"CLEARWATER,MN",80,63.8,0,27029
+age_1_2y,"BAKER,OR",79,59.5,0,41001
+age_1_2y,"CARROLL,MD",94,53.2,0,24013
+age_1_2y,"MORROW,OR",107,63.6,0,41049
+age_1_2y,"MOFFAT,CO",93,64.5,0,08081
+age_1_2y,"ROCK,MN",81,81.5,0,27133
+age_1_2y,"DOUGLAS,OR",86,44.2,0,41019
+age_1_2y,"KOOCHICHING,MN",66,69.7,0,27071
+age_1_2y,"ELBERT,CO",86,59.3,0,08039
+age_1_2y,"LAUDERDALE,TN",88,85.2,0,47097
+age_1_2y,"BUTTS,GA",81,55.6,0,13035
+age_1_2y,"PINE,MN",76,68.4,0,27115
+age_1_2y,"AITKIN,MN",65,64.6,0,27001
+age_1_2y,"MARSHALL,MN",70,65.7,0,27089
+age_1_2y,"CAMDEN,GA",76,42.1,0,13039
+age_1_2y,"TELLER,CO",68,36.8,0,08119
+age_1_2y,"MADISON,GA",55,65.5,0,13195
+age_1_2y,"SCHUYLER,NY",61,78.7,0,36097
+age_1_2y,"ESSEX,NY",61,62.3,0,36031
+age_1_2y,"TOMPKINS,NY",50,54,0,36109
+age_1_2y,"FREDERICK,MD",62,48.4,0,24021
+age_1_2y,"RHEA,TN",83,49.4,0,47143
+age_1_2y,"CURRY,NM",70,70,0,35009
+age_1_2y,"MADISON,NY",49,65.3,0,36053
+age_1_2y,"UNICOI,TN",76,72.4,0,47171
+age_1_2y,"KENT,MD",71,53.5,0,24029
+age_1_2y,"SWIFT,MN",57,68.4,0,27151
+age_1_2y,"BIBB,GA",66,53,0,13021
+age_1_2y,"SOMERSET,MD",67,46.3,0,24039
+age_1_2y,"FARIBAULT,MN",69,39.1,0,27043
+age_1_2y,"MARTIN,MN",61,70.5,0,27091
+age_1_2y,"SANBENITO,CA",53,56.6,0,06069
+age_1_2y,"HARALSON,GA",58,60.3,0,13143
+age_1_2y,"HOUSTON,GA",60,40,0,13153
+age_1_2y,"NORMAN,MN",48,66.7,0,27107
+age_1_2y,"MARION,TN",56,44.6,0,47115
+age_1_2y,"PLACER,CA",56,42.9,0,06061
+age_1_2y,"CARVER,MN",57,50.9,0,27019
+age_1_2y,"FREMONT,CO",58,41.4,0,08043
+age_1_2y,"WEAKLEY,TN",50,46,0,47183
+age_1_2y,"MORGAN,CO",66,59.1,0,08087
+age_1_2y,"ROOSEVELT,NM",61,78.7,0,35041
+age_1_2y,"SHASTA,CA",55,58.2,0,06089
+age_1_2y,"MEEKER,MN",46,50,0,27093
+age_1_2y,"WILKIN,MN",55,85.5,0,27167
+age_1_2y,"BLEDSOE,TN",56,50,0,47007
+age_1_2y,"DICKSON,TN",73,43.8,0,47043
+age_1_2y,"TIPTON,TN",49,59.2,0,47167
+age_1_2y,"RENVILLE,MN",49,55.1,0,27129
+age_1_2y,"GREENE,GA",53,64.2,0,13133
+age_1_2y,"SANLUISOBISPO,CA",53,39.6,0,06079
+age_1_2y,"COTTONWOOD,MN",44,47.7,0,27033
+age_1_2y,"LAKE,CA",47,76.6,0,06033
+age_1_2y,"CROCKETT,TN",55,41.8,0,47033
+age_1_2y,"HARNEY,OR",45,60,0,41025
+age_1_2y,"GARFIELD,CO",53,45.3,0,08045
+age_1_2y,"MONTGOMERY,NY",43,62.8,0,36057
+age_1_2y,"BERRIEN,GA",44,47.7,0,13019
+age_1_2y,"MAHNOMEN,MN",38,44.7,0,27087
+age_1_2y,"JOHNSON,TN",49,61.2,0,47091
+age_1_2y,"MCNAIRY,TN",37,NA,0,47109
+age_1_2y,"TILLAMOOK,OR",39,53.8,0,41057
+age_1_2y,"BENTON,TN",40,42.5,0,47005
+age_1_2y,"JACKSON,MN",42,69,0,27063
+age_1_2y,"MURRAY,MN",48,75,0,27101
+age_1_2y,"FILLMORE,MN",35,62.9,0,27045
+age_1_2y,"DELNORTE,CA",36,72.2,0,06015
+age_1_2y,"HARDEMAN,TN",41,48.8,0,47069
+age_1_2y,"HUMPHREYS,TN",45,55.6,0,47085
+age_1_2y,"OBION,TN",34,41.2,0,47131
+age_1_2y,"CHESTER,TN",39,38.5,0,47023
+age_1_2y,"CAYUGA,NY",37,64.9,0,36011
+age_1_2y,"GILMER,GA",46,39.1,0,13123
+age_1_2y,"SISKIYOU,CA",43,69.8,0,06093
+age_1_2y,"HENDERSON,TN",38,36.8,0,47077
+age_1_2y,"HENRY,TN",36,63.9,0,47079
+age_1_2y,"KITTSON,MN",47,74.5,0,27069
+age_1_2y,"MCDUFFIE,GA",43,51.2,0,13189
+age_1_2y,"MORGAN,GA",44,70.5,0,13211
+age_1_2y,"CHIPPEWA,MN",27,51.9,0,27023
+age_1_2y,"MERIWETHER,GA",39,61.5,0,13199
+age_1_2y,"DOUGHERTY,GA",39,38.5,0,13095
+age_1_2y,"GRANT,MN",38,60.5,0,27051
+age_1_2y,"LYON,MN",40,65,0,27083
+age_1_2y,"ELBERT,GA",30,76.7,0,13105
+age_1_2y,"WALLOWA,OR",18,NA,0,41063
+age_1_2y,"DADE,GA",36,58.3,0,13083
+age_1_2y,"LAMAR,GA",34,52.9,0,13171
+age_1_2y,"OTERO,CO",41,51.2,0,08089
+age_1_2y,"PUTNAM,GA",29,48.3,0,13237
+age_1_2y,"POLK,TN",42,35.7,0,47139
+age_1_2y,"PIPESTONE,MN",38,68.4,0,27117
+age_1_2y,"JOSEPHINE,OR",22,NA,0,41033
+age_1_2y,"YELLOWMEDICINE,MN",26,61.5,0,27173
+age_1_2y,"PIKE,GA",29,44.8,0,13231
+age_1_2y,"CHATTOOGA,GA",30,56.7,0,13055
+age_1_2y,"EAGLE,CO",34,NA,0,08037
+age_1_2y,"RICE,MN",24,NA,0,27131
+age_1_2y,"COOK,GA",22,NA,0,13075
+age_1_2y,"MCMINN,TN",21,NA,0,47107
+age_1_2y,"HAYWOOD,TN",40,67.5,0,47075
+age_1_2y,"LANIER,GA",33,NA,0,13173
+age_1_2y,"OSWEGO,NY",26,73.1,0,36075
+age_1_2y,"SUMMIT,CO",40,42.5,0,08117
+age_1_2y,"TRAVERSE,MN",28,75,0,27155
+age_1_2y,"ELDORADO,CA",27,48.1,0,06017
+age_1_2y,"ROCKLAND,NY",27,NA,0,36087
+age_1_2y,"LAKE,MN",24,62.5,0,27075
+age_1_2y,"OGLETHORPE,GA",36,61.1,0,13221
+age_1_2y,"CHATHAM,GA",28,57.1,0,13051
+age_1_2y,"YUBA,CA",23,69.6,0,06115
+age_1_2y,"BURKE,GA",24,50,0,13033
+age_1_2y,"REDLAKE,MN",25,72,0,27125
+age_1_2y,"CURRY,OR",20,NA,0,41015
+age_1_2y,"UNION,GA",28,50,0,13291
+age_1_2y,"PITKIN,CO",27,44.4,0,08097
+age_1_2y,"GRAND,CO",23,82.6,0,08049
+age_1_2y,"HARRIS,GA",25,56,0,13145
+age_1_2y,"KANABEC,MN",19,NA,0,27065
+age_1_2y,"GUNNISON,CO",29,NA,0,08051
+age_1_2y,"JASPER,GA",21,52.4,0,13159
+age_1_2y,"BROOKS,GA",24,NA,0,13027
+age_1_2y,"CLATSOP,OR",12,NA,0,41007
+age_1_2y,"FANNIN,GA",21,NA,0,13111
+age_1_2y,"DUTCHESS,NY",17,NA,0,36027
+age_1_2y,"LAKEOFTHEWOODS,MN",17,76.5,0,27077
+age_1_2y,"LAPLATA,CO",20,NA,0,08067
+age_1_2y,"JEFFERSON,GA",17,NA,0,13163
+age_1_2y,"LAKE,OR",16,NA,0,41037
+age_1_2y,"LOGAN,CO",20,70,0,08075
+age_1_2y,"CHAFFEE,CO",21,52.4,0,08015
+age_1_2y,"GRUNDY,TN",23,47.8,0,47061
+age_1_2y,"UPSON,GA",18,NA,0,13293
+age_1_2y,"BULLOCH,GA",18,NA,0,13031
+age_1_2y,"DELTA,CO",17,NA,0,08029
+age_1_2y,"PARK,CO",23,56.5,0,08093
+age_1_2y,"SANDOVAL,NM",14,NA,0,35043
+age_1_2y,"ALAMOSA,CO",13,NA,0,08003
+age_1_2y,"LAURENS,GA",15,NA,0,13175
+age_1_2y,"BLUEEARTH,MN",17,NA,0,27013
+age_1_2y,"COCKE,TN",13,NA,0,47029
+age_1_2y,"GRANT,OR",18,NA,0,41023
+age_1_2y,"POPE,MN",15,NA,0,27121
+age_1_2y,"STEVENS,MN",18,66.7,0,27149
+age_1_2y,"BALDWIN,GA",21,NA,0,13009
+age_1_2y,"COLQUITT,GA",15,NA,0,13071
+age_1_2y,"MARIPOSA,CA",14,NA,0,06043
+age_1_2y,"WASHINGTON,GA",20,NA,0,13303
+age_1_2y,"BIGSTONE,MN",12,NA,0,27011
+age_1_2y,"JEFFERSON,NY",5,NA,1,36045
+age_1_2y,"UNION,OR",13,NA,0,41061
+age_1_2y,"HEARD,GA",18,NA,0,13149
+age_1_2y,"MONTROSE,CO",14,NA,0,08085
+age_1_2y,"RIOGRANDE,CO",18,NA,0,08105
+age_1_2y,"LAKE,TN",21,57.1,0,47095
+age_1_2y,"LASANIMAS,CO",16,NA,0,08071
+age_1_2y,"MONROE,GA",21,NA,0,13207
+age_1_2y,"LASSEN,CA",20,85,0,06035
+age_1_2y,"THOMAS,GA",19,57.9,0,13275
+age_1_2y,"TIFT,GA",21,NA,0,13277
+age_1_2y,"CATTARAUGUS,NY",15,80,0,36009
+age_1_2y,"DECATUR,TN",13,NA,0,47039
+age_1_2y,"WABASHA,MN",5,NA,1,27157
+age_1_2y,"WILKES,GA",16,NA,0,13317
+age_1_2y,"HANCOCK,TN",13,NA,0,47067
+age_1_2y,"PROWERS,CO",5,NA,1,08099
+age_1_2y,"SUTTER,CA",5,NA,1,06101
+age_1_2y,"MEIGS,TN",20,NA,0,47121
+age_1_2y,"COFFEE,GA",15,NA,0,13069
+age_1_2y,"DECATUR,GA",17,NA,0,13087
+age_1_2y,"HARDIN,TN",13,NA,0,47071
+age_1_2y,"IMPERIAL,CA",16,68.8,0,06025
+age_1_2y,"TUOLUMNE,CA",5,NA,1,06109
+age_1_2y,"LINCOLN,MN",16,NA,0,27081
+age_1_2y,"MONTGOMERY,TN",12,NA,0,47125
+age_1_2y,"SAINTMARYS,MD",12,NA,0,NA
+age_1_2y,"CALVERT,MD",5,NA,1,24009
+age_1_2y,"EMANUEL,GA",5,NA,1,13107
+age_1_2y,"FAYETTE,TN",12,NA,0,47047
+age_1_2y,"PEACH,GA",13,NA,0,13225
+age_1_2y,"SIERRA,NM",12,NA,0,35051
+age_1_2y,"CLINCH,GA",14,NA,0,13065
+age_1_2y,"HAMBLEN,TN",5,NA,1,47063
+age_1_2y,"LACQUIPARLE,MN",5,NA,1,27073
+age_1_2y,"CHARLTON,GA",5,NA,1,13049
+age_1_2y,"DODGE,GA",5,NA,1,13091
+age_1_2y,"CHAUTAUQUA,NY",5,NA,1,36013
+age_1_2y,"ECHOLS,GA",11,NA,0,13101
+age_1_2y,"HICKMAN,TN",13,NA,0,47081
+age_1_2y,"LEE,GA",12,NA,0,13177
+age_1_2y,"LINCOLN,GA",13,NA,0,13181
+age_1_2y,"MONTEZUMA,CO",5,NA,1,08083
+age_1_2y,"TOWNS,GA",11,NA,0,13281
+age_1_2y,"GILPIN,CO",11,NA,0,08047
+age_1_2y,"KITCARSON,CO",5,NA,1,08063
+age_1_2y,"OTERO,NM",5,NA,1,35035
+age_1_2y,"YUMA,CO",5,NA,1,08125
+age_1_2y,"LINCOLN,CO",5,NA,1,08073
+age_1_2y,"OLMSTED,MN",12,NA,0,27109
+age_1_2y,"BROWN,MN",12,NA,0,27015
+age_1_2y,"FREEBORN,MN",18,NA,0,27047
+age_1_2y,"GRADY,GA",11,NA,0,13131
+age_1_2y,"CLEARCREEK,CO",13,NA,0,08019
+age_1_2y,"CRISP,GA",5,NA,1,13081
+age_1_2y,"EDDY,NM",11,NA,0,35015
+age_1_2y,"GLYNN,GA",5,NA,1,13127
+age_1_2y,"KNOX,TN",11,NA,0,47093
+age_1_2y,"LIBERTY,GA",5,NA,1,13179
+age_1_2y,"VENTURA,CA",5,NA,1,06111
+age_1_2y,"COLUSA,CA",5,NA,1,06011
+age_1_2y,"HANCOCK,GA",5,NA,1,13141
+age_1_2y,"HUERFANO,CO",11,NA,0,08055
+age_1_2y,"CUMBERLAND,TN",5,NA,1,47035
+age_1_2y,"MCLEOD,MN",5,NA,1,27085
+age_1_2y,"MODOC,CA",5,NA,1,06049
+age_1_2y,"GOODHUE,MN",5,NA,1,27049
+age_1_2y,"WHEELER,OR",5,NA,1,41069
+age_1_2y,"BRYAN,GA",5,NA,1,13029
+age_1_2y,"DAVIDSON,TN",5,NA,1,47037
+age_1_2y,"DONAANA,NM",5,NA,1,35013
+age_1_2y,"FRANKLIN,TN",5,NA,1,47051
+age_1_2y,"HAMILTON,NY",5,NA,1,36041
+age_1_2y,"LESUEUR,MN",5,NA,1,27079
+age_1_2y,"WASHINGTON,CO",12,NA,0,08121
+age_1_2y,"BUTTE,CA",5,NA,1,06007
+age_1_2y,"EFFINGHAM,GA",5,NA,1,13103
+age_1_2y,"SHERMAN,OR",5,NA,1,41055
+age_1_2y,"SUMTER,GA",5,NA,1,13261
+age_1_2y,"HOUSTON,TN",5,NA,1,47083
+age_1_2y,"JEFFERSON,TN",5,NA,1,47089
+age_1_2y,"TOOMBS,GA",5,NA,1,13279
+age_1_2y,"WATONWAN,MN",5,NA,1,27165
+age_1_2y,"JACKSON,CO",5,NA,1,08057
+age_1_2y,"JENKINS,GA",5,NA,1,13165
+age_1_2y,"JONES,GA",5,NA,1,13169
+age_1_2y,"VALENCIA,NM",5,NA,1,35061
+age_1_2y,"BENHILL,GA",5,NA,1,13017
+age_1_2y,"GLASCOCK,GA",5,NA,1,13125
+age_1_2y,"LAKE,CO",5,NA,1,08065
+age_1_2y,"LEWIS,NY",5,NA,1,36049
+age_1_2y,"NEVADA,CA",5,NA,1,06057
+age_1_2y,"RUTHERFORD,TN",5,NA,1,47149
+age_1_2y,"SANJUAN,NM",5,NA,1,35045
+age_1_2y,"SANTAFE,NM",5,NA,1,35049
+age_1_2y,"SCREVEN,GA",5,NA,1,13251
+age_1_2y,"TALBOT,GA",5,NA,1,13263
+age_1_2y,"WORTH,GA",5,NA,1,13321
+age_1_2y,"ARCHULETA,CO",5,NA,1,08007
+age_1_2y,"STEELE,MN",5,NA,1,27147
+age_1_2y,"WARE,GA",5,NA,1,13299
+age_1_2y,"BLECKLEY,GA",5,NA,1,13023
+age_1_2y,"CONEJOS,CO",5,NA,1,08021
+age_1_2y,"GILLIAM,OR",5,NA,1,41021
+age_1_2y,"NICOLLET,MN",5,NA,1,27103
+age_1_2y,"TATTNALL,GA",5,NA,1,13267
+age_1_2y,"WARREN,GA",5,NA,1,13301
+age_1_2y,"BENT,CO",5,NA,1,08011
+age_1_2y,"MONO,CA",5,NA,1,06051
+age_1_2y,"MONROE,TN",5,NA,1,47123
+age_1_2y,"PLUMAS,CA",5,NA,1,06063
+age_1_2y,"TURNER,GA",5,NA,1,13287
+age_1_2y,"WILLIAMSON,TN",5,NA,1,47187
+age_1_2y,"ATKINSON,GA",5,NA,1,13003
+age_1_2y,"CHEYENNE,CO",5,NA,1,08017
+age_1_2y,"COFFEE,TN",5,NA,1,47031
+age_1_2y,"JOHNSON,GA",5,NA,1,13167
+age_1_2y,"LEA,NM",5,NA,1,35025
+age_1_2y,"MITCHELL,GA",5,NA,1,13205
+age_1_2y,"PHILLIPS,CO",5,NA,1,08095
+age_1_2y,"SEMINOLE,GA",5,NA,1,13253
+age_1_2y,"SUMNER,TN",5,NA,1,47165
+age_1_2y,"COOK,MN",5,NA,1,27031
+age_1_2y,"CROWLEY,CO",5,NA,1,08025
+age_1_2y,"CUSTER,CO",5,NA,1,08027
+age_1_2y,"PULASKI,GA",5,NA,1,13235
+age_1_2y,"RIOBLANCO,CO",5,NA,1,08103
+age_1_2y,"TAYLOR,GA",5,NA,1,13269
+age_1_2y,"TREUTLEN,GA",5,NA,1,13283
+age_1_2y,"WAYNE,GA",5,NA,1,13305
+age_1_2y,"APPLING,GA",5,NA,1,13001
+age_1_2y,"CAMPBELL,TN",5,NA,1,47013
+age_1_2y,"DOOLY,GA",5,NA,1,13093
+age_1_2y,"SANMIGUEL,CO",5,NA,1,08113
+age_1_2y,"TERRELL,GA",5,NA,1,13273
+age_1_2y,"TRINITY,CA",5,NA,1,06105
+age_1_2y,"WILCOX,GA",5,NA,1,13315
+age_1_2y,"BACA,CO",5,NA,1,08009
+age_1_2y,"CALAVERAS,CA",5,NA,1,06009
+age_1_2y,"CANDLER,GA",5,NA,1,13043
+age_1_2y,"CRAWFORD,GA",5,NA,1,13079
+age_1_2y,"EARLY,GA",5,NA,1,13099
+age_1_2y,"SEVIER,TN",5,NA,1,47155
+age_1_2y,"WARREN,TN",5,NA,1,47177
+age_1_2y,"WILKINSON,GA",5,NA,1,13319
+age_1_2y,"ANDERSON,TN",5,NA,1,47001
+age_1_2y,"BRANTLEY,GA",5,NA,1,13025
+age_1_2y,"CHEATHAM,TN",5,NA,1,47021
+age_1_2y,"CLAIBORNE,TN",5,NA,1,47025
+age_1_2y,"DODGE,MN",5,NA,1,27039
+age_1_2y,"DOLORES,CO",5,NA,1,08033
+age_1_2y,"IRWIN,GA",5,NA,1,13155
+age_1_2y,"JEFFDAVIS,GA",5,NA,1,13161
+age_1_2y,"KIOWA,CO",5,NA,1,08061
+age_1_2y,"LINCOLN,NM",5,NA,1,35027
+age_1_2y,"MAURY,TN",5,NA,1,47119
+age_1_2y,"PIERCE,GA",5,NA,1,13229
+age_1_2y,"ROBERTSON,TN",5,NA,1,47147
+age_1_2y,"SAGUACHE,CO",5,NA,1,08109
+age_1_2y,"CALHOUN,GA",5,NA,1,13037
+age_1_2y,"COLFAX,NM",5,NA,1,35007
+age_1_2y,"GRAINGER,TN",5,NA,1,47057
+age_1_2y,"MACON,GA",5,NA,1,13193
+age_1_2y,"MARION,GA",5,NA,1,13197
+age_1_2y,"MCKINLEY,NM",5,NA,1,35031
+age_1_2y,"PERRY,TN",5,NA,1,47135
+age_1_2y,"QUAY,NM",5,NA,1,35037
+age_1_2y,"SCHLEY,GA",5,NA,1,13249
+age_1_2y,"SIBLEY,MN",5,NA,1,27143
+age_1_2y,"TALIAFERRO,GA",5,NA,1,13265
+age_1_2y,"TEHAMA,CA",5,NA,1,06103
+age_1_2y,"TWIGGS,GA",5,NA,1,13289
+age_1_2y,"VANBUREN,TN",5,NA,1,47175
+age_1_2y,"WHITE,TN",5,NA,1,47185
+age_1_2y,"AMADOR,CA",5,NA,1,06005
+age_1_2y,"BACON,GA",5,NA,1,13005
+age_1_2y,"BAKER,GA",5,NA,1,13007
+age_1_2y,"BLOUNT,TN",5,NA,1,47009
+age_1_2y,"COSTILLA,CO",5,NA,1,08023
+age_1_2y,"EVANS,GA",5,NA,1,13109
+age_1_2y,"GRANT,NM",5,NA,1,35017
+age_1_2y,"MILLER,GA",5,NA,1,13201
+age_1_2y,"PUTNAM,NY",5,NA,1,36079
+age_1_2y,"RANDOLPH,GA",5,NA,1,13243
+age_1_2y,"ROANE,TN",5,NA,1,47145
+age_1_2y,"SEDGWICK,CO",5,NA,1,08115
+age_1_2y,"TELFAIR,GA",5,NA,1,13271
+age_1_2y,"WASECA,MN",5,NA,1,27161
+age_1_2y,"WILSON,TN",5,NA,1,47189
+age_1_2y,"ALPINE,CA",5,NA,1,06003
+age_1_2y,"CHATTAHOOCHEE,GA",5,NA,1,13053
+age_1_2y,"CIBOLA,NM",5,NA,1,35006
+age_1_2y,"CLAY,GA",5,NA,1,13061
+age_1_2y,"INYO,CA",5,NA,1,06027
+age_1_2y,"LONG,GA",5,NA,1,13183
+age_1_2y,"LUNA,NM",5,NA,1,35029
+age_1_2y,"MONTGOMERY,GA",5,NA,1,13209
+age_1_2y,"OURAY,CO",5,NA,1,08091
+age_1_2y,"RIOARRIBA,NM",5,NA,1,35039
+age_1_2y,"SIERRA,CA",5,NA,1,06091
+age_1_2y,"STEWART,GA",5,NA,1,13259
+age_1_2y,"WAYNE,TN",5,NA,1,47181
+age_1_2y,"GUADALUPE,NM",5,NA,1,35019
+age_1_2y,"MCINTOSH,GA",5,NA,1,13191
+age_1_2y,"PUTNAM,TN",5,NA,1,47141
+age_1_2y,"SANJUAN,CO",5,NA,1,08111
+age_1_2y,"SANMIGUEL,NM",5,NA,1,35047
+age_1_2y,"STEWART,TN",5,NA,1,47161
+age_1_2y,"WHEELER,GA",5,NA,1,13309
+age_1_2y,"BEDFORD,TN",5,NA,1,47003
+age_1_2y,"DEBACA,NM",5,NA,1,35011
+age_1_2y,"HARDING,NM",5,NA,1,35021
+age_1_2y,"HIDALGO,NM",5,NA,1,35023
+age_1_2y,"LINCOLN,TN",5,NA,1,47103
+age_1_2y,"LOSALAMOS,NM",5,NA,1,35028
+age_1_2y,"LOUDON,TN",5,NA,1,47105
+age_1_2y,"MACON,TN",5,NA,1,47111
+age_1_2y,"MINERAL,CO",5,NA,1,08079
+age_1_2y,"MORGAN,TN",5,NA,1,47129
+age_1_2y,"MOWER,MN",5,NA,1,27099
+age_1_2y,"SCOTT,TN",5,NA,1,47151
+age_1_2y,"SMITH,TN",5,NA,1,47159
+age_1_2y,"SOCORRO,NM",5,NA,1,35053
+age_1_2y,"TORRANCE,NM",5,NA,1,35057
+age_1_2y,"TROUSDALE,TN",5,NA,1,47169
+age_1_2y,Noneoftheabove,6117,55.9,0,NA
+age_1_2y,Total,196587,62.2,0,NA
+"Total: Total includes all data, including data from rows not currently displayed.","SANDIEGO,CA",29884,65.8,0,06073
+"Total: Total includes all data, including data from rows not currently displayed.","FRESNO,CA",32195,71.6,0,06019
+"Total: Total includes all data, including data from rows not currently displayed.","LOSANGELES,CA",25104,67.5,0,06037
+"Total: Total includes all data, including data from rows not currently displayed.","COBB,GA",22929,74.8,0,13067
+"Total: Total includes all data, including data from rows not currently displayed.","ALAMEDA,CA",20118,77.3,0,06001
+"Total: Total includes all data, including data from rows not currently displayed.","MONROE,NY",20875,79.2,0,36055
+"Total: Total includes all data, including data from rows not currently displayed.","KINGS,NY",21717,56.7,0,36047
+"Total: Total includes all data, including data from rows not currently displayed.","FULTON,GA",23889,65.8,0,13121
+"Total: Total includes all data, including data from rows not currently displayed.","RIVERSIDE,CA",22630,57.1,0,06065
+"Total: Total includes all data, including data from rows not currently displayed.","DENVER,CO",21517,80.6,0,08031
+"Total: Total includes all data, including data from rows not currently displayed.","SANTACLARA,CA",17369,68.2,0,06085
+"Total: Total includes all data, including data from rows not currently displayed.","HENNEPIN,MN",18371,68.3,0,27053
+"Total: Total includes all data, including data from rows not currently displayed.","MULTNOMAH,OR",17185,72.8,0,41051
+"Total: Total includes all data, including data from rows not currently displayed.","ELPASO,CO",22354,57.4,0,08041
+"Total: Total includes all data, including data from rows not currently displayed.","ORANGE,CA",16647,68.3,0,06059
+"Total: Total includes all data, including data from rows not currently displayed.","ARAPAHOE,CO",19630,73.9,0,08005
+"Total: Total includes all data, including data from rows not currently displayed.","SANBERNARDINO,CA",19573,59.4,0,06071
+"Total: Total includes all data, including data from rows not currently displayed.","CONTRACOSTA,CA",15155,78.1,0,06013
+"Total: Total includes all data, including data from rows not currently displayed.","HARTFORD,CT",16055,80.5,0,09003
+"Total: Total includes all data, including data from rows not currently displayed.","DEKALB,GA",17447,64.3,0,13089
+"Total: Total includes all data, including data from rows not currently displayed.","GWINNETT,GA",17422,61.9,0,13135
+"Total: Total includes all data, including data from rows not currently displayed.","WASHINGTON,OR",12638,70.6,0,41067
+"Total: Total includes all data, including data from rows not currently displayed.","ADAMS,CO",15266,75,0,08001
+"Total: Total includes all data, including data from rows not currently displayed.","SUFFOLK,NY",12584,64.2,0,36103
+"Total: Total includes all data, including data from rows not currently displayed.","WELD,CO",12968,75.1,0,08123
+"Total: Total includes all data, including data from rows not currently displayed.","QUEENS,NY",11802,60.8,0,36081
+"Total: Total includes all data, including data from rows not currently displayed.","SANMATEO,CA",9366,79.8,0,06081
+"Total: Total includes all data, including data from rows not currently displayed.","NASSAU,NY",11388,63.1,0,36059
+"Total: Total includes all data, including data from rows not currently displayed.","RAMSEY,MN",9779,74.8,0,27123
+"Total: Total includes all data, including data from rows not currently displayed.","KERN,CA",11274,65.6,0,06029
+"Total: Total includes all data, including data from rows not currently displayed.","MONTEREY,CA",9158,78.5,0,06053
+"Total: Total includes all data, including data from rows not currently displayed.","SANFRANCISCO,CA",9005,70.3,0,06075
+"Total: Total includes all data, including data from rows not currently displayed.","LARIMER,CO",9322,76.3,0,08069
+"Total: Total includes all data, including data from rows not currently displayed.","CLACKAMAS,OR",8799,69.5,0,41005
+"Total: Total includes all data, including data from rows not currently displayed.","HALL,GA",9209,72,0,13139
+"Total: Total includes all data, including data from rows not currently displayed.","JEFFERSON,CO",11559,73.9,0,08059
+"Total: Total includes all data, including data from rows not currently displayed.","DESCHUTES,OR",7621,71.8,0,41017
+"Total: Total includes all data, including data from rows not currently displayed.","STEARNS,MN",7526,74.2,0,27145
+"Total: Total includes all data, including data from rows not currently displayed.","SACRAMENTO,CA",8019,65.3,0,06067
+"Total: Total includes all data, including data from rows not currently displayed.","BALTIMORECITY,MD",8299,74.2,0,24510
+"Total: Total includes all data, including data from rows not currently displayed.","BOULDER,CO",7446,71.4,0,08013
+"Total: Total includes all data, including data from rows not currently displayed.","BROOME,NY",6266,69.5,0,36007
+"Total: Total includes all data, including data from rows not currently displayed.","BALTIMORE,MD",8202,69.3,0,24005
+"Total: Total includes all data, including data from rows not currently displayed.","HAMILTON,TN",8080,62.3,0,47065
+"Total: Total includes all data, including data from rows not currently displayed.","SONOMA,CA",6285,47.3,0,06097
+"Total: Total includes all data, including data from rows not currently displayed.","ANOKA,MN",6824,73.1,0,27003
+"Total: Total includes all data, including data from rows not currently displayed.","ALBANY,NY",5730,55.6,0,36001
+"Total: Total includes all data, including data from rows not currently displayed.","CHEROKEE,GA",7333,67,0,13057
+"Total: Total includes all data, including data from rows not currently displayed.","DAKOTA,MN",6785,68.2,0,27037
+"Total: Total includes all data, including data from rows not currently displayed.","DOUGLAS,CO",9214,68.4,0,08035
+"Total: Total includes all data, including data from rows not currently displayed.","NEWYORK,NY",6146,58.4,0,36061
+"Total: Total includes all data, including data from rows not currently displayed.","SAINTLOUIS,MN",5338,80.1,0,NA
+"Total: Total includes all data, including data from rows not currently displayed.","PAULDING,GA",5702,75.3,0,13223
+"Total: Total includes all data, including data from rows not currently displayed.","NEWHAVEN,CT",5434,73.5,0,09009
+"Total: Total includes all data, including data from rows not currently displayed.","LINN,OR",4987,74.2,0,41043
+"Total: Total includes all data, including data from rows not currently displayed.","DOUGLAS,GA",5149,74.5,0,13097
+"Total: Total includes all data, including data from rows not currently displayed.","CLAYTON,GA",5471,63.8,0,13063
+"Total: Total includes all data, including data from rows not currently displayed.","NEWLONDON,CT",4219,79.7,0,09011
+"Total: Total includes all data, including data from rows not currently displayed.","MADERA,CA",4471,68.2,0,06039
+"Total: Total includes all data, including data from rows not currently displayed.","WASHINGTON,MN",4097,76.8,0,27163
+"Total: Total includes all data, including data from rows not currently displayed.","HENRY,GA",5339,60,0,13151
+"Total: Total includes all data, including data from rows not currently displayed.","CLAY,MN",3425,83.3,0,27027
+"Total: Total includes all data, including data from rows not currently displayed.","SANJOAQUIN,CA",3652,47.3,0,06077
+"Total: Total includes all data, including data from rows not currently displayed.","SOLANO,CA",3279,51.2,0,06095
+"Total: Total includes all data, including data from rows not currently displayed.","MARIN,CA",3229,57.2,0,06041
+"Total: Total includes all data, including data from rows not currently displayed.","MARION,OR",4233,59.3,0,41047
+"Total: Total includes all data, including data from rows not currently displayed.","STEUBEN,NY",3271,76.6,0,36101
+"Total: Total includes all data, including data from rows not currently displayed.","TULARE,CA",4689,55.3,0,06107
+"Total: Total includes all data, including data from rows not currently displayed.","ONTARIO,NY",3040,83.1,0,36069
+"Total: Total includes all data, including data from rows not currently displayed.","MERCED,CA",3756,60.6,0,06047
+"Total: Total includes all data, including data from rows not currently displayed.","MIDDLESEX,CT",3303,84.8,0,09007
+"Total: Total includes all data, including data from rows not currently displayed.","ONONDAGA,NY",3024,39.4,0,36067
+"Total: Total includes all data, including data from rows not currently displayed.","RENSSELAER,NY",2648,59.3,0,36083
+"Total: Total includes all data, including data from rows not currently displayed.","SARATOGA,NY",2361,42.7,0,36091
+"Total: Total includes all data, including data from rows not currently displayed.","SHERBURNE,MN",3359,71.4,0,27141
+"Total: Total includes all data, including data from rows not currently displayed.","FAIRFIELD,CT",3393,65,0,09001
+"Total: Total includes all data, including data from rows not currently displayed.","SULLIVAN,TN",2973,71.5,0,47163
+"Total: Total includes all data, including data from rows not currently displayed.","FORSYTH,GA",3932,61.1,0,13117
+"Total: Total includes all data, including data from rows not currently displayed.","HUMBOLDT,CA",2815,72.5,0,06023
+"Total: Total includes all data, including data from rows not currently displayed.","ONEIDA,NY",3236,69.7,0,36065
+"Total: Total includes all data, including data from rows not currently displayed.","WAYNE,NY",2723,81.1,0,36117
+"Total: Total includes all data, including data from rows not currently displayed.","CHEMUNG,NY",2568,80.5,0,36015
+"Total: Total includes all data, including data from rows not currently displayed.","ANNEARUNDEL,MD",3210,58.3,0,24003
+"Total: Total includes all data, including data from rows not currently displayed.","WASHINGTON,TN",2262,73,0,47179
+"Total: Total includes all data, including data from rows not currently displayed.","RICHMOND,GA",1394,24.1,0,13245
+"Total: Total includes all data, including data from rows not currently displayed.","JACKSON,GA",2763,68.7,0,13157
+"Total: Total includes all data, including data from rows not currently displayed.","PUEBLO,CO",3081,60.6,0,08101
+"Total: Total includes all data, including data from rows not currently displayed.","BARROW,GA",2717,63.9,0,13013
+"Total: Total includes all data, including data from rows not currently displayed.","KANDIYOHI,MN",2154,73.4,0,27067
+"Total: Total includes all data, including data from rows not currently displayed.","MADISON,TN",1911,59.1,0,47113
+"Total: Total includes all data, including data from rows not currently displayed.","OTTERTAIL,MN",2128,72,0,27111
+"Total: Total includes all data, including data from rows not currently displayed.","WRIGHT,MN",2567,68.8,0,27171
+"Total: Total includes all data, including data from rows not currently displayed.","TOLLAND,CT",2375,80.2,0,09013
+"Total: Total includes all data, including data from rows not currently displayed.","PRINCEGEORGES,MD",2955,54.3,0,NA
+"Total: Total includes all data, including data from rows not currently displayed.","WINDHAM,CT",2227,78.4,0,09015
+"Total: Total includes all data, including data from rows not currently displayed.","HARFORD,MD",2926,59,0,24025
+"Total: Total includes all data, including data from rows not currently displayed.","GREENE,TN",2025,75,0,47059
+"Total: Total includes all data, including data from rows not currently displayed.","BELTRAMI,MN",1982,78.7,0,27007
+"Total: Total includes all data, including data from rows not currently displayed.","HABERSHAM,GA",2000,73.7,0,13137
+"Total: Total includes all data, including data from rows not currently displayed.","MONTGOMERY,MD",3413,56.5,0,24031
+"Total: Total includes all data, including data from rows not currently displayed.","COOS,OR",1879,72.3,0,41011
+"Total: Total includes all data, including data from rows not currently displayed.","LANE,OR",2198,44.8,0,41039
+"Total: Total includes all data, including data from rows not currently displayed.","WICOMICO,MD",2237,65.6,0,24045
+"Total: Total includes all data, including data from rows not currently displayed.","CHISAGO,MN",1848,76,0,27025
+"Total: Total includes all data, including data from rows not currently displayed.","SAINTLAWRENCE,NY",1829,69.3,0,NA
+"Total: Total includes all data, including data from rows not currently displayed.","COLUMBIA,GA",1094,25.1,0,13073
+"Total: Total includes all data, including data from rows not currently displayed.","TROUP,GA",2319,72.5,0,13285
+"Total: Total includes all data, including data from rows not currently displayed.","CHENANGO,NY",1704,83.1,0,36017
+"Total: Total includes all data, including data from rows not currently displayed.","BARTOW,GA",2092,65.9,0,13015
+"Total: Total includes all data, including data from rows not currently displayed.","ORANGE,NY",2507,56.7,0,36071
+"Total: Total includes all data, including data from rows not currently displayed.","SANTABARBARA,CA",1994,80.5,0,06083
+"Total: Total includes all data, including data from rows not currently displayed.","ITASCA,MN",1616,78,0,27061
+"Total: Total includes all data, including data from rows not currently displayed.","BRONX,NY",2066,57.2,0,36005
+"Total: Total includes all data, including data from rows not currently displayed.","TIOGA,NY",1532,76.8,0,36107
+"Total: Total includes all data, including data from rows not currently displayed.","CROWWING,MN",1740,70.1,0,27035
+"Total: Total includes all data, including data from rows not currently displayed.","BENTON,MN",1683,75.7,0,27009
+"Total: Total includes all data, including data from rows not currently displayed.","ERIE,NY",2627,64.6,0,36029
+"Total: Total includes all data, including data from rows not currently displayed.","LOWNDES,GA",2600,51.2,0,13185
+"Total: Total includes all data, including data from rows not currently displayed.","NAPA,CA",1411,24.5,0,06055
+"Total: Total includes all data, including data from rows not currently displayed.","WHITFIELD,GA",1668,45.2,0,13313
+"Total: Total includes all data, including data from rows not currently displayed.","KINGS,CA",2122,57.4,0,06031
+"Total: Total includes all data, including data from rows not currently displayed.","CARROLL,GA",1940,67.5,0,13045
+"Total: Total includes all data, including data from rows not currently displayed.","MESA,CO",1960,58.5,0,08077
+"Total: Total includes all data, including data from rows not currently displayed.","SANTACRUZ,CA",1600,52.9,0,06087
+"Total: Total includes all data, including data from rows not currently displayed.","POLK,MN",1412,80.9,0,27119
+"Total: Total includes all data, including data from rows not currently displayed.","BECKER,MN",1369,77.8,0,27005
+"Total: Total includes all data, including data from rows not currently displayed.","BENTON,OR",1550,69.5,0,41003
+"Total: Total includes all data, including data from rows not currently displayed.","LIVINGSTON,NY",1598,74.9,0,36051
+"Total: Total includes all data, including data from rows not currently displayed.","WALTON,GA",1891,60,0,13297
+"Total: Total includes all data, including data from rows not currently displayed.","UMATILLA,OR",1535,69.3,0,41059
+"Total: Total includes all data, including data from rows not currently displayed.","BROOMFIELD,CO",1608,69.9,0,08014
+"Total: Total includes all data, including data from rows not currently displayed.","OTSEGO,NY",1355,84,0,36077
+"Total: Total includes all data, including data from rows not currently displayed.","LITCHFIELD,CT",1577,68.3,0,09005
+"Total: Total includes all data, including data from rows not currently displayed.","DELAWARE,NY",1294,82.3,0,36025
+"Total: Total includes all data, including data from rows not currently displayed.","NEWTON,GA",1766,60.9,0,13217
+"Total: Total includes all data, including data from rows not currently displayed.","COLUMBIA,OR",1385,68.4,0,41009
+"Total: Total includes all data, including data from rows not currently displayed.","YOLO,CA",1213,28.4,0,06113
+"Total: Total includes all data, including data from rows not currently displayed.","CECIL,MD",1412,58.3,0,24015
+"Total: Total includes all data, including data from rows not currently displayed.","JACKSON,OR",1477,57.3,0,41029
+"Total: Total includes all data, including data from rows not currently displayed.","LINCOLN,OR",1358,71.8,0,41041
+"Total: Total includes all data, including data from rows not currently displayed.","BRADLEY,TN",1545,53.5,0,47011
+"Total: Total includes all data, including data from rows not currently displayed.","GORDON,GA",1365,52.8,0,13129
+"Total: Total includes all data, including data from rows not currently displayed.","MENDOCINO,CA",1373,64.6,0,06045
+"Total: Total includes all data, including data from rows not currently displayed.","DORCHESTER,MD",1215,83.9,0,24019
+"Total: Total includes all data, including data from rows not currently displayed.","STANISLAUS,CA",1717,45.9,0,06099
+"Total: Total includes all data, including data from rows not currently displayed.","SULLIVAN,NY",1557,63.8,0,36105
+"Total: Total includes all data, including data from rows not currently displayed.","YAMHILL,OR",1294,56,0,41071
+"Total: Total includes all data, including data from rows not currently displayed.","STEPHENS,GA",1149,73.5,0,13257
+"Total: Total includes all data, including data from rows not currently displayed.","ALLEGANY,NY",1087,69.7,0,36003
+"Total: Total includes all data, including data from rows not currently displayed.","KLAMATH,OR",1438,69.9,0,41035
+"Total: Total includes all data, including data from rows not currently displayed.","COWETA,GA",1545,58.4,0,13077
+"Total: Total includes all data, including data from rows not currently displayed.","MALHEUR,OR",1217,67.5,0,41045
+"Total: Total includes all data, including data from rows not currently displayed.","JEFFERSON,OR",1092,74.7,0,41031
+"Total: Total includes all data, including data from rows not currently displayed.","WASHINGTON,MD",1216,65.6,0,24043
+"Total: Total includes all data, including data from rows not currently displayed.","CROOK,OR",1067,64.9,0,41013
+"Total: Total includes all data, including data from rows not currently displayed.","COLUMBIA,NY",760,36.2,0,36021
+"Total: Total includes all data, including data from rows not currently displayed.","RICHMOND,NY",1204,46.7,0,36085
+"Total: Total includes all data, including data from rows not currently displayed.","SHELBY,TN",1034,51.7,0,47157
+"Total: Total includes all data, including data from rows not currently displayed.","SCOTT,MN",1168,65.8,0,27139
+"Total: Total includes all data, including data from rows not currently displayed.","MORRISON,MN",1006,72.9,0,27097
+"Total: Total includes all data, including data from rows not currently displayed.","GENESEE,NY",1192,74.6,0,36037
+"Total: Total includes all data, including data from rows not currently displayed.","DAWSON,GA",1141,67.2,0,13085
+"Total: Total includes all data, including data from rows not currently displayed.","DYER,TN",891,73.4,0,47045
+"Total: Total includes all data, including data from rows not currently displayed.","HAWKINS,TN",1092,70.1,0,47073
+"Total: Total includes all data, including data from rows not currently displayed.","WALKER,GA",1370,64,0,13295
+"Total: Total includes all data, including data from rows not currently displayed.","CARTER,TN",946,75.4,0,47019
+"Total: Total includes all data, including data from rows not currently displayed.","ULSTER,NY",1018,56,0,36111
+"Total: Total includes all data, including data from rows not currently displayed.","MILLELACS,MN",936,72.8,0,27095
+"Total: Total includes all data, including data from rows not currently displayed.","SPALDING,GA",1414,66.5,0,13255
+"Total: Total includes all data, including data from rows not currently displayed.","CLINTON,NY",1162,61.2,0,36019
+"Total: Total includes all data, including data from rows not currently displayed.","TODD,MN",884,65.4,0,27153
+"Total: Total includes all data, including data from rows not currently displayed.","NOBLES,MN",910,81.2,0,27105
+"Total: Total includes all data, including data from rows not currently displayed.","CASS,MN",940,63.5,0,27021
+"Total: Total includes all data, including data from rows not currently displayed.","CAROLINE,MD",962,69.5,0,24011
+"Total: Total includes all data, including data from rows not currently displayed.","WHITE,GA",944,73.7,0,13311
+"Total: Total includes all data, including data from rows not currently displayed.","FAYETTE,GA",1136,59.2,0,13113
+"Total: Total includes all data, including data from rows not currently displayed.","CARLTON,MN",886,79,0,27017
+"Total: Total includes all data, including data from rows not currently displayed.","CLARKE,GA",1164,52.1,0,13059
+"Total: Total includes all data, including data from rows not currently displayed.","WINONA,MN",806,73.6,0,27169
+"Total: Total includes all data, including data from rows not currently displayed.","FLOYD,GA",933,53.1,0,13115
+"Total: Total includes all data, including data from rows not currently displayed.","ROCKDALE,GA",1230,59,0,13247
+"Total: Total includes all data, including data from rows not currently displayed.","TALBOT,MD",877,72.4,0,24041
+"Total: Total includes all data, including data from rows not currently displayed.","FRANKLIN,GA",857,69.3,0,13119
+"Total: Total includes all data, including data from rows not currently displayed.","LUMPKIN,GA",885,70.8,0,13187
+"Total: Total includes all data, including data from rows not currently displayed.","HERKIMER,NY",954,70.3,0,36043
+"Total: Total includes all data, including data from rows not currently displayed.","HOWARD,MD",1119,53.4,0,24027
+"Total: Total includes all data, including data from rows not currently displayed.","ISANTI,MN",826,73.6,0,27059
+"Total: Total includes all data, including data from rows not currently displayed.","SCHENECTADY,NY",716,52.8,0,36093
+"Total: Total includes all data, including data from rows not currently displayed.","GREENE,NY",574,37.5,0,36039
+"Total: Total includes all data, including data from rows not currently displayed.","BANKS,GA",810,70.5,0,13011
+"Total: Total includes all data, including data from rows not currently displayed.","ROUTT,CO",749,82,0,08107
+"Total: Total includes all data, including data from rows not currently displayed.","FRANKLIN,NY",821,62.9,0,36033
+"Total: Total includes all data, including data from rows not currently displayed.","HUBBARD,MN",713,72.8,0,27057
+"Total: Total includes all data, including data from rows not currently displayed.","CORTLAND,NY",806,70.8,0,36023
+"Total: Total includes all data, including data from rows not currently displayed.","ROSEAU,MN",661,78.7,0,27135
+"Total: Total includes all data, including data from rows not currently displayed.","GARRETT,MD",617,58.7,0,24023
+"Total: Total includes all data, including data from rows not currently displayed.","MURRAY,GA",731,40.9,0,13213
+"Total: Total includes all data, including data from rows not currently displayed.","CHARLES,MD",1161,51.2,0,24017
+"Total: Total includes all data, including data from rows not currently displayed.","CATOOSA,GA",924,58.2,0,13047
+"Total: Total includes all data, including data from rows not currently displayed.","DOUGLAS,MN",717,74.6,0,27041
+"Total: Total includes all data, including data from rows not currently displayed.","GIBSON,TN",500,47.6,0,47053
+"Total: Total includes all data, including data from rows not currently displayed.","SCHOHARIE,NY",642,81.2,0,36095
+"Total: Total includes all data, including data from rows not currently displayed.","WADENA,MN",552,54.2,0,27159
+"Total: Total includes all data, including data from rows not currently displayed.","WASHINGTON,NY",436,25.2,0,36115
+"Total: Total includes all data, including data from rows not currently displayed.","POLK,GA",735,63,0,13233
+"Total: Total includes all data, including data from rows not currently displayed.","HOUSTON,MN",569,81.9,0,27055
+"Total: Total includes all data, including data from rows not currently displayed.","REDWOOD,MN",594,68.5,0,27127
+"Total: Total includes all data, including data from rows not currently displayed.","NIAGARA,NY",895,56.8,0,36063
+"Total: Total includes all data, including data from rows not currently displayed.","ALLEGANY,MD",569,51.7,0,24001
+"Total: Total includes all data, including data from rows not currently displayed.","ORLEANS,NY",727,71.7,0,36073
+"Total: Total includes all data, including data from rows not currently displayed.","CHAVES,NM",749,57.3,0,35005
+"Total: Total includes all data, including data from rows not currently displayed.","HART,GA",598,68.4,0,13147
+"Total: Total includes all data, including data from rows not currently displayed.","WESTCHESTER,NY",667,52.3,0,36119
+"Total: Total includes all data, including data from rows not currently displayed.","CARROLL,TN",416,55.8,0,47017
+"Total: Total includes all data, including data from rows not currently displayed.","OCONEE,GA",522,57.5,0,13219
+"Total: Total includes all data, including data from rows not currently displayed.","WARREN,NY",356,22.5,0,36113
+"Total: Total includes all data, including data from rows not currently displayed.","WORCESTER,MD",502,62.2,0,24047
+"Total: Total includes all data, including data from rows not currently displayed.","MUSCOGEE,GA",612,53.1,0,13215
+"Total: Total includes all data, including data from rows not currently displayed.","HOODRIVER,OR",532,73.1,0,41027
+"Total: Total includes all data, including data from rows not currently displayed.","QUEENANNES,MD",570,57.2,0,NA
+"Total: Total includes all data, including data from rows not currently displayed.","PENNINGTON,MN",439,76.5,0,27113
+"Total: Total includes all data, including data from rows not currently displayed.","FULTON,NY",362,33.1,0,36035
+"Total: Total includes all data, including data from rows not currently displayed.","WASCO,OR",507,69.6,0,41065
+"Total: Total includes all data, including data from rows not currently displayed.","BERNALILLO,NM",765,52.7,0,35001
+"Total: Total includes all data, including data from rows not currently displayed.","RABUN,GA",449,69.7,0,13241
+"Total: Total includes all data, including data from rows not currently displayed.","SENECA,NY",444,74.5,0,36099
+"Total: Total includes all data, including data from rows not currently displayed.","PICKENS,GA",536,55.8,0,13227
+"Total: Total includes all data, including data from rows not currently displayed.","YATES,NY",453,78.4,0,36123
+"Total: Total includes all data, including data from rows not currently displayed.","POLK,OR",623,57.8,0,41053
+"Total: Total includes all data, including data from rows not currently displayed.","SEQUATCHIE,TN",492,62.4,0,47153
+"Total: Total includes all data, including data from rows not currently displayed.","WYOMING,NY",484,64.5,0,36121
+"Total: Total includes all data, including data from rows not currently displayed.","CLEARWATER,MN",386,67.9,0,27029
+"Total: Total includes all data, including data from rows not currently displayed.","BAKER,OR",524,64.1,0,41001
+"Total: Total includes all data, including data from rows not currently displayed.","CARROLL,MD",567,57,0,24013
+"Total: Total includes all data, including data from rows not currently displayed.","MORROW,OR",428,70.1,0,41049
+"Total: Total includes all data, including data from rows not currently displayed.","MOFFAT,CO",461,74,0,08081
+"Total: Total includes all data, including data from rows not currently displayed.","ROCK,MN",393,84,0,27133
+"Total: Total includes all data, including data from rows not currently displayed.","DOUGLAS,OR",510,50.6,0,41019
+"Total: Total includes all data, including data from rows not currently displayed.","KOOCHICHING,MN",376,78.7,0,27071
+"Total: Total includes all data, including data from rows not currently displayed.","ELBERT,CO",549,61,0,08039
+"Total: Total includes all data, including data from rows not currently displayed.","LAUDERDALE,TN",365,75.1,0,47097
+"Total: Total includes all data, including data from rows not currently displayed.","BUTTS,GA",577,63.8,0,13035
+"Total: Total includes all data, including data from rows not currently displayed.","PINE,MN",388,72.4,0,27115
+"Total: Total includes all data, including data from rows not currently displayed.","AITKIN,MN",372,43.8,0,27001
+"Total: Total includes all data, including data from rows not currently displayed.","MARSHALL,MN",363,77.1,0,27089
+"Total: Total includes all data, including data from rows not currently displayed.","CAMDEN,GA",388,62.4,0,13039
+"Total: Total includes all data, including data from rows not currently displayed.","TELLER,CO",482,52.7,0,08119
+"Total: Total includes all data, including data from rows not currently displayed.","MADISON,GA",389,57.1,0,13195
+"Total: Total includes all data, including data from rows not currently displayed.","SCHUYLER,NY",351,78.1,0,36097
+"Total: Total includes all data, including data from rows not currently displayed.","ESSEX,NY",409,64.3,0,36031
+"Total: Total includes all data, including data from rows not currently displayed.","TOMPKINS,NY",401,61.1,0,36109
+"Total: Total includes all data, including data from rows not currently displayed.","FREDERICK,MD",473,51.4,0,24021
+"Total: Total includes all data, including data from rows not currently displayed.","RHEA,TN",478,64,0,47143
+"Total: Total includes all data, including data from rows not currently displayed.","CURRY,NM",317,35,0,35009
+"Total: Total includes all data, including data from rows not currently displayed.","MADISON,NY",373,52.3,0,36053
+"Total: Total includes all data, including data from rows not currently displayed.","UNICOI,TN",296,75,0,47171
+"Total: Total includes all data, including data from rows not currently displayed.","KENT,MD",416,67.8,0,24029
+"Total: Total includes all data, including data from rows not currently displayed.","SWIFT,MN",309,64.7,0,27151
+"Total: Total includes all data, including data from rows not currently displayed.","BIBB,GA",417,52,0,13021
+"Total: Total includes all data, including data from rows not currently displayed.","SOMERSET,MD",397,67.5,0,24039
+"Total: Total includes all data, including data from rows not currently displayed.","FARIBAULT,MN",291,67.4,0,27043
+"Total: Total includes all data, including data from rows not currently displayed.","MARTIN,MN",286,55.6,0,27091
+"Total: Total includes all data, including data from rows not currently displayed.","SANBENITO,CA",308,59.7,0,06069
+"Total: Total includes all data, including data from rows not currently displayed.","HARALSON,GA",451,64.3,0,13143
+"Total: Total includes all data, including data from rows not currently displayed.","HOUSTON,GA",414,49.8,0,13153
+"Total: Total includes all data, including data from rows not currently displayed.","NORMAN,MN",282,84.8,0,27107
+"Total: Total includes all data, including data from rows not currently displayed.","MARION,TN",380,62.4,0,47115
+"Total: Total includes all data, including data from rows not currently displayed.","PLACER,CA",407,49.6,0,06061
+"Total: Total includes all data, including data from rows not currently displayed.","CARVER,MN",384,60.4,0,27019
+"Total: Total includes all data, including data from rows not currently displayed.","FREMONT,CO",425,48,0,08043
+"Total: Total includes all data, including data from rows not currently displayed.","WEAKLEY,TN",295,56.3,0,47183
+"Total: Total includes all data, including data from rows not currently displayed.","MORGAN,CO",387,59.7,0,08087
+"Total: Total includes all data, including data from rows not currently displayed.","ROOSEVELT,NM",247,52.6,0,35041
+"Total: Total includes all data, including data from rows not currently displayed.","SHASTA,CA",282,33,0,06089
+"Total: Total includes all data, including data from rows not currently displayed.","MEEKER,MN",317,75.1,0,27093
+"Total: Total includes all data, including data from rows not currently displayed.","WILKIN,MN",266,84.2,0,27167
+"Total: Total includes all data, including data from rows not currently displayed.","BLEDSOE,TN",307,67.8,0,47007
+"Total: Total includes all data, including data from rows not currently displayed.","DICKSON,TN",145,25.5,0,47043
+"Total: Total includes all data, including data from rows not currently displayed.","TIPTON,TN",198,58.1,0,47167
+"Total: Total includes all data, including data from rows not currently displayed.","RENVILLE,MN",275,74.5,0,27129
+"Total: Total includes all data, including data from rows not currently displayed.","GREENE,GA",306,54.6,0,13133
+"Total: Total includes all data, including data from rows not currently displayed.","SANLUISOBISPO,CA",344,50.9,0,06079
+"Total: Total includes all data, including data from rows not currently displayed.","COTTONWOOD,MN",298,70.5,0,27033
+"Total: Total includes all data, including data from rows not currently displayed.","LAKE,CA",281,61.6,0,06033
+"Total: Total includes all data, including data from rows not currently displayed.","CROCKETT,TN",199,48.7,0,47033
+"Total: Total includes all data, including data from rows not currently displayed.","HARNEY,OR",262,73.3,0,41025
+"Total: Total includes all data, including data from rows not currently displayed.","GARFIELD,CO",306,48.4,0,08045
+"Total: Total includes all data, including data from rows not currently displayed.","MONTGOMERY,NY",246,65.9,0,36057
+"Total: Total includes all data, including data from rows not currently displayed.","BERRIEN,GA",299,57.2,0,13019
+"Total: Total includes all data, including data from rows not currently displayed.","MAHNOMEN,MN",224,71.9,0,27087
+"Total: Total includes all data, including data from rows not currently displayed.","JOHNSON,TN",245,70.2,0,47091
+"Total: Total includes all data, including data from rows not currently displayed.","MCNAIRY,TN",175,44,0,47109
+"Total: Total includes all data, including data from rows not currently displayed.","TILLAMOOK,OR",310,61.3,0,41057
+"Total: Total includes all data, including data from rows not currently displayed.","BENTON,TN",164,37.2,0,47005
+"Total: Total includes all data, including data from rows not currently displayed.","JACKSON,MN",231,74,0,27063
+"Total: Total includes all data, including data from rows not currently displayed.","MURRAY,MN",218,76.1,0,27101
+"Total: Total includes all data, including data from rows not currently displayed.","FILLMORE,MN",185,65.4,0,27045
+"Total: Total includes all data, including data from rows not currently displayed.","DELNORTE,CA",255,55.7,0,06015
+"Total: Total includes all data, including data from rows not currently displayed.","HARDEMAN,TN",158,48.1,0,47069
+"Total: Total includes all data, including data from rows not currently displayed.","HUMPHREYS,TN",113,25.7,0,47085
+"Total: Total includes all data, including data from rows not currently displayed.","OBION,TN",187,57.2,0,47131
+"Total: Total includes all data, including data from rows not currently displayed.","CHESTER,TN",138,37.7,0,47023
+"Total: Total includes all data, including data from rows not currently displayed.","CAYUGA,NY",225,57.3,0,36011
+"Total: Total includes all data, including data from rows not currently displayed.","GILMER,GA",263,54.8,0,13123
+"Total: Total includes all data, including data from rows not currently displayed.","SISKIYOU,CA",189,35.4,0,06093
+"Total: Total includes all data, including data from rows not currently displayed.","HENDERSON,TN",149,37.6,0,47077
+"Total: Total includes all data, including data from rows not currently displayed.","HENRY,TN",169,58,0,47079
+"Total: Total includes all data, including data from rows not currently displayed.","KITTSON,MN",166,80.7,0,27069
+"Total: Total includes all data, including data from rows not currently displayed.","MCDUFFIE,GA",106,27.4,0,13189
+"Total: Total includes all data, including data from rows not currently displayed.","MORGAN,GA",214,62.6,0,13211
+"Total: Total includes all data, including data from rows not currently displayed.","CHIPPEWA,MN",199,77.4,0,27023
+"Total: Total includes all data, including data from rows not currently displayed.","MERIWETHER,GA",285,64.9,0,13199
+"Total: Total includes all data, including data from rows not currently displayed.","DOUGHERTY,GA",194,50.5,0,13095
+"Total: Total includes all data, including data from rows not currently displayed.","GRANT,MN",195,62.6,0,27051
+"Total: Total includes all data, including data from rows not currently displayed.","LYON,MN",220,62.7,0,27083
+"Total: Total includes all data, including data from rows not currently displayed.","ELBERT,GA",193,67.9,0,13105
+"Total: Total includes all data, including data from rows not currently displayed.","WALLOWA,OR",187,67.9,0,41063
+"Total: Total includes all data, including data from rows not currently displayed.","DADE,GA",232,58.6,0,13083
+"Total: Total includes all data, including data from rows not currently displayed.","LAMAR,GA",241,63.5,0,13171
+"Total: Total includes all data, including data from rows not currently displayed.","OTERO,CO",224,55.8,0,08089
+"Total: Total includes all data, including data from rows not currently displayed.","PUTNAM,GA",197,47.2,0,13237
+"Total: Total includes all data, including data from rows not currently displayed.","POLK,TN",190,50.5,0,47139
+"Total: Total includes all data, including data from rows not currently displayed.","PIPESTONE,MN",169,78.7,0,27117
+"Total: Total includes all data, including data from rows not currently displayed.","JOSEPHINE,OR",192,49.5,0,41033
+"Total: Total includes all data, including data from rows not currently displayed.","YELLOWMEDICINE,MN",167,79.6,0,27173
+"Total: Total includes all data, including data from rows not currently displayed.","PIKE,GA",229,61.1,0,13231
+"Total: Total includes all data, including data from rows not currently displayed.","CHATTOOGA,GA",206,52.4,0,13055
+"Total: Total includes all data, including data from rows not currently displayed.","EAGLE,CO",215,41.9,0,08037
+"Total: Total includes all data, including data from rows not currently displayed.","RICE,MN",168,58.3,0,27131
+"Total: Total includes all data, including data from rows not currently displayed.","COOK,GA",199,54.8,0,13075
+"Total: Total includes all data, including data from rows not currently displayed.","MCMINN,TN",208,46.2,0,47107
+"Total: Total includes all data, including data from rows not currently displayed.","HAYWOOD,TN",131,58,0,47075
+"Total: Total includes all data, including data from rows not currently displayed.","LANIER,GA",227,46.3,0,13173
+"Total: Total includes all data, including data from rows not currently displayed.","OSWEGO,NY",147,48.3,0,36075
+"Total: Total includes all data, including data from rows not currently displayed.","SUMMIT,CO",174,54,0,08117
+"Total: Total includes all data, including data from rows not currently displayed.","TRAVERSE,MN",141,75.9,0,27155
+"Total: Total includes all data, including data from rows not currently displayed.","ELDORADO,CA",198,37.9,0,06017
+"Total: Total includes all data, including data from rows not currently displayed.","ROCKLAND,NY",192,22.9,0,36087
+"Total: Total includes all data, including data from rows not currently displayed.","LAKE,MN",138,79,0,27075
+"Total: Total includes all data, including data from rows not currently displayed.","OGLETHORPE,GA",151,53,0,13221
+"Total: Total includes all data, including data from rows not currently displayed.","CHATHAM,GA",143,44.8,0,13051
+"Total: Total includes all data, including data from rows not currently displayed.","YUBA,CA",137,44.5,0,06115
+"Total: Total includes all data, including data from rows not currently displayed.","BURKE,GA",78,17.9,0,13033
+"Total: Total includes all data, including data from rows not currently displayed.","REDLAKE,MN",149,80.5,0,27125
+"Total: Total includes all data, including data from rows not currently displayed.","CURRY,OR",158,62,0,41015
+"Total: Total includes all data, including data from rows not currently displayed.","UNION,GA",140,55,0,13291
+"Total: Total includes all data, including data from rows not currently displayed.","PITKIN,CO",120,45,0,08097
+"Total: Total includes all data, including data from rows not currently displayed.","GRAND,CO",132,68.2,0,08049
+"Total: Total includes all data, including data from rows not currently displayed.","HARRIS,GA",173,63,0,13145
+"Total: Total includes all data, including data from rows not currently displayed.","KANABEC,MN",107,62.6,0,27065
+"Total: Total includes all data, including data from rows not currently displayed.","GUNNISON,CO",86,40.7,0,08051
+"Total: Total includes all data, including data from rows not currently displayed.","JASPER,GA",153,54.9,0,13159
+"Total: Total includes all data, including data from rows not currently displayed.","BROOKS,GA",156,50,0,13027
+"Total: Total includes all data, including data from rows not currently displayed.","CLATSOP,OR",181,51.9,0,41007
+"Total: Total includes all data, including data from rows not currently displayed.","FANNIN,GA",147,44.9,0,13111
+"Total: Total includes all data, including data from rows not currently displayed.","DUTCHESS,NY",110,43.6,0,36027
+"Total: Total includes all data, including data from rows not currently displayed.","LAKEOFTHEWOODS,MN",92,77.2,0,27077
+"Total: Total includes all data, including data from rows not currently displayed.","LAPLATA,CO",174,48.9,0,08067
+"Total: Total includes all data, including data from rows not currently displayed.","JEFFERSON,GA",54,NA,0,13163
+"Total: Total includes all data, including data from rows not currently displayed.","LAKE,OR",112,50.9,0,41037
+"Total: Total includes all data, including data from rows not currently displayed.","LOGAN,CO",152,56.6,0,08075
+"Total: Total includes all data, including data from rows not currently displayed.","CHAFFEE,CO",133,43.6,0,08015
+"Total: Total includes all data, including data from rows not currently displayed.","GRUNDY,TN",138,44.9,0,47061
+"Total: Total includes all data, including data from rows not currently displayed.","UPSON,GA",161,56.5,0,13293
+"Total: Total includes all data, including data from rows not currently displayed.","BULLOCH,GA",80,36.3,0,13031
+"Total: Total includes all data, including data from rows not currently displayed.","DELTA,CO",119,44.5,0,08029
+"Total: Total includes all data, including data from rows not currently displayed.","PARK,CO",145,58.6,0,08093
+"Total: Total includes all data, including data from rows not currently displayed.","SANDOVAL,NM",170,53.5,0,35043
+"Total: Total includes all data, including data from rows not currently displayed.","ALAMOSA,CO",124,44.4,0,08003
+"Total: Total includes all data, including data from rows not currently displayed.","LAURENS,GA",96,55.2,0,13175
+"Total: Total includes all data, including data from rows not currently displayed.","BLUEEARTH,MN",93,53.8,0,27013
+"Total: Total includes all data, including data from rows not currently displayed.","COCKE,TN",94,53.2,0,47029
+"Total: Total includes all data, including data from rows not currently displayed.","GRANT,OR",103,52.4,0,41023
+"Total: Total includes all data, including data from rows not currently displayed.","POPE,MN",101,70.3,0,27121
+"Total: Total includes all data, including data from rows not currently displayed.","STEVENS,MN",91,65.9,0,27149
+"Total: Total includes all data, including data from rows not currently displayed.","BALDWIN,GA",90,47.8,0,13009
+"Total: Total includes all data, including data from rows not currently displayed.","COLQUITT,GA",91,56,0,13071
+"Total: Total includes all data, including data from rows not currently displayed.","MARIPOSA,CA",115,47.8,0,06043
+"Total: Total includes all data, including data from rows not currently displayed.","WASHINGTON,GA",55,30.9,0,13303
+"Total: Total includes all data, including data from rows not currently displayed.","BIGSTONE,MN",82,76.8,0,27011
+"Total: Total includes all data, including data from rows not currently displayed.","JEFFERSON,NY",133,33.1,0,36045
+"Total: Total includes all data, including data from rows not currently displayed.","UNION,OR",109,64.2,0,41061
+"Total: Total includes all data, including data from rows not currently displayed.","HEARD,GA",127,64.6,0,13149
+"Total: Total includes all data, including data from rows not currently displayed.","MONTROSE,CO",137,51.8,0,08085
+"Total: Total includes all data, including data from rows not currently displayed.","RIOGRANDE,CO",118,46.6,0,08105
+"Total: Total includes all data, including data from rows not currently displayed.","LAKE,TN",64,70.3,0,47095
+"Total: Total includes all data, including data from rows not currently displayed.","LASANIMAS,CO",110,50,0,08071
+"Total: Total includes all data, including data from rows not currently displayed.","MONROE,GA",108,52.8,0,13207
+"Total: Total includes all data, including data from rows not currently displayed.","LASSEN,CA",80,70,0,06035
+"Total: Total includes all data, including data from rows not currently displayed.","THOMAS,GA",88,46.6,0,13275
+"Total: Total includes all data, including data from rows not currently displayed.","TIFT,GA",90,55.6,0,13277
+"Total: Total includes all data, including data from rows not currently displayed.","CATTARAUGUS,NY",94,51.1,0,36009
+"Total: Total includes all data, including data from rows not currently displayed.","DECATUR,TN",46,NA,0,47039
+"Total: Total includes all data, including data from rows not currently displayed.","WABASHA,MN",74,73,0,27157
+"Total: Total includes all data, including data from rows not currently displayed.","WILKES,GA",50,40,0,13317
+"Total: Total includes all data, including data from rows not currently displayed.","HANCOCK,TN",98,54.1,0,47067
+"Total: Total includes all data, including data from rows not currently displayed.","PROWERS,CO",155,51.6,0,08099
+"Total: Total includes all data, including data from rows not currently displayed.","SUTTER,CA",65,55.4,0,06101
+"Total: Total includes all data, including data from rows not currently displayed.","MEIGS,TN",114,48.2,0,47121
+"Total: Total includes all data, including data from rows not currently displayed.","COFFEE,GA",65,41.5,0,13069
+"Total: Total includes all data, including data from rows not currently displayed.","DECATUR,GA",53,62.3,0,13087
+"Total: Total includes all data, including data from rows not currently displayed.","HARDIN,TN",60,33.3,0,47071
+"Total: Total includes all data, including data from rows not currently displayed.","IMPERIAL,CA",65,72.3,0,06025
+"Total: Total includes all data, including data from rows not currently displayed.","TUOLUMNE,CA",67,32.8,0,06109
+"Total: Total includes all data, including data from rows not currently displayed.","LINCOLN,MN",66,72.7,0,27081
+"Total: Total includes all data, including data from rows not currently displayed.","MONTGOMERY,TN",76,56.6,0,47125
+"Total: Total includes all data, including data from rows not currently displayed.","SAINTMARYS,MD",123,36.6,0,NA
+"Total: Total includes all data, including data from rows not currently displayed.","CALVERT,MD",87,37.9,0,24009
+"Total: Total includes all data, including data from rows not currently displayed.","EMANUEL,GA",42,42.9,0,13107
+"Total: Total includes all data, including data from rows not currently displayed.","FAYETTE,TN",47,38.3,0,47047
+"Total: Total includes all data, including data from rows not currently displayed.","PEACH,GA",73,45.2,0,13225
+"Total: Total includes all data, including data from rows not currently displayed.","SIERRA,NM",49,NA,0,35051
+"Total: Total includes all data, including data from rows not currently displayed.","CLINCH,GA",92,53.3,0,13065
+"Total: Total includes all data, including data from rows not currently displayed.","HAMBLEN,TN",74,63.5,0,47063
+"Total: Total includes all data, including data from rows not currently displayed.","LACQUIPARLE,MN",60,76.7,0,27073
+"Total: Total includes all data, including data from rows not currently displayed.","CHARLTON,GA",69,63.8,0,13049
+"Total: Total includes all data, including data from rows not currently displayed.","DODGE,GA",53,47.2,0,13091
+"Total: Total includes all data, including data from rows not currently displayed.","CHAUTAUQUA,NY",86,58.1,0,36013
+"Total: Total includes all data, including data from rows not currently displayed.","ECHOLS,GA",66,59.1,0,13101
+"Total: Total includes all data, including data from rows not currently displayed.","HICKMAN,TN",29,NA,0,47081
+"Total: Total includes all data, including data from rows not currently displayed.","LEE,GA",70,44.3,0,13177
+"Total: Total includes all data, including data from rows not currently displayed.","LINCOLN,GA",37,32.4,0,13181
+"Total: Total includes all data, including data from rows not currently displayed.","MONTEZUMA,CO",74,39.2,0,08083
+"Total: Total includes all data, including data from rows not currently displayed.","TOWNS,GA",79,50.6,0,13281
+"Total: Total includes all data, including data from rows not currently displayed.","GILPIN,CO",70,60,0,08047
+"Total: Total includes all data, including data from rows not currently displayed.","KITCARSON,CO",77,46.8,0,08063
+"Total: Total includes all data, including data from rows not currently displayed.","OTERO,NM",36,NA,0,35035
+"Total: Total includes all data, including data from rows not currently displayed.","YUMA,CO",81,58,0,08125
+"Total: Total includes all data, including data from rows not currently displayed.","LINCOLN,CO",60,53.3,0,08073
+"Total: Total includes all data, including data from rows not currently displayed.","OLMSTED,MN",71,60.6,0,27109
+"Total: Total includes all data, including data from rows not currently displayed.","BROWN,MN",47,57.4,0,27015
+"Total: Total includes all data, including data from rows not currently displayed.","FREEBORN,MN",47,59.6,0,27047
+"Total: Total includes all data, including data from rows not currently displayed.","GRADY,GA",66,57.6,0,13131
+"Total: Total includes all data, including data from rows not currently displayed.","CLEARCREEK,CO",58,69,0,08019
+"Total: Total includes all data, including data from rows not currently displayed.","CRISP,GA",47,53.2,0,13081
+"Total: Total includes all data, including data from rows not currently displayed.","EDDY,NM",61,39.3,0,35015
+"Total: Total includes all data, including data from rows not currently displayed.","GLYNN,GA",55,58.2,0,13127
+"Total: Total includes all data, including data from rows not currently displayed.","KNOX,TN",92,50,0,47093
+"Total: Total includes all data, including data from rows not currently displayed.","LIBERTY,GA",59,35.6,0,13179
+"Total: Total includes all data, including data from rows not currently displayed.","VENTURA,CA",82,56.1,0,06111
+"Total: Total includes all data, including data from rows not currently displayed.","COLUSA,CA",39,NA,0,06011
+"Total: Total includes all data, including data from rows not currently displayed.","HANCOCK,GA",42,38.1,0,13141
+"Total: Total includes all data, including data from rows not currently displayed.","HUERFANO,CO",50,50,0,08055
+"Total: Total includes all data, including data from rows not currently displayed.","CUMBERLAND,TN",52,61.5,0,47035
+"Total: Total includes all data, including data from rows not currently displayed.","MCLEOD,MN",69,58,0,27085
+"Total: Total includes all data, including data from rows not currently displayed.","MODOC,CA",41,26.8,0,06049
+"Total: Total includes all data, including data from rows not currently displayed.","GOODHUE,MN",46,54.3,0,27049
+"Total: Total includes all data, including data from rows not currently displayed.","WHEELER,OR",34,55.9,0,41069
+"Total: Total includes all data, including data from rows not currently displayed.","BRYAN,GA",43,44.2,0,13029
+"Total: Total includes all data, including data from rows not currently displayed.","DAVIDSON,TN",71,45.1,0,47037
+"Total: Total includes all data, including data from rows not currently displayed.","DONAANA,NM",40,32.5,0,35013
+"Total: Total includes all data, including data from rows not currently displayed.","FRANKLIN,TN",51,51,0,47051
+"Total: Total includes all data, including data from rows not currently displayed.","HAMILTON,NY",26,53.8,0,36041
+"Total: Total includes all data, including data from rows not currently displayed.","LESUEUR,MN",52,61.5,0,27079
+"Total: Total includes all data, including data from rows not currently displayed.","WASHINGTON,CO",39,51.3,0,08121
+"Total: Total includes all data, including data from rows not currently displayed.","BUTTE,CA",51,54.9,0,06007
+"Total: Total includes all data, including data from rows not currently displayed.","EFFINGHAM,GA",46,43.5,0,13103
+"Total: Total includes all data, including data from rows not currently displayed.","SHERMAN,OR",42,57.1,0,41055
+"Total: Total includes all data, including data from rows not currently displayed.","SUMTER,GA",49,49,0,13261
+"Total: Total includes all data, including data from rows not currently displayed.","HOUSTON,TN",18,NA,0,47083
+"Total: Total includes all data, including data from rows not currently displayed.","JEFFERSON,TN",30,56.7,0,47089
+"Total: Total includes all data, including data from rows not currently displayed.","TOOMBS,GA",29,37.9,0,13279
+"Total: Total includes all data, including data from rows not currently displayed.","WATONWAN,MN",32,40.6,0,27165
+"Total: Total includes all data, including data from rows not currently displayed.","JACKSON,CO",28,64.3,0,08057
+"Total: Total includes all data, including data from rows not currently displayed.","JENKINS,GA",19,NA,0,13165
+"Total: Total includes all data, including data from rows not currently displayed.","JONES,GA",45,42.2,0,13169
+"Total: Total includes all data, including data from rows not currently displayed.","VALENCIA,NM",61,49.2,0,35061
+"Total: Total includes all data, including data from rows not currently displayed.","BENHILL,GA",34,38.2,0,13017
+"Total: Total includes all data, including data from rows not currently displayed.","GLASCOCK,GA",17,NA,0,13125
+"Total: Total includes all data, including data from rows not currently displayed.","LAKE,CO",49,38.8,0,08065
+"Total: Total includes all data, including data from rows not currently displayed.","LEWIS,NY",31,54.8,0,36049
+"Total: Total includes all data, including data from rows not currently displayed.","NEVADA,CA",43,62.8,0,06057
+"Total: Total includes all data, including data from rows not currently displayed.","RUTHERFORD,TN",42,54.8,0,47149
+"Total: Total includes all data, including data from rows not currently displayed.","SANJUAN,NM",45,26.7,0,35045
+"Total: Total includes all data, including data from rows not currently displayed.","SANTAFE,NM",40,50,0,35049
+"Total: Total includes all data, including data from rows not currently displayed.","SCREVEN,GA",16,NA,0,13251
+"Total: Total includes all data, including data from rows not currently displayed.","TALBOT,GA",23,52.2,0,13263
+"Total: Total includes all data, including data from rows not currently displayed.","WORTH,GA",31,54.8,0,13321
+"Total: Total includes all data, including data from rows not currently displayed.","ARCHULETA,CO",37,32.4,0,08007
+"Total: Total includes all data, including data from rows not currently displayed.","STEELE,MN",29,48.3,0,27147
+"Total: Total includes all data, including data from rows not currently displayed.","WARE,GA",29,NA,0,13299
+"Total: Total includes all data, including data from rows not currently displayed.","BLECKLEY,GA",30,46.7,0,13023
+"Total: Total includes all data, including data from rows not currently displayed.","CONEJOS,CO",49,44.9,0,08021
+"Total: Total includes all data, including data from rows not currently displayed.","GILLIAM,OR",30,80,0,41021
+"Total: Total includes all data, including data from rows not currently displayed.","NICOLLET,MN",24,54.2,0,27103
+"Total: Total includes all data, including data from rows not currently displayed.","TATTNALL,GA",17,NA,0,13267
+"Total: Total includes all data, including data from rows not currently displayed.","WARREN,GA",14,NA,0,13301
+"Total: Total includes all data, including data from rows not currently displayed.","BENT,CO",38,60.5,0,08011
+"Total: Total includes all data, including data from rows not currently displayed.","MONO,CA",21,NA,0,06051
+"Total: Total includes all data, including data from rows not currently displayed.","MONROE,TN",24,NA,0,47123
+"Total: Total includes all data, including data from rows not currently displayed.","PLUMAS,CA",32,84.4,0,06063
+"Total: Total includes all data, including data from rows not currently displayed.","TURNER,GA",16,NA,0,13287
+"Total: Total includes all data, including data from rows not currently displayed.","WILLIAMSON,TN",39,59,0,47187
+"Total: Total includes all data, including data from rows not currently displayed.","ATKINSON,GA",24,45.8,0,13003
+"Total: Total includes all data, including data from rows not currently displayed.","CHEYENNE,CO",18,NA,0,08017
+"Total: Total includes all data, including data from rows not currently displayed.","COFFEE,TN",36,50,0,47031
+"Total: Total includes all data, including data from rows not currently displayed.","JOHNSON,GA",15,NA,0,13167
+"Total: Total includes all data, including data from rows not currently displayed.","LEA,NM",28,NA,0,35025
+"Total: Total includes all data, including data from rows not currently displayed.","MITCHELL,GA",29,51.7,0,13205
+"Total: Total includes all data, including data from rows not currently displayed.","PHILLIPS,CO",33,36.4,0,08095
+"Total: Total includes all data, including data from rows not currently displayed.","SEMINOLE,GA",16,NA,0,13253
+"Total: Total includes all data, including data from rows not currently displayed.","SUMNER,TN",22,50,0,47165
+"Total: Total includes all data, including data from rows not currently displayed.","COOK,MN",20,65,0,27031
+"Total: Total includes all data, including data from rows not currently displayed.","CROWLEY,CO",33,45.5,0,08025
+"Total: Total includes all data, including data from rows not currently displayed.","CUSTER,CO",32,53.1,0,08027
+"Total: Total includes all data, including data from rows not currently displayed.","PULASKI,GA",27,NA,0,13235
+"Total: Total includes all data, including data from rows not currently displayed.","RIOBLANCO,CO",33,66.7,0,08103
+"Total: Total includes all data, including data from rows not currently displayed.","TAYLOR,GA",19,NA,0,13269
+"Total: Total includes all data, including data from rows not currently displayed.","TREUTLEN,GA",13,NA,0,13283
+"Total: Total includes all data, including data from rows not currently displayed.","WAYNE,GA",18,NA,0,13305
+"Total: Total includes all data, including data from rows not currently displayed.","APPLING,GA",17,NA,0,13001
+"Total: Total includes all data, including data from rows not currently displayed.","CAMPBELL,TN",18,NA,0,47013
+"Total: Total includes all data, including data from rows not currently displayed.","DOOLY,GA",14,NA,0,13093
+"Total: Total includes all data, including data from rows not currently displayed.","SANMIGUEL,CO",19,NA,0,08113
+"Total: Total includes all data, including data from rows not currently displayed.","TERRELL,GA",15,NA,0,13273
+"Total: Total includes all data, including data from rows not currently displayed.","TRINITY,CA",20,NA,0,06105
+"Total: Total includes all data, including data from rows not currently displayed.","WILCOX,GA",14,NA,0,13315
+"Total: Total includes all data, including data from rows not currently displayed.","BACA,CO",24,NA,0,08009
+"Total: Total includes all data, including data from rows not currently displayed.","CALAVERAS,CA",25,NA,0,06009
+"Total: Total includes all data, including data from rows not currently displayed.","CANDLER,GA",5,NA,1,13043
+"Total: Total includes all data, including data from rows not currently displayed.","CRAWFORD,GA",16,NA,0,13079
+"Total: Total includes all data, including data from rows not currently displayed.","EARLY,GA",29,48.3,0,13099
+"Total: Total includes all data, including data from rows not currently displayed.","SEVIER,TN",16,NA,0,47155
+"Total: Total includes all data, including data from rows not currently displayed.","WARREN,TN",24,50,0,47177
+"Total: Total includes all data, including data from rows not currently displayed.","WILKINSON,GA",26,53.8,0,13319
+"Total: Total includes all data, including data from rows not currently displayed.","ANDERSON,TN",12,NA,0,47001
+"Total: Total includes all data, including data from rows not currently displayed.","BRANTLEY,GA",17,NA,0,13025
+"Total: Total includes all data, including data from rows not currently displayed.","CHEATHAM,TN",5,NA,1,47021
+"Total: Total includes all data, including data from rows not currently displayed.","CLAIBORNE,TN",11,NA,0,47025
+"Total: Total includes all data, including data from rows not currently displayed.","DODGE,MN",15,NA,0,27039
+"Total: Total includes all data, including data from rows not currently displayed.","DOLORES,CO",5,NA,1,08033
+"Total: Total includes all data, including data from rows not currently displayed.","IRWIN,GA",17,NA,0,13155
+"Total: Total includes all data, including data from rows not currently displayed.","JEFFDAVIS,GA",5,NA,1,13161
+"Total: Total includes all data, including data from rows not currently displayed.","KIOWA,CO",17,NA,0,08061
+"Total: Total includes all data, including data from rows not currently displayed.","LINCOLN,NM",5,NA,1,35027
+"Total: Total includes all data, including data from rows not currently displayed.","MAURY,TN",18,NA,0,47119
+"Total: Total includes all data, including data from rows not currently displayed.","PIERCE,GA",13,NA,0,13229
+"Total: Total includes all data, including data from rows not currently displayed.","ROBERTSON,TN",5,NA,1,47147
+"Total: Total includes all data, including data from rows not currently displayed.","SAGUACHE,CO",18,NA,0,08109
+"Total: Total includes all data, including data from rows not currently displayed.","CALHOUN,GA",13,NA,0,13037
+"Total: Total includes all data, including data from rows not currently displayed.","COLFAX,NM",5,NA,1,35007
+"Total: Total includes all data, including data from rows not currently displayed.","GRAINGER,TN",22,54.5,0,47057
+"Total: Total includes all data, including data from rows not currently displayed.","MACON,GA",24,45.8,0,13193
+"Total: Total includes all data, including data from rows not currently displayed.","MARION,GA",22,NA,0,13197
+"Total: Total includes all data, including data from rows not currently displayed.","MCKINLEY,NM",14,NA,0,35031
+"Total: Total includes all data, including data from rows not currently displayed.","PERRY,TN",5,NA,1,47135
+"Total: Total includes all data, including data from rows not currently displayed.","QUAY,NM",5,NA,1,35037
+"Total: Total includes all data, including data from rows not currently displayed.","SCHLEY,GA",13,NA,0,13249
+"Total: Total includes all data, including data from rows not currently displayed.","SIBLEY,MN",12,NA,0,27143
+"Total: Total includes all data, including data from rows not currently displayed.","TALIAFERRO,GA",5,NA,1,13265
+"Total: Total includes all data, including data from rows not currently displayed.","TEHAMA,CA",13,NA,0,06103
+"Total: Total includes all data, including data from rows not currently displayed.","TWIGGS,GA",12,NA,0,13289
+"Total: Total includes all data, including data from rows not currently displayed.","VANBUREN,TN",21,NA,0,47175
+"Total: Total includes all data, including data from rows not currently displayed.","WHITE,TN",17,NA,0,47185
+"Total: Total includes all data, including data from rows not currently displayed.","AMADOR,CA",18,61.1,0,06005
+"Total: Total includes all data, including data from rows not currently displayed.","BACON,GA",11,NA,0,13005
+"Total: Total includes all data, including data from rows not currently displayed.","BAKER,GA",5,NA,1,13007
+"Total: Total includes all data, including data from rows not currently displayed.","BLOUNT,TN",20,70,0,47009
+"Total: Total includes all data, including data from rows not currently displayed.","COSTILLA,CO",21,52.4,0,08023
+"Total: Total includes all data, including data from rows not currently displayed.","EVANS,GA",5,NA,1,13109
+"Total: Total includes all data, including data from rows not currently displayed.","GRANT,NM",5,NA,1,35017
+"Total: Total includes all data, including data from rows not currently displayed.","MILLER,GA",11,NA,0,13201
+"Total: Total includes all data, including data from rows not currently displayed.","PUTNAM,NY",12,NA,0,36079
+"Total: Total includes all data, including data from rows not currently displayed.","RANDOLPH,GA",5,NA,1,13243
+"Total: Total includes all data, including data from rows not currently displayed.","ROANE,TN",12,NA,0,47145
+"Total: Total includes all data, including data from rows not currently displayed.","SEDGWICK,CO",13,NA,0,08115
+"Total: Total includes all data, including data from rows not currently displayed.","TELFAIR,GA",14,NA,0,13271
+"Total: Total includes all data, including data from rows not currently displayed.","WASECA,MN",5,NA,1,27161
+"Total: Total includes all data, including data from rows not currently displayed.","WILSON,TN",21,NA,0,47189
+"Total: Total includes all data, including data from rows not currently displayed.","ALPINE,CA",5,NA,1,06003
+"Total: Total includes all data, including data from rows not currently displayed.","CHATTAHOOCHEE,GA",5,NA,1,13053
+"Total: Total includes all data, including data from rows not currently displayed.","CIBOLA,NM",15,NA,0,35006
+"Total: Total includes all data, including data from rows not currently displayed.","CLAY,GA",5,NA,1,13061
+"Total: Total includes all data, including data from rows not currently displayed.","INYO,CA",17,64.7,0,06027
+"Total: Total includes all data, including data from rows not currently displayed.","LONG,GA",5,NA,1,13183
+"Total: Total includes all data, including data from rows not currently displayed.","LUNA,NM",5,NA,1,35029
+"Total: Total includes all data, including data from rows not currently displayed.","MONTGOMERY,GA",5,NA,1,13209
+"Total: Total includes all data, including data from rows not currently displayed.","OURAY,CO",5,NA,1,08091
+"Total: Total includes all data, including data from rows not currently displayed.","RIOARRIBA,NM",5,NA,1,35039
+"Total: Total includes all data, including data from rows not currently displayed.","SIERRA,CA",5,NA,1,06091
+"Total: Total includes all data, including data from rows not currently displayed.","STEWART,GA",5,NA,1,13259
+"Total: Total includes all data, including data from rows not currently displayed.","WAYNE,TN",5,NA,1,47181
+"Total: Total includes all data, including data from rows not currently displayed.","GUADALUPE,NM",5,NA,1,35019
+"Total: Total includes all data, including data from rows not currently displayed.","MCINTOSH,GA",5,NA,1,13191
+"Total: Total includes all data, including data from rows not currently displayed.","PUTNAM,TN",27,40.7,0,47141
+"Total: Total includes all data, including data from rows not currently displayed.","SANJUAN,CO",5,NA,1,08111
+"Total: Total includes all data, including data from rows not currently displayed.","SANMIGUEL,NM",5,NA,1,35047
+"Total: Total includes all data, including data from rows not currently displayed.","STEWART,TN",5,NA,1,47161
+"Total: Total includes all data, including data from rows not currently displayed.","WHEELER,GA",5,NA,1,13309
+"Total: Total includes all data, including data from rows not currently displayed.","BEDFORD,TN",5,NA,1,47003
+"Total: Total includes all data, including data from rows not currently displayed.","DEBACA,NM",5,NA,1,35011
+"Total: Total includes all data, including data from rows not currently displayed.","HARDING,NM",5,NA,1,35021
+"Total: Total includes all data, including data from rows not currently displayed.","HIDALGO,NM",5,NA,1,35023
+"Total: Total includes all data, including data from rows not currently displayed.","LINCOLN,TN",5,NA,1,47103
+"Total: Total includes all data, including data from rows not currently displayed.","LOSALAMOS,NM",5,NA,1,35028
+"Total: Total includes all data, including data from rows not currently displayed.","LOUDON,TN",15,NA,0,47105
+"Total: Total includes all data, including data from rows not currently displayed.","MACON,TN",5,NA,1,47111
+"Total: Total includes all data, including data from rows not currently displayed.","MINERAL,CO",5,NA,1,08079
+"Total: Total includes all data, including data from rows not currently displayed.","MORGAN,TN",5,NA,1,47129
+"Total: Total includes all data, including data from rows not currently displayed.","MOWER,MN",11,NA,0,27099
+"Total: Total includes all data, including data from rows not currently displayed.","SCOTT,TN",5,NA,1,47151
+"Total: Total includes all data, including data from rows not currently displayed.","SMITH,TN",5,NA,1,47159
+"Total: Total includes all data, including data from rows not currently displayed.","SOCORRO,NM",5,NA,1,35053
+"Total: Total includes all data, including data from rows not currently displayed.","TORRANCE,NM",5,NA,1,35057
+"Total: Total includes all data, including data from rows not currently displayed.","TROUSDALE,TN",5,NA,1,47169
+"Total: Total includes all data, including data from rows not currently displayed.",Noneoftheabove,43409,51.2,0,NA
+"Total: Total includes all data, including data from rows not currently displayed.",Total,1112258,66.9,0,NA
+age_u1y,"SANDIEGO,CA",6811,80,0,06073
+age_u1y,"MONROE,NY",3328,65.2,0,36055
+age_u1y,"KINGS,NY",3911,61.8,0,36047
+age_u1y,"RIVERSIDE,CA",3673,69.9,0,06065
+age_u1y,"HENNEPIN,MN",3336,71.4,0,27053
+age_u1y,"FRESNO,CA",5000,78,0,06019
+age_u1y,"NASSAU,NY",2191,68.4,0,36059
+age_u1y,"SUFFOLK,NY",2149,61.3,0,36103
+age_u1y,"LOSANGELES,CA",4122,81.9,0,06037
+age_u1y,"SANTACLARA,CA",3203,83.7,0,06085
+age_u1y,"ALAMEDA,CA",3697,86.6,0,06001
+age_u1y,"ORANGE,CA",3709,77.4,0,06059
+age_u1y,"QUEENS,NY",2782,65.2,0,36081
+age_u1y,"HARTFORD,CT",1617,76.7,0,09003
+age_u1y,"COBB,GA",4323,72.5,0,13067
+age_u1y,"MULTNOMAH,OR",3557,72.7,0,41051
+age_u1y,"FULTON,GA",3481,66,0,13121
+age_u1y,"DENVER,CO",4107,80.2,0,08031
+age_u1y,"ELPASO,CO",3008,57.4,0,08041
+age_u1y,"SANBERNARDINO,CA",3027,66.8,0,06071
+age_u1y,"CONTRACOSTA,CA",2206,87.4,0,06013
+age_u1y,"NEWYORK,NY",1190,76,0,36061
+age_u1y,"ARAPAHOE,CO",3314,77.3,0,08005
+age_u1y,"DEKALB,GA",2306,65,0,13089
+age_u1y,"BALTIMORE,MD",1376,61.3,0,24005
+age_u1y,"WASHINGTON,OR",2516,76.9,0,41067
+age_u1y,"SANFRANCISCO,CA",1694,87.7,0,06075
+age_u1y,"GWINNETT,GA",1904,65,0,13135
+age_u1y,"LARIMER,CO",1929,72,0,08069
+age_u1y,"BALTIMORECITY,MD",1662,73.2,0,24510
+age_u1y,"ERIE,NY",361,57.3,0,36029
+age_u1y,"RAMSEY,MN",1967,75.2,0,27123
+age_u1y,"CLACKAMAS,OR",1553,66.3,0,41005
+age_u1y,"JEFFERSON,CO",1713,72.2,0,08059
+age_u1y,"WELD,CO",2364,68.6,0,08123
+age_u1y,"ADAMS,CO",2305,74.1,0,08001
+age_u1y,"SACRAMENTO,CA",1418,84.5,0,06067
+age_u1y,"BOULDER,CO",1517,73.4,0,08013
+age_u1y,"NEWHAVEN,CT",694,68.6,0,09009
+age_u1y,"DESCHUTES,OR",1771,67.1,0,41017
+age_u1y,"ANNEARUNDEL,MD",486,56.4,0,24003
+age_u1y,"SANMATEO,CA",2042,84.2,0,06081
+age_u1y,"DOUGLAS,CO",1021,70.2,0,08035
+age_u1y,"ALBANY,NY",1457,73.7,0,36001
+age_u1y,"FAIRFIELD,CT",477,79.5,0,09001
+age_u1y,"MONTEREY,CA",1678,88.4,0,06053
+age_u1y,"HALL,GA",1908,78.5,0,13139
+age_u1y,"HAMILTON,TN",1625,54.7,0,47065
+age_u1y,"DAKOTA,MN",1128,69.5,0,27037
+age_u1y,"KERN,CA",1439,81,0,06029
+age_u1y,"ANOKA,MN",1204,69.9,0,27003
+age_u1y,"BROOME,NY",1227,80.5,0,36007
+age_u1y,"SAINTLOUIS,MN",773,72.8,0,NA
+age_u1y,"STEARNS,MN",1518,71.9,0,27145
+age_u1y,"PRINCEGEORGES,MD",528,52.3,0,NA
+age_u1y,"HARFORD,MD",403,38.5,0,24025
+age_u1y,"CHEROKEE,GA",901,69.5,0,13057
+age_u1y,"NEWLONDON,CT",672,78.1,0,09011
+age_u1y,"BERNALILLO,NM",104,36.5,0,35001
+age_u1y,"SARATOGA,NY",674,65.3,0,36091
+age_u1y,"ONONDAGA,NY",577,74.5,0,36067
+age_u1y,"PAULDING,GA",1057,71.1,0,13223
+age_u1y,"LINN,OR",1056,65,0,41043
+age_u1y,"ONEIDA,NY",491,72.3,0,36065
+age_u1y,"MONTGOMERY,MD",468,60.9,0,24031
+age_u1y,"MARION,OR",621,59.9,0,41047
+age_u1y,"SANJOAQUIN,CA",849,69,0,06077
+age_u1y,"SULLIVAN,TN",585,64.4,0,47163
+age_u1y,"SONOMA,CA",1005,86.9,0,06097
+age_u1y,"RICHMOND,NY",213,56.8,0,36085
+age_u1y,"WASHINGTON,MN",669,71,0,27163
+age_u1y,"BRONX,NY",290,71,0,36005
+age_u1y,"MIDDLESEX,CT",550,70.7,0,09007
+age_u1y,"DOUGLAS,GA",996,73,0,13097
+age_u1y,"RENSSELAER,NY",627,68.6,0,36083
+age_u1y,"ONTARIO,NY",520,75.6,0,36069
+age_u1y,"ORANGE,NY",248,46.4,0,36071
+age_u1y,"WASHINGTON,TN",553,73.2,0,47179
+age_u1y,"STEUBEN,NY",464,79.1,0,36101
+age_u1y,"WAYNE,NY",372,68,0,36117
+age_u1y,"HOWARD,MD",137,56.9,0,24027
+age_u1y,"SHERBURNE,MN",559,69.4,0,27141
+age_u1y,"HUMBOLDT,CA",422,79.4,0,06023
+age_u1y,"LITCHFIELD,CT",139,66.2,0,09005
+age_u1y,"LOWNDES,GA",549,39.9,0,13185
+age_u1y,"TOLLAND,CT",344,76.2,0,09013
+age_u1y,"NIAGARA,NY",59,55.9,0,36063
+age_u1y,"CLAYTON,GA",776,61.1,0,13063
+age_u1y,"PUEBLO,CO",406,59.6,0,08101
+age_u1y,"WICOMICO,MD",454,66.7,0,24045
+age_u1y,"WRIGHT,MN",478,58.2,0,27171
+age_u1y,"HENRY,GA",531,59.7,0,13151
+age_u1y,"MADERA,CA",691,72.5,0,06039
+age_u1y,"BENTON,OR",343,65.6,0,41003
+age_u1y,"FORSYTH,GA",357,65,0,13117
+age_u1y,"SOLANO,CA",697,80.1,0,06095
+age_u1y,"CLAY,MN",555,78.9,0,27027
+age_u1y,"WINDHAM,CT",329,78.7,0,09015
+age_u1y,"SANTACRUZ,CA",274,87.6,0,06087
+age_u1y,"CHEMUNG,NY",372,88.4,0,36015
+age_u1y,"TULARE,CA",476,67.6,0,06107
+age_u1y,"MARIN,CA",524,88.2,0,06041
+age_u1y,"SAINTLAWRENCE,NY",196,92.3,0,NA
+age_u1y,"WASHINGTON,MD",122,67.2,0,24043
+age_u1y,"SHELBY,TN",180,80,0,47157
+age_u1y,"JACKSON,OR",263,65.8,0,41029
+age_u1y,"JACKSON,GA",341,64.2,0,13157
+age_u1y,"BARROW,GA",343,68.8,0,13013
+age_u1y,"COOS,OR",424,63.9,0,41011
+age_u1y,"CROWWING,MN",212,61.3,0,27035
+age_u1y,"CLINTON,NY",169,50.9,0,36019
+age_u1y,"GREENE,TN",463,68.7,0,47059
+age_u1y,"WHITFIELD,GA",482,42.3,0,13313
+age_u1y,"OTTERTAIL,MN",415,68.7,0,27111
+age_u1y,"TROUP,GA",387,63.8,0,13285
+age_u1y,"LIVINGSTON,NY",213,65.3,0,36051
+age_u1y,"LANE,OR",291,64.6,0,41039
+age_u1y,"WESTCHESTER,NY",56,60.7,0,36119
+age_u1y,"CHARLES,MD",133,36.1,0,24017
+age_u1y,"MESA,CO",445,38.7,0,08077
+age_u1y,"LINCOLN,OR",271,72,0,41041
+age_u1y,"ITASCA,MN",305,62.6,0,27061
+age_u1y,"MADISON,TN",602,57.8,0,47113
+age_u1y,"KANDIYOHI,MN",504,73.2,0,27067
+age_u1y,"OTSEGO,NY",175,81.1,0,36077
+age_u1y,"BARTOW,GA",308,66.9,0,13015
+age_u1y,"GENESEE,NY",161,59.6,0,36037
+age_u1y,"BELTRAMI,MN",356,66.3,0,27007
+age_u1y,"CHISAGO,MN",335,67.5,0,27025
+age_u1y,"SULLIVAN,NY",132,60.6,0,36105
+age_u1y,"HERKIMER,NY",83,66.3,0,36043
+age_u1y,"CHENANGO,NY",266,80.5,0,36017
+age_u1y,"HAWKINS,TN",175,65.7,0,47073
+age_u1y,"TIOGA,NY",246,83.7,0,36107
+age_u1y,"STANISLAUS,CA",126,73,0,06099
+age_u1y,"MERCED,CA",379,76.8,0,06047
+age_u1y,"SCOTT,MN",170,67.6,0,27139
+age_u1y,"GORDON,GA",195,62.1,0,13129
+age_u1y,"HABERSHAM,GA",409,75.1,0,13137
+age_u1y,"ULSTER,NY",157,66.2,0,36111
+age_u1y,"SANTABARBARA,CA",326,79.1,0,06083
+age_u1y,"BROOMFIELD,CO",268,67.2,0,08014
+age_u1y,"BENTON,MN",337,70.3,0,27009
+age_u1y,"RICHMOND,GA",697,66.7,0,13245
+age_u1y,"COLUMBIA,OR",258,67.8,0,41009
+age_u1y,"UMATILLA,OR",354,65.8,0,41059
+age_u1y,"CARTER,TN",213,69,0,47019
+age_u1y,"YAMHILL,OR",267,70.4,0,41071
+age_u1y,"BECKER,MN",257,67.3,0,27005
+age_u1y,"SPALDING,GA",190,55.8,0,13255
+age_u1y,"CARROLL,MD",69,55.1,0,24013
+age_u1y,"WORCESTER,MD",71,47.9,0,24047
+age_u1y,"CLARKE,GA",195,72.8,0,13059
+age_u1y,"TOMPKINS,NY",37,75.7,0,36109
+age_u1y,"COLUMBIA,NY",226,71.7,0,36021
+age_u1y,"SCHENECTADY,NY",192,68.2,0,36093
+age_u1y,"FLOYD,GA",132,66.7,0,13115
+age_u1y,"QUEENANNES,MD",60,45,0,NA
+age_u1y,"DELAWARE,NY",182,77.5,0,36025
+age_u1y,"BRADLEY,TN",315,48.9,0,47011
+age_u1y,"TALBOT,MD",136,69.9,0,24041
+age_u1y,"POLK,MN",232,77.2,0,27119
+age_u1y,"MENDOCINO,CA",272,77.9,0,06045
+age_u1y,"CORTLAND,NY",76,73.7,0,36023
+age_u1y,"CARROLL,GA",261,66.3,0,13045
+age_u1y,"FREDERICK,MD",62,61.3,0,24021
+age_u1y,"FRANKLIN,NY",139,70.5,0,36033
+age_u1y,"YOLO,CA",328,81.4,0,06113
+age_u1y,"DORCHESTER,MD",216,71.8,0,24019
+age_u1y,"CROOK,OR",245,65.7,0,41013
+age_u1y,"CATOOSA,GA",143,51,0,13047
+age_u1y,"MALHEUR,OR",250,75.6,0,41045
+age_u1y,"PLACER,CA",33,66.7,0,06061
+age_u1y,"CAROLINE,MD",156,59.6,0,24011
+age_u1y,"COLUMBIA,GA",455,68.1,0,13073
+age_u1y,"ALLEGANY,NY",222,75.7,0,36003
+age_u1y,"WALKER,GA",170,57.1,0,13295
+age_u1y,"ELDORADO,CA",5,NA,1,06017
+age_u1y,"CASS,MN",153,56.9,0,27021
+age_u1y,"SANDOVAL,NM",12,NA,0,35043
+age_u1y,"WHITE,GA",181,72.9,0,13311
+age_u1y,"ORLEANS,NY",90,57.8,0,36073
+age_u1y,"WARREN,NY",104,47.1,0,36113
+age_u1y,"MURRAY,GA",156,52.6,0,13213
+age_u1y,"WALTON,GA",220,64.1,0,13297
+age_u1y,"JEFFERSON,OR",243,65.8,0,41031
+age_u1y,"LUMPKIN,GA",119,71.4,0,13187
+age_u1y,"CECIL,MD",204,57.8,0,24015
+age_u1y,"GREENE,NY",138,66.7,0,36039
+age_u1y,"DOUGLAS,MN",93,72,0,27041
+age_u1y,"KINGS,CA",211,72,0,06031
+age_u1y,"NAPA,CA",344,81.4,0,06055
+age_u1y,"MORRISON,MN",183,60.7,0,27097
+age_u1y,"STEPHENS,GA",235,69.4,0,13257
+age_u1y,"CHAVES,NM",82,64.6,0,35005
+age_u1y,"WASHINGTON,NY",130,54.6,0,36115
+age_u1y,"COWETA,GA",207,61.8,0,13077
+age_u1y,"WINONA,MN",139,69.8,0,27169
+age_u1y,"DOUGLAS,OR",65,58.5,0,41019
+age_u1y,"MILLELACS,MN",188,64.4,0,27095
+age_u1y,"ESSEX,NY",53,69.8,0,36031
+age_u1y,"CARLTON,MN",127,81.1,0,27017
+age_u1y,"GARRETT,MD",133,41.4,0,24023
+age_u1y,"FAYETTE,GA",139,59.7,0,13113
+age_u1y,"MADISON,NY",45,80,0,36053
+age_u1y,"SCHOHARIE,NY",91,78,0,36095
+age_u1y,"DAWSON,GA",149,65.1,0,13085
+age_u1y,"HUBBARD,MN",112,68.8,0,27057
+age_u1y,"TODD,MN",187,69.5,0,27153
+age_u1y,"NEWTON,GA",196,61.2,0,13217
+age_u1y,"DYER,TN",219,71.2,0,47045
+age_u1y,"WYOMING,NY",61,57.4,0,36121
+age_u1y,"GIBSON,TN",171,56.1,0,47053
+age_u1y,"ROCKDALE,GA",131,55.7,0,13247
+age_u1y,"ROUTT,CO",175,69.1,0,08107
+age_u1y,"SENECA,NY",57,70.2,0,36099
+age_u1y,"OSWEGO,NY",16,NA,0,36075
+age_u1y,"FRANKLIN,GA",192,74.5,0,13119
+age_u1y,"NOBLES,MN",202,72.3,0,27105
+age_u1y,"CAYUGA,NY",17,NA,0,36011
+age_u1y,"POLK,GA",93,62.4,0,13233
+age_u1y,"ALLEGANY,MD",65,52.3,0,24001
+age_u1y,"POLK,OR",95,64.2,0,41053
+age_u1y,"CARVER,MN",46,58.7,0,27019
+age_u1y,"BAKER,OR",68,67.6,0,41001
+age_u1y,"KENT,MD",55,47.3,0,24029
+age_u1y,"TELLER,CO",75,42.7,0,08119
+age_u1y,"ISANTI,MN",132,56.1,0,27059
+age_u1y,"BANKS,GA",124,78.2,0,13011
+age_u1y,"TILLAMOOK,OR",20,60,0,41057
+age_u1y,"YATES,NY",89,71.9,0,36123
+age_u1y,"ROSEAU,MN",116,65.5,0,27135
+age_u1y,"HART,GA",108,64.8,0,13147
+age_u1y,"FULTON,NY",78,60.3,0,36035
+age_u1y,"KLAMATH,OR",200,71.5,0,41035
+age_u1y,"SOMERSET,MD",49,65.3,0,24039
+age_u1y,"HOODRIVER,OR",92,73.9,0,41027
+age_u1y,"WASCO,OR",82,65.9,0,41065
+age_u1y,"HOUSTON,MN",97,66,0,27055
+age_u1y,"OCONEE,GA",90,67.8,0,13219
+age_u1y,"WEAKLEY,TN",45,60,0,47183
+age_u1y,"PENNINGTON,MN",58,82.8,0,27113
+age_u1y,"PINE,MN",66,72.7,0,27115
+age_u1y,"MARION,TN",82,53.7,0,47115
+age_u1y,"BUTTS,GA",69,58,0,13035
+age_u1y,"GREENE,GA",59,69.5,0,13133
+age_u1y,"AITKIN,MN",63,79.4,0,27001
+age_u1y,"ROCKLAND,NY",26,NA,0,36087
+age_u1y,"JOHNSON,TN",58,67.2,0,47091
+age_u1y,"DUTCHESS,NY",17,76.5,0,36027
+age_u1y,"VALENCIA,NM",5,NA,1,35061
+age_u1y,"UNICOI,TN",75,73.3,0,47171
+age_u1y,"SANBENITO,CA",58,86.2,0,06069
+age_u1y,"REDWOOD,MN",69,76.8,0,27127
+age_u1y,"SHASTA,CA",30,63.3,0,06089
+age_u1y,"ELBERT,CO",65,61.5,0,08039
+age_u1y,"CARROLL,TN",96,63.5,0,47017
+age_u1y,"CLATSOP,OR",28,50,0,41007
+age_u1y,"WADENA,MN",99,51.5,0,27159
+age_u1y,"RABUN,GA",96,72.9,0,13241
+age_u1y,"SANLUISOBISPO,CA",42,66.7,0,06079
+age_u1y,"JEFFERSON,NY",5,NA,1,36045
+age_u1y,"KOOCHICHING,MN",48,70.8,0,27071
+age_u1y,"SEQUATCHIE,TN",92,52.2,0,47153
+age_u1y,"MEEKER,MN",54,55.6,0,27093
+age_u1y,"SCHUYLER,NY",42,73.8,0,36097
+age_u1y,"MCNAIRY,TN",38,42.1,0,47109
+age_u1y,"IMPERIAL,CA",21,81,0,06025
+age_u1y,"LAKE,CA",35,82.9,0,06033
+age_u1y,"OBION,TN",34,64.7,0,47131
+age_u1y,"VENTURA,CA",5,NA,1,06111
+age_u1y,"FREMONT,CO",47,55.3,0,08043
+age_u1y,"MONTGOMERY,NY",41,70.7,0,36057
+age_u1y,"CAMDEN,GA",68,86.8,0,13039
+age_u1y,"SANTAFE,NM",5,NA,1,35049
+age_u1y,"BERRIEN,GA",61,42.6,0,13019
+age_u1y,"LAUDERDALE,TN",89,61.8,0,47097
+age_u1y,"MORROW,OR",111,76.6,0,41049
+age_u1y,"MADISON,GA",72,62.5,0,13195
+age_u1y,"MUSCOGEE,GA",70,54.3,0,13215
+age_u1y,"RHEA,TN",108,50,0,47143
+age_u1y,"BUTTE,CA",5,NA,1,06007
+age_u1y,"ROCK,MN",73,75.3,0,27133
+age_u1y,"DELNORTE,CA",24,83.3,0,06015
+age_u1y,"COTTONWOOD,MN",39,59,0,27033
+age_u1y,"MARSHALL,MN",60,61.7,0,27089
+age_u1y,"CHATTOOGA,GA",38,68.4,0,13055
+age_u1y,"FARIBAULT,MN",52,75,0,27043
+age_u1y,"HENDERSON,TN",47,34,0,47077
+age_u1y,"CLEARWATER,MN",82,57.3,0,27029
+age_u1y,"PICKENS,GA",67,68.7,0,13227
+age_u1y,"MOFFAT,CO",108,66.7,0,08081
+age_u1y,"CHAUTAUQUA,NY",14,NA,0,36013
+age_u1y,"MERIWETHER,GA",51,64.7,0,13199
+age_u1y,"CURRY,OR",23,47.8,0,41015
+age_u1y,"MARTIN,MN",94,67,0,27091
+age_u1y,"UNION,GA",24,NA,0,13291
+age_u1y,"CATTARAUGUS,NY",12,NA,0,36009
+age_u1y,"HOUSTON,GA",47,61.7,0,13153
+age_u1y,"BIBB,GA",44,68.2,0,13021
+age_u1y,"JACKSON,MN",36,75,0,27063
+age_u1y,"HARDEMAN,TN",67,40.3,0,47069
+age_u1y,"SWIFT,MN",67,76.1,0,27151
+age_u1y,"BLEDSOE,TN",63,63.5,0,47007
+age_u1y,"MORGAN,CO",46,63,0,08087
+age_u1y,"RENVILLE,MN",59,59.3,0,27129
+age_u1y,"PUTNAM,GA",19,68.4,0,13237
+age_u1y,"HARALSON,GA",69,65.2,0,13143
+age_u1y,"HARNEY,OR",50,54,0,41025
+age_u1y,"BENTON,TN",46,65.2,0,47005
+age_u1y,"CHESTER,TN",54,50,0,47023
+age_u1y,"WALLOWA,OR",36,63.9,0,41063
+age_u1y,"LYON,MN",18,66.7,0,27083
+age_u1y,"JOSEPHINE,OR",31,54.8,0,41033
+age_u1y,"WILKIN,MN",36,88.9,0,27167
+age_u1y,"LAMAR,GA",30,43.3,0,13171
+age_u1y,"CURRY,NM",98,83.7,0,35009
+age_u1y,"SAINTMARYS,MD",5,NA,1,NA
+age_u1y,"PIKE,GA",36,50,0,13231
+age_u1y,"GILMER,GA",47,55.3,0,13123
+age_u1y,"GARFIELD,CO",42,42.9,0,08045
+age_u1y,"CALVERT,MD",5,NA,1,24009
+age_u1y,"MURRAY,MN",39,71.8,0,27101
+age_u1y,"NORMAN,MN",27,96.3,0,27107
+age_u1y,"COOK,GA",32,34.4,0,13075
+age_u1y,"LANIER,GA",32,NA,0,13173
+age_u1y,"SISKIYOU,CA",28,89.3,0,06093
+age_u1y,"DADE,GA",35,51.4,0,13083
+age_u1y,"PITKIN,CO",35,62.9,0,08097
+age_u1y,"TIPTON,TN",51,84.3,0,47167
+age_u1y,"ELBERT,GA",40,77.5,0,13105
+age_u1y,"FANNIN,GA",28,67.9,0,13111
+age_u1y,"CHIPPEWA,MN",39,69.2,0,27023
+age_u1y,"HARRIS,GA",24,66.7,0,13145
+age_u1y,"TOWNS,GA",5,NA,1,13281
+age_u1y,"CROCKETT,TN",80,52.5,0,47033
+age_u1y,"BROOKS,GA",32,NA,0,13027
+age_u1y,"EAGLE,CO",22,54.5,0,08037
+age_u1y,"FILLMORE,MN",33,75.8,0,27045
+age_u1y,"OTERO,CO",37,43.2,0,08089
+age_u1y,"DAVIDSON,TN",15,NA,0,47037
+age_u1y,"HAYWOOD,TN",55,49.1,0,47075
+age_u1y,"RICE,MN",38,71.1,0,27131
+age_u1y,"MORGAN,GA",46,67.4,0,13211
+age_u1y,"HARDIN,TN",20,NA,0,47071
+age_u1y,"UNION,OR",16,68.8,0,41061
+age_u1y,"GRANT,MN",30,76.7,0,27051
+age_u1y,"YELLOWMEDICINE,MN",22,86.4,0,27173
+age_u1y,"POPE,MN",20,70,0,27121
+age_u1y,"LOGAN,CO",16,NA,0,08075
+age_u1y,"HENRY,TN",27,66.7,0,47079
+age_u1y,"NEVADA,CA",5,NA,1,06057
+age_u1y,"DONAANA,NM",5,NA,1,35013
+age_u1y,"CHATHAM,GA",20,60,0,13051
+age_u1y,"MCMINN,TN",27,NA,0,47107
+age_u1y,"MAHNOMEN,MN",28,64.3,0,27087
+age_u1y,"DELTA,CO",26,NA,0,08029
+age_u1y,"MONTROSE,CO",26,46.2,0,08085
+age_u1y,"KITTSON,MN",24,62.5,0,27069
+age_u1y,"MCKINLEY,NM",5,NA,1,35031
+age_u1y,"OGLETHORPE,GA",30,63.3,0,13221
+age_u1y,"LAKE,MN",20,80,0,27075
+age_u1y,"GRANT,OR",22,NA,0,41023
+age_u1y,"POLK,TN",29,37.9,0,47139
+age_u1y,"PARK,CO",26,57.7,0,08093
+age_u1y,"REDLAKE,MN",21,81,0,27125
+age_u1y,"GRAND,CO",24,70.8,0,08049
+age_u1y,"UPSON,GA",22,NA,0,13293
+age_u1y,"MCLEOD,MN",5,NA,1,27085
+age_u1y,"YUBA,CA",30,83.3,0,06115
+age_u1y,"KNOX,TN",5,NA,1,47093
+age_u1y,"HANCOCK,TN",5,NA,1,47067
+age_u1y,"LASANIMAS,CO",13,NA,0,08071
+age_u1y,"KANABEC,MN",21,61.9,0,27065
+age_u1y,"LAKE,OR",21,52.4,0,41037
+age_u1y,"STEVENS,MN",12,NA,0,27149
+age_u1y,"SUMMIT,CO",24,62.5,0,08117
+age_u1y,"CALAVERAS,CA",5,NA,1,06009
+age_u1y,"HEARD,GA",31,45.2,0,13149
+age_u1y,"LASSEN,CA",18,NA,0,06035
+age_u1y,"TRAVERSE,MN",20,95,0,27155
+age_u1y,"WABASHA,MN",5,NA,1,27157
+age_u1y,"FAYETTE,TN",5,NA,1,47047
+age_u1y,"ROOSEVELT,NM",49,89.8,0,35041
+age_u1y,"LAPLATA,CO",13,NA,0,08067
+age_u1y,"LEWIS,NY",5,NA,1,36049
+age_u1y,"DOUGHERTY,GA",28,50,0,13095
+age_u1y,"CHAFFEE,CO",5,NA,1,08015
+age_u1y,"HAMBLEN,TN",13,NA,0,47063
+age_u1y,"PROWERS,CO",11,NA,0,08099
+age_u1y,"OLMSTED,MN",5,NA,1,27109
+age_u1y,"MARIPOSA,CA",11,NA,0,06043
+age_u1y,"COCKE,TN",21,52.4,0,47029
+age_u1y,"TUOLUMNE,CA",5,NA,1,06109
+age_u1y,"GUNNISON,CO",47,48.9,0,08051
+age_u1y,"BALDWIN,GA",5,NA,1,13009
+age_u1y,"DECATUR,TN",18,NA,0,47039
+age_u1y,"BIGSTONE,MN",11,NA,0,27011
+age_u1y,"AMADOR,CA",5,NA,1,06005
+age_u1y,"PIPESTONE,MN",24,58.3,0,27117
+age_u1y,"DICKSON,TN",262,67.9,0,47043
+age_u1y,"MONROE,GA",17,NA,0,13207
+age_u1y,"LAKEOFTHEWOODS,MN",19,84.2,0,27077
+age_u1y,"SUTTER,CA",15,86.7,0,06101
+age_u1y,"BURKE,GA",55,61.8,0,13033
+age_u1y,"MEIGS,TN",19,NA,0,47121
+age_u1y,"CIBOLA,NM",5,NA,1,35006
+age_u1y,"GRUNDY,TN",21,NA,0,47061
+age_u1y,"EDDY,NM",20,NA,0,35015
+age_u1y,"BLUEEARTH,MN",5,NA,1,27013
+age_u1y,"PUTNAM,NY",5,NA,1,36079
+age_u1y,"WILLIAMSON,TN",16,NA,0,47187
+age_u1y,"TIFT,GA",18,NA,0,13277
+age_u1y,"GLYNN,GA",5,NA,1,13127
+age_u1y,"JASPER,GA",27,51.9,0,13159
+age_u1y,"TORRANCE,NM",5,NA,1,35057
+age_u1y,"GOODHUE,MN",5,NA,1,27049
+age_u1y,"MCDUFFIE,GA",44,72.7,0,13189
+age_u1y,"PLUMAS,CA",5,NA,1,06063
+age_u1y,"HUERFANO,CO",11,NA,0,08055
+age_u1y,"LAKE,TN",14,NA,0,47095
+age_u1y,"CLINCH,GA",15,NA,0,13065
+age_u1y,"LACQUIPARLE,MN",5,NA,1,27073
+age_u1y,"COLQUITT,GA",5,NA,1,13071
+age_u1y,"FREEBORN,MN",5,NA,1,27047
+age_u1y,"THOMAS,GA",15,NA,0,13275
+age_u1y,"HUMPHREYS,TN",98,70.4,0,47085
+age_u1y,"MONTGOMERY,TN",16,NA,0,47125
+age_u1y,"ALAMOSA,CO",17,NA,0,08003
+age_u1y,"RIOGRANDE,CO",5,NA,1,08105
+age_u1y,"CHARLTON,GA",12,NA,0,13049
+age_u1y,"COFFEE,GA",5,NA,1,13069
+age_u1y,"LAURENS,GA",20,60,0,13175
+age_u1y,"SANJUAN,NM",5,NA,1,35045
+age_u1y,"YUMA,CO",5,NA,1,08125
+age_u1y,"GILPIN,CO",5,NA,1,08047
+age_u1y,"BROWN,MN",5,NA,1,27015
+age_u1y,"RUTHERFORD,TN",5,NA,1,47149
+age_u1y,"JEFFERSON,GA",29,69,0,13163
+age_u1y,"WASHINGTON,GA",20,60,0,13303
+age_u1y,"LESUEUR,MN",5,NA,1,27079
+age_u1y,"COOK,MN",5,NA,1,27031
+age_u1y,"TEHAMA,CA",5,NA,1,06103
+age_u1y,"CUMBERLAND,TN",5,NA,1,47035
+age_u1y,"ECHOLS,GA",12,NA,0,13101
+age_u1y,"HANCOCK,GA",5,NA,1,13141
+age_u1y,"BULLOCH,GA",24,62.5,0,13031
+age_u1y,"PEACH,GA",11,NA,0,13225
+age_u1y,"HAMILTON,NY",5,NA,1,36041
+age_u1y,"TAOS,NM",5,NA,1,35055
+age_u1y,"OTERO,NM",15,NA,0,35035
+age_u1y,"FRANKLIN,TN",5,NA,1,47051
+age_u1y,"CUSTER,CO",5,NA,1,08027
+age_u1y,"SOCORRO,NM",5,NA,1,35053
+age_u1y,"MONTEZUMA,CO",5,NA,1,08083
+age_u1y,"RIOARRIBA,NM",5,NA,1,35039
+age_u1y,"LEE,GA",5,NA,1,13177
+age_u1y,"CLEARCREEK,CO",5,NA,1,08019
+age_u1y,"LINCOLN,NM",5,NA,1,35027
+age_u1y,"WILKES,GA",5,NA,1,13317
+age_u1y,"SANMIGUEL,NM",5,NA,1,35047
+age_u1y,"WHEELER,OR",13,NA,0,41069
+age_u1y,"SUMNER,TN",5,NA,1,47165
+age_u1y,"BENT,CO",5,NA,1,08011
+age_u1y,"SANMIGUEL,CO",5,NA,1,08113
+age_u1y,"SIERRA,NM",26,65.4,0,35051
+age_u1y,"GRAINGER,TN",5,NA,1,47057
+age_u1y,"LINCOLN,MN",5,NA,1,27081
+age_u1y,"BLOUNT,TN",5,NA,1,47009
+age_u1y,"CROWLEY,CO",5,NA,1,08025
+age_u1y,"JEFFERSON,TN",5,NA,1,47089
+age_u1y,"NICOLLET,MN",5,NA,1,27103
+age_u1y,"KITCARSON,CO",14,NA,0,08063
+age_u1y,"LINCOLN,GA",13,NA,0,13181
+age_u1y,"EFFINGHAM,GA",5,NA,1,13103
+age_u1y,"PHILLIPS,CO",5,NA,1,08095
+age_u1y,"INYO,CA",5,NA,1,06027
+age_u1y,"JONES,GA",5,NA,1,13169
+age_u1y,"MODOC,CA",5,NA,1,06049
+age_u1y,"STEELE,MN",5,NA,1,27147
+age_u1y,"CAMPBELL,TN",5,NA,1,47013
+age_u1y,"EMANUEL,GA",13,NA,0,13107
+age_u1y,"EARLY,GA",5,NA,1,13099
+age_u1y,"SEVIER,TN",5,NA,1,47155
+age_u1y,"WARE,GA",5,NA,1,13299
+age_u1y,"GLENN,CA",5,NA,1,06021
+age_u1y,"SUMTER,GA",5,NA,1,13261
+age_u1y,"WASHINGTON,CO",5,NA,1,08121
+age_u1y,"WILSON,TN",5,NA,1,47189
+age_u1y,"ARCHULETA,CO",5,NA,1,08007
+age_u1y,"LINCOLN,CO",5,NA,1,08073
+age_u1y,"LOSALAMOS,NM",5,NA,1,35028
+age_u1y,"SIBLEY,MN",5,NA,1,27143
+age_u1y,"TRINITY,CA",5,NA,1,06105
+age_u1y,"BENHILL,GA",5,NA,1,13017
+age_u1y,"RIOBLANCO,CO",5,NA,1,08103
+age_u1y,"BRYAN,GA",5,NA,1,13029
+age_u1y,"MONROE,TN",5,NA,1,47123
+age_u1y,"CONEJOS,CO",5,NA,1,08021
+age_u1y,"LIBERTY,GA",5,NA,1,13179
+age_u1y,"DECATUR,GA",5,NA,1,13087
+age_u1y,"GILLIAM,OR",5,NA,1,41021
+age_u1y,"QUAY,NM",5,NA,1,35037
+age_u1y,"LOUDON,TN",5,NA,1,47105
+age_u1y,"WATONWAN,MN",5,NA,1,27165
+age_u1y,"GRADY,GA",5,NA,1,13131
+age_u1y,"CLAIBORNE,TN",5,NA,1,47025
+age_u1y,"LAKE,CO",5,NA,1,08065
+age_u1y,"MAURY,TN",5,NA,1,47119
+age_u1y,"BACA,CO",5,NA,1,08009
+age_u1y,"COLFAX,NM",5,NA,1,35007
+age_u1y,"CRISP,GA",5,NA,1,13081
+age_u1y,"MONO,CA",5,NA,1,06051
+age_u1y,"SHERMAN,OR",5,NA,1,41055
+age_u1y,"DODGE,GA",5,NA,1,13091
+age_u1y,"WORTH,GA",5,NA,1,13321
+age_u1y,"COFFEE,TN",5,NA,1,47031
+age_u1y,"ATKINSON,GA",5,NA,1,13003
+age_u1y,"COLUSA,CA",19,73.7,0,06011
+age_u1y,"MOWER,MN",5,NA,1,27099
+age_u1y,"HICKMAN,TN",47,66,0,47081
+age_u1y,"PUTNAM,TN",5,NA,1,47141
+age_u1y,"TALBOT,GA",5,NA,1,13263
+age_u1y,"GRANT,NM",5,NA,1,35017
+age_u1y,"JACKSON,CO",11,NA,0,08057
+age_u1y,"SEDGWICK,CO",5,NA,1,08115
+age_u1y,"WARREN,TN",5,NA,1,47177
+age_u1y,"TOOMBS,GA",5,NA,1,13279
+age_u1y,"MITCHELL,GA",5,NA,1,13205
+age_u1y,"ANDERSON,TN",5,NA,1,47001
+age_u1y,"VANBUREN,TN",5,NA,1,47175
+age_u1y,"SEMINOLE,GA",5,NA,1,13253
+age_u1y,"COSTILLA,CO",5,NA,1,08023
+age_u1y,"CLAY,GA",5,NA,1,13061
+age_u1y,"WARREN,GA",5,NA,1,13301
+age_u1y,"BLECKLEY,GA",5,NA,1,13023
+age_u1y,"OURAY,CO",5,NA,1,08091
+age_u1y,"ROANE,TN",5,NA,1,47145
+age_u1y,"LUNA,NM",5,NA,1,35029
+age_u1y,"JENKINS,GA",5,NA,1,13165
+age_u1y,"GUADALUPE,NM",5,NA,1,35019
+age_u1y,"CHEATHAM,TN",5,NA,1,47021
+age_u1y,"PIERCE,GA",5,NA,1,13229
+age_u1y,"LEA,NM",5,NA,1,35025
+age_u1y,"SIERRA,CA",5,NA,1,06091
+age_u1y,"SAGUACHE,CO",5,NA,1,08109
+age_u1y,"IRWIN,GA",5,NA,1,13155
+age_u1y,"SCREVEN,GA",5,NA,1,13251
+age_u1y,"KIOWA,CO",5,NA,1,08061
+age_u1y,"WAYNE,GA",5,NA,1,13305
+age_u1y,"BRANTLEY,GA",5,NA,1,13025
+age_u1y,"PULASKI,GA",5,NA,1,13235
+age_u1y,"WILKINSON,GA",5,NA,1,13319
+age_u1y,"TURNER,GA",5,NA,1,13287
+age_u1y,"WASECA,MN",5,NA,1,27161
+age_u1y,"CRAWFORD,GA",5,NA,1,13079
+age_u1y,"WHITE,TN",5,NA,1,47185
+age_u1y,"DODGE,MN",5,NA,1,27039
+age_u1y,"MACON,GA",5,NA,1,13193
+age_u1y,"TALIAFERRO,GA",5,NA,1,13265
+age_u1y,"JOHNSON,GA",5,NA,1,13167
+age_u1y,"TAYLOR,GA",5,NA,1,13269
+age_u1y,"CHEYENNE,CO",5,NA,1,08017
+age_u1y,"DOOLY,GA",5,NA,1,13093
+age_u1y,"TATTNALL,GA",5,NA,1,13267
+age_u1y,"APPLING,GA",5,NA,1,13001
+age_u1y,"ROBERTSON,TN",5,NA,1,47147
+age_u1y,"TELFAIR,GA",5,NA,1,13271
+age_u1y,"WILCOX,GA",5,NA,1,13315
+age_u1y,"UNION,NM",5,NA,1,35059
+age_u1y,"PERRY,TN",5,NA,1,47135
+age_u1y,"ALPINE,CA",5,NA,1,06003
+age_u1y,"GLASCOCK,GA",5,NA,1,13125
+age_u1y,"HOUSTON,TN",27,66.7,0,47083
+age_u1y,"JEFFDAVIS,GA",5,NA,1,13161
+age_u1y,"MARION,GA",5,NA,1,13197
+age_u1y,"MCINTOSH,GA",5,NA,1,13191
+age_u1y,"QUITMAN,GA",5,NA,1,13239
+age_u1y,"MILLER,GA",5,NA,1,13201
+age_u1y,"TERRELL,GA",5,NA,1,13273
+age_u1y,"BACON,GA",5,NA,1,13005
+age_u1y,"TWIGGS,GA",5,NA,1,13289
+age_u1y,"CALHOUN,GA",5,NA,1,13037
+age_u1y,"MORA,NM",5,NA,1,35033
+age_u1y,"STEWART,TN",5,NA,1,47161
+age_u1y,"FENTRESS,TN",5,NA,1,47049
+age_u1y,"SCOTT,TN",5,NA,1,47151
+age_u1y,"CATRON,NM",5,NA,1,35003
+age_u1y,"LONG,GA",5,NA,1,13183
+age_u1y,"CANDLER,GA",5,NA,1,13043
+age_u1y,"MONTGOMERY,GA",5,NA,1,13209
+age_u1y,"WAYNE,TN",5,NA,1,47181
+age_u1y,"TREUTLEN,GA",5,NA,1,13283
+age_u1y,"DEBACA,NM",5,NA,1,35011
+age_u1y,"BEDFORD,TN",5,NA,1,47003
+age_u1y,"EVANS,GA",5,NA,1,13109
+age_u1y,"LINCOLN,TN",5,NA,1,47103
+age_u1y,"RANDOLPH,GA",5,NA,1,13243
+age_u1y,"BAKER,GA",5,NA,1,13007
+age_u1y,"SCHLEY,GA",5,NA,1,13249
+age_u1y,"CHATTAHOOCHEE,GA",5,NA,1,13053
+age_u1y,"OVERTON,TN",5,NA,1,47133
+age_u1y,"STEWART,GA",5,NA,1,13259
+age_u1y,"UNION,TN",5,NA,1,47173
+age_u1y,"LAWRENCE,TN",5,NA,1,47099
+age_u1y,"WHEELER,GA",5,NA,1,13309
+age_u1y,"DEKALB,TN",5,NA,1,47041
+age_u1y,"MORGAN,TN",5,NA,1,47129
+age_u1y,"DOLORES,CO",5,NA,1,08033
+age_u1y,"MINERAL,CO",5,NA,1,08079
+age_u1y,"MARSHALL,TN",5,NA,1,47117
+age_u1y,"SMITH,TN",5,NA,1,47159
+age_u1y,"GILES,TN",5,NA,1,47055
+age_u1y,"HINSDALE,CO",5,NA,1,08053
+age_u1y,"HIDALGO,NM",5,NA,1,35023
+age_u1y,"JACKSON,TN",5,NA,1,47087
+age_u1y,"MACON,TN",5,NA,1,47111
+age_u1y,"CANNON,TN",5,NA,1,47015
+age_u1y,"LEWIS,TN",5,NA,1,47101
+age_u1y,"WEBSTER,GA",5,NA,1,13307
+age_u1y,"HARDING,NM",5,NA,1,35021
+age_u1y,"PICKETT,TN",5,NA,1,47137
+age_u1y,"CLAY,TN",5,NA,1,47027
+age_u1y,"SANJUAN,CO",5,NA,1,08111
+age_u1y,"MOORE,TN",5,NA,1,47127
+age_u1y,"TROUSDALE,TN",5,NA,1,47169
+age_u1y,Noneoftheabove,4723,67.1,0,NA
+age_u1y,Total,188240,71.3,0,NA
+"Total: Total includes all data, including data from rows not currently displayed.","SANDIEGO,CA",11295,85.1,0,06073
+"Total: Total includes all data, including data from rows not currently displayed.","MONROE,NY",5277,75.2,0,36055
+"Total: Total includes all data, including data from rows not currently displayed.","KINGS,NY",6209,66.9,0,36047
+"Total: Total includes all data, including data from rows not currently displayed.","RIVERSIDE,CA",5953,75.9,0,06065
+"Total: Total includes all data, including data from rows not currently displayed.","HENNEPIN,MN",5354,78.1,0,27053
+"Total: Total includes all data, including data from rows not currently displayed.","FRESNO,CA",8493,83.8,0,06019
+"Total: Total includes all data, including data from rows not currently displayed.","NASSAU,NY",3439,75.7,0,36059
+"Total: Total includes all data, including data from rows not currently displayed.","SUFFOLK,NY",3401,69.6,0,36103
+"Total: Total includes all data, including data from rows not currently displayed.","LOSANGELES,CA",6807,84,0,06037
+"Total: Total includes all data, including data from rows not currently displayed.","SANTACLARA,CA",5253,86.8,0,06085
+"Total: Total includes all data, including data from rows not currently displayed.","ALAMEDA,CA",6104,89.8,0,06001
+"Total: Total includes all data, including data from rows not currently displayed.","ORANGE,CA",5849,82.6,0,06059
+"Total: Total includes all data, including data from rows not currently displayed.","QUEENS,NY",4102,71.9,0,36081
+"Total: Total includes all data, including data from rows not currently displayed.","HARTFORD,CT",2883,83.9,0,09003
+"Total: Total includes all data, including data from rows not currently displayed.","COBB,GA",6709,79.1,0,13067
+"Total: Total includes all data, including data from rows not currently displayed.","MULTNOMAH,OR",5474,78.2,0,41051
+"Total: Total includes all data, including data from rows not currently displayed.","FULTON,GA",5709,72.5,0,13121
+"Total: Total includes all data, including data from rows not currently displayed.","DENVER,CO",6406,84.7,0,08031
+"Total: Total includes all data, including data from rows not currently displayed.","ELPASO,CO",4966,64.5,0,08041
+"Total: Total includes all data, including data from rows not currently displayed.","SANBERNARDINO,CA",4916,72.9,0,06071
+"Total: Total includes all data, including data from rows not currently displayed.","CONTRACOSTA,CA",3737,89.8,0,06013
+"Total: Total includes all data, including data from rows not currently displayed.","NEWYORK,NY",1866,79.8,0,36061
+"Total: Total includes all data, including data from rows not currently displayed.","ARAPAHOE,CO",5329,82,0,08005
+"Total: Total includes all data, including data from rows not currently displayed.","DEKALB,GA",3889,72.6,0,13089
+"Total: Total includes all data, including data from rows not currently displayed.","BALTIMORE,MD",2219,70.8,0,24005
+"Total: Total includes all data, including data from rows not currently displayed.","WASHINGTON,OR",4053,82.1,0,41067
+"Total: Total includes all data, including data from rows not currently displayed.","SANFRANCISCO,CA",2849,90.4,0,06075
+"Total: Total includes all data, including data from rows not currently displayed.","GWINNETT,GA",3288,70.6,0,13135
+"Total: Total includes all data, including data from rows not currently displayed.","LARIMER,CO",3062,78.2,0,08069
+"Total: Total includes all data, including data from rows not currently displayed.","BALTIMORECITY,MD",2605,79.2,0,24510
+"Total: Total includes all data, including data from rows not currently displayed.","ERIE,NY",561,67.6,0,36029
+"Total: Total includes all data, including data from rows not currently displayed.","RAMSEY,MN",3094,79.1,0,27123
+"Total: Total includes all data, including data from rows not currently displayed.","CLACKAMAS,OR",2533,72,0,41005
+"Total: Total includes all data, including data from rows not currently displayed.","JEFFERSON,CO",2823,78,0,08059
+"Total: Total includes all data, including data from rows not currently displayed.","WELD,CO",3833,75.9,0,08123
+"Total: Total includes all data, including data from rows not currently displayed.","ADAMS,CO",3713,79.4,0,08001
+"Total: Total includes all data, including data from rows not currently displayed.","SACRAMENTO,CA",2311,86.2,0,06067
+"Total: Total includes all data, including data from rows not currently displayed.","BOULDER,CO",2432,80.2,0,08013
+"Total: Total includes all data, including data from rows not currently displayed.","NEWHAVEN,CT",1189,76,0,09009
+"Total: Total includes all data, including data from rows not currently displayed.","DESCHUTES,OR",2750,74,0,41017
+"Total: Total includes all data, including data from rows not currently displayed.","ANNEARUNDEL,MD",794,66,0,24003
+"Total: Total includes all data, including data from rows not currently displayed.","SANMATEO,CA",3186,88.3,0,06081
+"Total: Total includes all data, including data from rows not currently displayed.","DOUGLAS,CO",1716,76.6,0,08035
+"Total: Total includes all data, including data from rows not currently displayed.","ALBANY,NY",2262,79.9,0,36001
+"Total: Total includes all data, including data from rows not currently displayed.","FAIRFIELD,CT",781,84.3,0,09001
+"Total: Total includes all data, including data from rows not currently displayed.","MONTEREY,CA",2764,90.9,0,06053
+"Total: Total includes all data, including data from rows not currently displayed.","HALL,GA",3009,84.3,0,13139
+"Total: Total includes all data, including data from rows not currently displayed.","HAMILTON,TN",2466,65.4,0,47065
+"Total: Total includes all data, including data from rows not currently displayed.","DAKOTA,MN",1822,73.6,0,27037
+"Total: Total includes all data, including data from rows not currently displayed.","KERN,CA",2621,85.4,0,06029
+"Total: Total includes all data, including data from rows not currently displayed.","ANOKA,MN",1915,75.6,0,27003
+"Total: Total includes all data, including data from rows not currently displayed.","BROOME,NY",2047,83.9,0,36007
+"Total: Total includes all data, including data from rows not currently displayed.","SAINTLOUIS,MN",1321,79.9,0,NA
+"Total: Total includes all data, including data from rows not currently displayed.","STEARNS,MN",2395,78.5,0,27145
+"Total: Total includes all data, including data from rows not currently displayed.","PRINCEGEORGES,MD",833,64.6,0,NA
+"Total: Total includes all data, including data from rows not currently displayed.","HARFORD,MD",623,49.8,0,24025
+"Total: Total includes all data, including data from rows not currently displayed.","CHEROKEE,GA",1543,74.2,0,13057
+"Total: Total includes all data, including data from rows not currently displayed.","NEWLONDON,CT",1086,83.8,0,09011
+"Total: Total includes all data, including data from rows not currently displayed.","BERNALILLO,NM",156,47.4,0,35001
+"Total: Total includes all data, including data from rows not currently displayed.","SARATOGA,NY",1066,69.9,0,36091
+"Total: Total includes all data, including data from rows not currently displayed.","ONONDAGA,NY",874,80.5,0,36067
+"Total: Total includes all data, including data from rows not currently displayed.","PAULDING,GA",1668,78.4,0,13223
+"Total: Total includes all data, including data from rows not currently displayed.","LINN,OR",1626,72.1,0,41043
+"Total: Total includes all data, including data from rows not currently displayed.","ONEIDA,NY",730,77,0,36065
+"Total: Total includes all data, including data from rows not currently displayed.","MONTGOMERY,MD",755,72.2,0,24031
+"Total: Total includes all data, including data from rows not currently displayed.","MARION,OR",1053,67.2,0,41047
+"Total: Total includes all data, including data from rows not currently displayed.","SANJOAQUIN,CA",1352,55.4,0,06077
+"Total: Total includes all data, including data from rows not currently displayed.","SULLIVAN,TN",916,73.4,0,47163
+"Total: Total includes all data, including data from rows not currently displayed.","SONOMA,CA",1728,88.8,0,06097
+"Total: Total includes all data, including data from rows not currently displayed.","RICHMOND,NY",353,59.8,0,36085
+"Total: Total includes all data, including data from rows not currently displayed.","WASHINGTON,MN",1133,77.8,0,27163
+"Total: Total includes all data, including data from rows not currently displayed.","BRONX,NY",466,76.2,0,36005
+"Total: Total includes all data, including data from rows not currently displayed.","MIDDLESEX,CT",852,78.8,0,09007
+"Total: Total includes all data, including data from rows not currently displayed.","DOUGLAS,GA",1509,79.3,0,13097
+"Total: Total includes all data, including data from rows not currently displayed.","RENSSELAER,NY",988,77.3,0,36083
+"Total: Total includes all data, including data from rows not currently displayed.","ONTARIO,NY",862,82.4,0,36069
+"Total: Total includes all data, including data from rows not currently displayed.","ORANGE,NY",400,57.3,0,36071
+"Total: Total includes all data, including data from rows not currently displayed.","WASHINGTON,TN",841,78.6,0,47179
+"Total: Total includes all data, including data from rows not currently displayed.","STEUBEN,NY",821,84.4,0,36101
+"Total: Total includes all data, including data from rows not currently displayed.","WAYNE,NY",652,77.9,0,36117
+"Total: Total includes all data, including data from rows not currently displayed.","HOWARD,MD",221,62.4,0,24027
+"Total: Total includes all data, including data from rows not currently displayed.","SHERBURNE,MN",877,75.3,0,27141
+"Total: Total includes all data, including data from rows not currently displayed.","HUMBOLDT,CA",692,83.1,0,06023
+"Total: Total includes all data, including data from rows not currently displayed.","LITCHFIELD,CT",257,75.5,0,09005
+"Total: Total includes all data, including data from rows not currently displayed.","LOWNDES,GA",749,48.2,0,13185
+"Total: Total includes all data, including data from rows not currently displayed.","TOLLAND,CT",563,83.3,0,09013
+"Total: Total includes all data, including data from rows not currently displayed.","NIAGARA,NY",115,64.3,0,36063
+"Total: Total includes all data, including data from rows not currently displayed.","CLAYTON,GA",1246,68.4,0,13063
+"Total: Total includes all data, including data from rows not currently displayed.","PUEBLO,CO",684,70.6,0,08101
+"Total: Total includes all data, including data from rows not currently displayed.","WICOMICO,MD",709,71.8,0,24045
+"Total: Total includes all data, including data from rows not currently displayed.","WRIGHT,MN",748,66.2,0,27171
+"Total: Total includes all data, including data from rows not currently displayed.","HENRY,GA",924,66.6,0,13151
+"Total: Total includes all data, including data from rows not currently displayed.","MADERA,CA",1182,79.6,0,06039
+"Total: Total includes all data, including data from rows not currently displayed.","BENTON,OR",497,72.8,0,41003
+"Total: Total includes all data, including data from rows not currently displayed.","FORSYTH,GA",657,69.3,0,13117
+"Total: Total includes all data, including data from rows not currently displayed.","SOLANO,CA",1145,75.6,0,06095
+"Total: Total includes all data, including data from rows not currently displayed.","CLAY,MN",936,84.1,0,27027
+"Total: Total includes all data, including data from rows not currently displayed.","WINDHAM,CT",556,84.5,0,09015
+"Total: Total includes all data, including data from rows not currently displayed.","SANTACRUZ,CA",436,86.2,0,06087
+"Total: Total includes all data, including data from rows not currently displayed.","CHEMUNG,NY",649,88.6,0,36015
+"Total: Total includes all data, including data from rows not currently displayed.","TULARE,CA",834,71.7,0,06107
+"Total: Total includes all data, including data from rows not currently displayed.","MARIN,CA",894,90.8,0,06041
+"Total: Total includes all data, including data from rows not currently displayed.","SAINTLAWRENCE,NY",387,94.3,0,NA
+"Total: Total includes all data, including data from rows not currently displayed.","WASHINGTON,MD",226,77.9,0,24043
+"Total: Total includes all data, including data from rows not currently displayed.","SHELBY,TN",306,83,0,47157
+"Total: Total includes all data, including data from rows not currently displayed.","JACKSON,OR",401,70.8,0,41029
+"Total: Total includes all data, including data from rows not currently displayed.","JACKSON,GA",604,73.7,0,13157
+"Total: Total includes all data, including data from rows not currently displayed.","BARROW,GA",593,74.4,0,13013
+"Total: Total includes all data, including data from rows not currently displayed.","COOS,OR",661,72.2,0,41011
+"Total: Total includes all data, including data from rows not currently displayed.","CROWWING,MN",336,67.3,0,27035
+"Total: Total includes all data, including data from rows not currently displayed.","CLINTON,NY",260,59.6,0,36019
+"Total: Total includes all data, including data from rows not currently displayed.","GREENE,TN",718,76.9,0,47059
+"Total: Total includes all data, including data from rows not currently displayed.","WHITFIELD,GA",665,49,0,13313
+"Total: Total includes all data, including data from rows not currently displayed.","OTTERTAIL,MN",672,75.3,0,27111
+"Total: Total includes all data, including data from rows not currently displayed.","TROUP,GA",607,73.6,0,13285
+"Total: Total includes all data, including data from rows not currently displayed.","LIVINGSTON,NY",364,75.5,0,36051
+"Total: Total includes all data, including data from rows not currently displayed.","LANE,OR",545,70.1,0,41039
+"Total: Total includes all data, including data from rows not currently displayed.","WESTCHESTER,NY",116,65.5,0,36119
+"Total: Total includes all data, including data from rows not currently displayed.","CHARLES,MD",203,48.8,0,24017
+"Total: Total includes all data, including data from rows not currently displayed.","MESA,CO",648,47.1,0,08077
+"Total: Total includes all data, including data from rows not currently displayed.","LINCOLN,OR",416,76.9,0,41041
+"Total: Total includes all data, including data from rows not currently displayed.","ITASCA,MN",493,71.4,0,27061
+"Total: Total includes all data, including data from rows not currently displayed.","MADISON,TN",865,65.2,0,47113
+"Total: Total includes all data, including data from rows not currently displayed.","KANDIYOHI,MN",763,78.5,0,27067
+"Total: Total includes all data, including data from rows not currently displayed.","OTSEGO,NY",314,88.2,0,36077
+"Total: Total includes all data, including data from rows not currently displayed.","BARTOW,GA",521,71.2,0,13015
+"Total: Total includes all data, including data from rows not currently displayed.","GENESEE,NY",268,70.9,0,36037
+"Total: Total includes all data, including data from rows not currently displayed.","BELTRAMI,MN",585,74,0,27007
+"Total: Total includes all data, including data from rows not currently displayed.","CHISAGO,MN",553,75.2,0,27025
+"Total: Total includes all data, including data from rows not currently displayed.","SULLIVAN,NY",245,73.1,0,36105
+"Total: Total includes all data, including data from rows not currently displayed.","HERKIMER,NY",164,75.6,0,36043
+"Total: Total includes all data, including data from rows not currently displayed.","CHENANGO,NY",439,85.4,0,36017
+"Total: Total includes all data, including data from rows not currently displayed.","HAWKINS,TN",279,72.8,0,47073
+"Total: Total includes all data, including data from rows not currently displayed.","TIOGA,NY",439,85.9,0,36107
+"Total: Total includes all data, including data from rows not currently displayed.","STANISLAUS,CA",240,72.5,0,06099
+"Total: Total includes all data, including data from rows not currently displayed.","MERCED,CA",704,78.4,0,06047
+"Total: Total includes all data, including data from rows not currently displayed.","SCOTT,MN",297,73.4,0,27139
+"Total: Total includes all data, including data from rows not currently displayed.","GORDON,GA",334,70.4,0,13129
+"Total: Total includes all data, including data from rows not currently displayed.","HABERSHAM,GA",662,81.4,0,13137
+"Total: Total includes all data, including data from rows not currently displayed.","ULSTER,NY",260,74.2,0,36111
+"Total: Total includes all data, including data from rows not currently displayed.","SANTABARBARA,CA",510,85.9,0,06083
+"Total: Total includes all data, including data from rows not currently displayed.","BROOMFIELD,CO",431,75.2,0,08014
+"Total: Total includes all data, including data from rows not currently displayed.","BENTON,MN",545,76.7,0,27009
+"Total: Total includes all data, including data from rows not currently displayed.","RICHMOND,GA",1061,59.8,0,13245
+"Total: Total includes all data, including data from rows not currently displayed.","COLUMBIA,OR",422,73,0,41009
+"Total: Total includes all data, including data from rows not currently displayed.","UMATILLA,OR",530,72.5,0,41059
+"Total: Total includes all data, including data from rows not currently displayed.","CARTER,TN",335,76.7,0,47019
+"Total: Total includes all data, including data from rows not currently displayed.","YAMHILL,OR",439,74.9,0,41071
+"Total: Total includes all data, including data from rows not currently displayed.","BECKER,MN",437,71.9,0,27005
+"Total: Total includes all data, including data from rows not currently displayed.","SPALDING,GA",310,65.2,0,13255
+"Total: Total includes all data, including data from rows not currently displayed.","CARROLL,MD",114,64,0,24013
+"Total: Total includes all data, including data from rows not currently displayed.","WORCESTER,MD",114,60.5,0,24047
+"Total: Total includes all data, including data from rows not currently displayed.","CLARKE,GA",320,76.6,0,13059
+"Total: Total includes all data, including data from rows not currently displayed.","TOMPKINS,NY",72,80.6,0,36109
+"Total: Total includes all data, including data from rows not currently displayed.","COLUMBIA,NY",358,76,0,36021
+"Total: Total includes all data, including data from rows not currently displayed.","SCHENECTADY,NY",295,75.3,0,36093
+"Total: Total includes all data, including data from rows not currently displayed.","FLOYD,GA",236,68.6,0,13115
+"Total: Total includes all data, including data from rows not currently displayed.","QUEENANNES,MD",95,55.8,0,NA
+"Total: Total includes all data, including data from rows not currently displayed.","DELAWARE,NY",321,85.4,0,36025
+"Total: Total includes all data, including data from rows not currently displayed.","BRADLEY,TN",479,57.2,0,47011
+"Total: Total includes all data, including data from rows not currently displayed.","TALBOT,MD",234,79.1,0,24041
+"Total: Total includes all data, including data from rows not currently displayed.","POLK,MN",413,82.6,0,27119
+"Total: Total includes all data, including data from rows not currently displayed.","MENDOCINO,CA",403,83.1,0,06045
+"Total: Total includes all data, including data from rows not currently displayed.","CORTLAND,NY",138,79.7,0,36023
+"Total: Total includes all data, including data from rows not currently displayed.","CARROLL,GA",443,72.9,0,13045
+"Total: Total includes all data, including data from rows not currently displayed.","FREDERICK,MD",102,65.7,0,24021
+"Total: Total includes all data, including data from rows not currently displayed.","FRANKLIN,NY",211,74.9,0,36033
+"Total: Total includes all data, including data from rows not currently displayed.","YOLO,CA",490,79.8,0,06113
+"Total: Total includes all data, including data from rows not currently displayed.","DORCHESTER,MD",352,80.1,0,24019
+"Total: Total includes all data, including data from rows not currently displayed.","CROOK,OR",364,69.8,0,41013
+"Total: Total includes all data, including data from rows not currently displayed.","CATOOSA,GA",229,59.4,0,13047
+"Total: Total includes all data, including data from rows not currently displayed.","MALHEUR,OR",375,80.8,0,41045
+"Total: Total includes all data, including data from rows not currently displayed.","PLACER,CA",76,71.1,0,06061
+"Total: Total includes all data, including data from rows not currently displayed.","CAROLINE,MD",239,69,0,24011
+"Total: Total includes all data, including data from rows not currently displayed.","COLUMBIA,GA",669,60.7,0,13073
+"Total: Total includes all data, including data from rows not currently displayed.","ALLEGANY,NY",380,81.8,0,36003
+"Total: Total includes all data, including data from rows not currently displayed.","WALKER,GA",304,66.8,0,13295
+"Total: Total includes all data, including data from rows not currently displayed.","ELDORADO,CA",23,65.2,0,06017
+"Total: Total includes all data, including data from rows not currently displayed.","CASS,MN",265,66.8,0,27021
+"Total: Total includes all data, including data from rows not currently displayed.","SANDOVAL,NM",24,50,0,35043
+"Total: Total includes all data, including data from rows not currently displayed.","WHITE,GA",278,79.5,0,13311
+"Total: Total includes all data, including data from rows not currently displayed.","ORLEANS,NY",134,65.7,0,36073
+"Total: Total includes all data, including data from rows not currently displayed.","WARREN,NY",159,54.7,0,36113
+"Total: Total includes all data, including data from rows not currently displayed.","MURRAY,GA",238,58.4,0,13213
+"Total: Total includes all data, including data from rows not currently displayed.","WALTON,GA",365,66.3,0,13297
+"Total: Total includes all data, including data from rows not currently displayed.","JEFFERSON,OR",377,71.4,0,41031
+"Total: Total includes all data, including data from rows not currently displayed.","LUMPKIN,GA",217,78.8,0,13187
+"Total: Total includes all data, including data from rows not currently displayed.","CECIL,MD",353,64.6,0,24015
+"Total: Total includes all data, including data from rows not currently displayed.","GREENE,NY",237,70.9,0,36039
+"Total: Total includes all data, including data from rows not currently displayed.","DOUGLAS,MN",153,79.1,0,27041
+"Total: Total includes all data, including data from rows not currently displayed.","KINGS,CA",431,76.3,0,06031
+"Total: Total includes all data, including data from rows not currently displayed.","NAPA,CA",533,80.5,0,06055
+"Total: Total includes all data, including data from rows not currently displayed.","MORRISON,MN",299,69.9,0,27097
+"Total: Total includes all data, including data from rows not currently displayed.","STEPHENS,GA",399,77.9,0,13257
+"Total: Total includes all data, including data from rows not currently displayed.","CHAVES,NM",151,72.2,0,35005
+"Total: Total includes all data, including data from rows not currently displayed.","WASHINGTON,NY",195,56.9,0,36115
+"Total: Total includes all data, including data from rows not currently displayed.","COWETA,GA",367,66.8,0,13077
+"Total: Total includes all data, including data from rows not currently displayed.","WINONA,MN",243,76.1,0,27169
+"Total: Total includes all data, including data from rows not currently displayed.","DOUGLAS,OR",110,58.2,0,41019
+"Total: Total includes all data, including data from rows not currently displayed.","MILLELACS,MN",313,71.2,0,27095
+"Total: Total includes all data, including data from rows not currently displayed.","ESSEX,NY",80,73.8,0,36031
+"Total: Total includes all data, including data from rows not currently displayed.","CARLTON,MN",233,84.1,0,27017
+"Total: Total includes all data, including data from rows not currently displayed.","GARRETT,MD",200,56,0,24023
+"Total: Total includes all data, including data from rows not currently displayed.","FAYETTE,GA",225,63.1,0,13113
+"Total: Total includes all data, including data from rows not currently displayed.","MADISON,NY",78,79.5,0,36053
+"Total: Total includes all data, including data from rows not currently displayed.","SCHOHARIE,NY",180,85.6,0,36095
+"Total: Total includes all data, including data from rows not currently displayed.","DAWSON,GA",270,71.5,0,13085
+"Total: Total includes all data, including data from rows not currently displayed.","HUBBARD,MN",187,73.8,0,27057
+"Total: Total includes all data, including data from rows not currently displayed.","TODD,MN",304,76.6,0,27153
+"Total: Total includes all data, including data from rows not currently displayed.","NEWTON,GA",345,67.5,0,13217
+"Total: Total includes all data, including data from rows not currently displayed.","DYER,TN",329,77.8,0,47045
+"Total: Total includes all data, including data from rows not currently displayed.","WYOMING,NY",111,70.3,0,36121
+"Total: Total includes all data, including data from rows not currently displayed.","GIBSON,TN",265,62.3,0,47053
+"Total: Total includes all data, including data from rows not currently displayed.","ROCKDALE,GA",218,65.1,0,13247
+"Total: Total includes all data, including data from rows not currently displayed.","ROUTT,CO",266,76.3,0,08107
+"Total: Total includes all data, including data from rows not currently displayed.","SENECA,NY",94,77.7,0,36099
+"Total: Total includes all data, including data from rows not currently displayed.","OSWEGO,NY",26,61.5,0,36075
+"Total: Total includes all data, including data from rows not currently displayed.","FRANKLIN,GA",291,79,0,13119
+"Total: Total includes all data, including data from rows not currently displayed.","NOBLES,MN",312,79.8,0,27105
+"Total: Total includes all data, including data from rows not currently displayed.","CAYUGA,NY",34,67.6,0,36011
+"Total: Total includes all data, including data from rows not currently displayed.","POLK,GA",155,67.7,0,13233
+"Total: Total includes all data, including data from rows not currently displayed.","ALLEGANY,MD",103,60.2,0,24001
+"Total: Total includes all data, including data from rows not currently displayed.","POLK,OR",147,67.3,0,41053
+"Total: Total includes all data, including data from rows not currently displayed.","CARVER,MN",84,70.2,0,27019
+"Total: Total includes all data, including data from rows not currently displayed.","BAKER,OR",113,73.5,0,41001
+"Total: Total includes all data, including data from rows not currently displayed.","KENT,MD",102,54.9,0,24029
+"Total: Total includes all data, including data from rows not currently displayed.","TELLER,CO",113,52.2,0,08119
+"Total: Total includes all data, including data from rows not currently displayed.","ISANTI,MN",231,65.8,0,27059
+"Total: Total includes all data, including data from rows not currently displayed.","BANKS,GA",217,85.3,0,13011
+"Total: Total includes all data, including data from rows not currently displayed.","TILLAMOOK,OR",39,61.5,0,41057
+"Total: Total includes all data, including data from rows not currently displayed.","YATES,NY",140,80,0,36123
+"Total: Total includes all data, including data from rows not currently displayed.","ROSEAU,MN",192,75,0,27135
+"Total: Total includes all data, including data from rows not currently displayed.","HART,GA",158,73.4,0,13147
+"Total: Total includes all data, including data from rows not currently displayed.","FULTON,NY",144,70.1,0,36035
+"Total: Total includes all data, including data from rows not currently displayed.","KLAMATH,OR",338,74.3,0,41035
+"Total: Total includes all data, including data from rows not currently displayed.","SOMERSET,MD",79,69.6,0,24039
+"Total: Total includes all data, including data from rows not currently displayed.","HOODRIVER,OR",154,79.9,0,41027
+"Total: Total includes all data, including data from rows not currently displayed.","WASCO,OR",138,73.2,0,41065
+"Total: Total includes all data, including data from rows not currently displayed.","HOUSTON,MN",167,77.8,0,27055
+"Total: Total includes all data, including data from rows not currently displayed.","OCONEE,GA",139,76.3,0,13219
+"Total: Total includes all data, including data from rows not currently displayed.","WEAKLEY,TN",73,68.5,0,47183
+"Total: Total includes all data, including data from rows not currently displayed.","PENNINGTON,MN",96,83.3,0,27113
+"Total: Total includes all data, including data from rows not currently displayed.","PINE,MN",119,78.2,0,27115
+"Total: Total includes all data, including data from rows not currently displayed.","MARION,TN",118,63.6,0,47115
+"Total: Total includes all data, including data from rows not currently displayed.","BUTTS,GA",107,66.4,0,13035
+"Total: Total includes all data, including data from rows not currently displayed.","GREENE,GA",81,71.6,0,13133
+"Total: Total includes all data, including data from rows not currently displayed.","AITKIN,MN",99,84.8,0,27001
+"Total: Total includes all data, including data from rows not currently displayed.","ROCKLAND,NY",39,30.8,0,36087
+"Total: Total includes all data, including data from rows not currently displayed.","JOHNSON,TN",85,74.1,0,47091
+"Total: Total includes all data, including data from rows not currently displayed.","DUTCHESS,NY",26,73.1,0,36027
+"Total: Total includes all data, including data from rows not currently displayed.","VALENCIA,NM",12,NA,0,35061
+"Total: Total includes all data, including data from rows not currently displayed.","UNICOI,TN",118,82.2,0,47171
+"Total: Total includes all data, including data from rows not currently displayed.","SANBENITO,CA",82,85.4,0,06069
+"Total: Total includes all data, including data from rows not currently displayed.","REDWOOD,MN",136,82.4,0,27127
+"Total: Total includes all data, including data from rows not currently displayed.","SHASTA,CA",47,70.2,0,06089
+"Total: Total includes all data, including data from rows not currently displayed.","ELBERT,CO",107,67.3,0,08039
+"Total: Total includes all data, including data from rows not currently displayed.","CARROLL,TN",150,70,0,47017
+"Total: Total includes all data, including data from rows not currently displayed.","CLATSOP,OR",36,61.1,0,41007
+"Total: Total includes all data, including data from rows not currently displayed.","WADENA,MN",167,58.7,0,27159
+"Total: Total includes all data, including data from rows not currently displayed.","RABUN,GA",164,77.4,0,13241
+"Total: Total includes all data, including data from rows not currently displayed.","SANLUISOBISPO,CA",66,63.6,0,06079
+"Total: Total includes all data, including data from rows not currently displayed.","JEFFERSON,NY",5,NA,1,36045
+"Total: Total includes all data, including data from rows not currently displayed.","KOOCHICHING,MN",87,77,0,27071
+"Total: Total includes all data, including data from rows not currently displayed.","SEQUATCHIE,TN",146,63.7,0,47153
+"Total: Total includes all data, including data from rows not currently displayed.","MEEKER,MN",78,64.1,0,27093
+"Total: Total includes all data, including data from rows not currently displayed.","SCHUYLER,NY",76,82.9,0,36097
+"Total: Total includes all data, including data from rows not currently displayed.","MCNAIRY,TN",61,42.6,0,47109
+"Total: Total includes all data, including data from rows not currently displayed.","IMPERIAL,CA",27,81.5,0,06025
+"Total: Total includes all data, including data from rows not currently displayed.","LAKE,CA",62,85.5,0,06033
+"Total: Total includes all data, including data from rows not currently displayed.","OBION,TN",54,72.2,0,47131
+"Total: Total includes all data, including data from rows not currently displayed.","VENTURA,CA",5,NA,1,06111
+"Total: Total includes all data, including data from rows not currently displayed.","FREMONT,CO",77,62.3,0,08043
+"Total: Total includes all data, including data from rows not currently displayed.","MONTGOMERY,NY",72,76.4,0,36057
+"Total: Total includes all data, including data from rows not currently displayed.","CAMDEN,GA",117,87.2,0,13039
+"Total: Total includes all data, including data from rows not currently displayed.","SANTAFE,NM",5,NA,1,35049
+"Total: Total includes all data, including data from rows not currently displayed.","BERRIEN,GA",84,51.2,0,13019
+"Total: Total includes all data, including data from rows not currently displayed.","LAUDERDALE,TN",147,72.8,0,47097
+"Total: Total includes all data, including data from rows not currently displayed.","MORROW,OR",167,79.6,0,41049
+"Total: Total includes all data, including data from rows not currently displayed.","MADISON,GA",108,68.5,0,13195
+"Total: Total includes all data, including data from rows not currently displayed.","MUSCOGEE,GA",105,61.9,0,13215
+"Total: Total includes all data, including data from rows not currently displayed.","RHEA,TN",159,62.9,0,47143
+"Total: Total includes all data, including data from rows not currently displayed.","BUTTE,CA",5,NA,1,06007
+"Total: Total includes all data, including data from rows not currently displayed.","ROCK,MN",122,83.6,0,27133
+"Total: Total includes all data, including data from rows not currently displayed.","DELNORTE,CA",46,84.8,0,06015
+"Total: Total includes all data, including data from rows not currently displayed.","COTTONWOOD,MN",67,68.7,0,27033
+"Total: Total includes all data, including data from rows not currently displayed.","MARSHALL,MN",103,71.8,0,27089
+"Total: Total includes all data, including data from rows not currently displayed.","CHATTOOGA,GA",58,72.4,0,13055
+"Total: Total includes all data, including data from rows not currently displayed.","FARIBAULT,MN",97,74.2,0,27043
+"Total: Total includes all data, including data from rows not currently displayed.","HENDERSON,TN",82,50,0,47077
+"Total: Total includes all data, including data from rows not currently displayed.","CLEARWATER,MN",130,64.6,0,27029
+"Total: Total includes all data, including data from rows not currently displayed.","PICKENS,GA",95,64.2,0,13227
+"Total: Total includes all data, including data from rows not currently displayed.","MOFFAT,CO",172,76.2,0,08081
+"Total: Total includes all data, including data from rows not currently displayed.","CHAUTAUQUA,NY",19,NA,0,36013
+"Total: Total includes all data, including data from rows not currently displayed.","MERIWETHER,GA",64,71.9,0,13199
+"Total: Total includes all data, including data from rows not currently displayed.","CURRY,OR",37,56.8,0,41015
+"Total: Total includes all data, including data from rows not currently displayed.","MARTIN,MN",135,72.6,0,27091
+"Total: Total includes all data, including data from rows not currently displayed.","UNION,GA",38,55.3,0,13291
+"Total: Total includes all data, including data from rows not currently displayed.","CATTARAUGUS,NY",19,57.9,0,36009
+"Total: Total includes all data, including data from rows not currently displayed.","HOUSTON,GA",90,70,0,13153
+"Total: Total includes all data, including data from rows not currently displayed.","BIBB,GA",84,67.9,0,13021
+"Total: Total includes all data, including data from rows not currently displayed.","JACKSON,MN",57,82.5,0,27063
+"Total: Total includes all data, including data from rows not currently displayed.","HARDEMAN,TN",98,54.1,0,47069
+"Total: Total includes all data, including data from rows not currently displayed.","SWIFT,MN",93,78.5,0,27151
+"Total: Total includes all data, including data from rows not currently displayed.","BLEDSOE,TN",95,67.4,0,47007
+"Total: Total includes all data, including data from rows not currently displayed.","MORGAN,CO",83,63.9,0,08087
+"Total: Total includes all data, including data from rows not currently displayed.","RENVILLE,MN",85,67.1,0,27129
+"Total: Total includes all data, including data from rows not currently displayed.","PUTNAM,GA",37,64.9,0,13237
+"Total: Total includes all data, including data from rows not currently displayed.","HARALSON,GA",106,69.8,0,13143
+"Total: Total includes all data, including data from rows not currently displayed.","HARNEY,OR",81,59.3,0,41025
+"Total: Total includes all data, including data from rows not currently displayed.","BENTON,TN",82,72,0,47005
+"Total: Total includes all data, including data from rows not currently displayed.","CHESTER,TN",83,54.2,0,47023
+"Total: Total includes all data, including data from rows not currently displayed.","WALLOWA,OR",49,67.3,0,41063
+"Total: Total includes all data, including data from rows not currently displayed.","LYON,MN",46,76.1,0,27083
+"Total: Total includes all data, including data from rows not currently displayed.","JOSEPHINE,OR",51,54.9,0,41033
+"Total: Total includes all data, including data from rows not currently displayed.","WILKIN,MN",69,91.3,0,27167
+"Total: Total includes all data, including data from rows not currently displayed.","LAMAR,GA",49,57.1,0,13171
+"Total: Total includes all data, including data from rows not currently displayed.","CURRY,NM",136,83.8,0,35009
+"Total: Total includes all data, including data from rows not currently displayed.","SAINTMARYS,MD",12,NA,0,NA
+"Total: Total includes all data, including data from rows not currently displayed.","PIKE,GA",57,61.4,0,13231
+"Total: Total includes all data, including data from rows not currently displayed.","GILMER,GA",72,58.3,0,13123
+"Total: Total includes all data, including data from rows not currently displayed.","GARFIELD,CO",73,50.7,0,08045
+"Total: Total includes all data, including data from rows not currently displayed.","CALVERT,MD",12,NA,0,24009
+"Total: Total includes all data, including data from rows not currently displayed.","MURRAY,MN",61,75.4,0,27101
+"Total: Total includes all data, including data from rows not currently displayed.","NORMAN,MN",57,93,0,27107
+"Total: Total includes all data, including data from rows not currently displayed.","COOK,GA",48,45.8,0,13075
+"Total: Total includes all data, including data from rows not currently displayed.","LANIER,GA",50,40,0,13173
+"Total: Total includes all data, including data from rows not currently displayed.","SISKIYOU,CA",54,90.7,0,06093
+"Total: Total includes all data, including data from rows not currently displayed.","DADE,GA",57,63.2,0,13083
+"Total: Total includes all data, including data from rows not currently displayed.","PITKIN,CO",53,69.8,0,08097
+"Total: Total includes all data, including data from rows not currently displayed.","TIPTON,TN",91,82.4,0,47167
+"Total: Total includes all data, including data from rows not currently displayed.","ELBERT,GA",61,77,0,13105
+"Total: Total includes all data, including data from rows not currently displayed.","FANNIN,GA",47,66,0,13111
+"Total: Total includes all data, including data from rows not currently displayed.","CHIPPEWA,MN",55,74.5,0,27023
+"Total: Total includes all data, including data from rows not currently displayed.","HARRIS,GA",37,75.7,0,13145
+"Total: Total includes all data, including data from rows not currently displayed.","TOWNS,GA",5,NA,1,13281
+"Total: Total includes all data, including data from rows not currently displayed.","CROCKETT,TN",115,66.1,0,47033
+"Total: Total includes all data, including data from rows not currently displayed.","BROOKS,GA",47,44.7,0,13027
+"Total: Total includes all data, including data from rows not currently displayed.","EAGLE,CO",35,60,0,08037
+"Total: Total includes all data, including data from rows not currently displayed.","FILLMORE,MN",56,76.8,0,27045
+"Total: Total includes all data, including data from rows not currently displayed.","OTERO,CO",57,50.9,0,08089
+"Total: Total includes all data, including data from rows not currently displayed.","DAVIDSON,TN",16,NA,0,47037
+"Total: Total includes all data, including data from rows not currently displayed.","HAYWOOD,TN",81,58,0,47075
+"Total: Total includes all data, including data from rows not currently displayed.","RICE,MN",60,78.3,0,27131
+"Total: Total includes all data, including data from rows not currently displayed.","MORGAN,GA",72,65.3,0,13211
+"Total: Total includes all data, including data from rows not currently displayed.","HARDIN,TN",29,51.7,0,47071
+"Total: Total includes all data, including data from rows not currently displayed.","UNION,OR",26,73.1,0,41061
+"Total: Total includes all data, including data from rows not currently displayed.","GRANT,MN",55,83.6,0,27051
+"Total: Total includes all data, including data from rows not currently displayed.","YELLOWMEDICINE,MN",36,88.9,0,27173
+"Total: Total includes all data, including data from rows not currently displayed.","POPE,MN",28,78.6,0,27121
+"Total: Total includes all data, including data from rows not currently displayed.","LOGAN,CO",22,63.6,0,08075
+"Total: Total includes all data, including data from rows not currently displayed.","HENRY,TN",51,70.6,0,47079
+"Total: Total includes all data, including data from rows not currently displayed.","NEVADA,CA",12,NA,0,06057
+"Total: Total includes all data, including data from rows not currently displayed.","DONAANA,NM",5,NA,1,35013
+"Total: Total includes all data, including data from rows not currently displayed.","CHATHAM,GA",36,52.8,0,13051
+"Total: Total includes all data, including data from rows not currently displayed.","MCMINN,TN",43,48.8,0,47107
+"Total: Total includes all data, including data from rows not currently displayed.","MAHNOMEN,MN",45,68.9,0,27087
+"Total: Total includes all data, including data from rows not currently displayed.","DELTA,CO",35,NA,0,08029
+"Total: Total includes all data, including data from rows not currently displayed.","MONTROSE,CO",36,50,0,08085
+"Total: Total includes all data, including data from rows not currently displayed.","KITTSON,MN",50,74,0,27069
+"Total: Total includes all data, including data from rows not currently displayed.","MCKINLEY,NM",5,NA,1,35031
+"Total: Total includes all data, including data from rows not currently displayed.","OGLETHORPE,GA",54,75.9,0,13221
+"Total: Total includes all data, including data from rows not currently displayed.","LAKE,MN",37,78.4,0,27075
+"Total: Total includes all data, including data from rows not currently displayed.","GRANT,OR",35,45.7,0,41023
+"Total: Total includes all data, including data from rows not currently displayed.","POLK,TN",46,50,0,47139
+"Total: Total includes all data, including data from rows not currently displayed.","PARK,CO",38,60.5,0,08093
+"Total: Total includes all data, including data from rows not currently displayed.","REDLAKE,MN",30,86.7,0,27125
+"Total: Total includes all data, including data from rows not currently displayed.","GRAND,CO",42,81,0,08049
+"Total: Total includes all data, including data from rows not currently displayed.","UPSON,GA",35,54.3,0,13293
+"Total: Total includes all data, including data from rows not currently displayed.","MCLEOD,MN",14,NA,0,27085
+"Total: Total includes all data, including data from rows not currently displayed.","YUBA,CA",43,76.7,0,06115
+"Total: Total includes all data, including data from rows not currently displayed.","KNOX,TN",5,NA,1,47093
+"Total: Total includes all data, including data from rows not currently displayed.","HANCOCK,TN",11,NA,0,47067
+"Total: Total includes all data, including data from rows not currently displayed.","LASANIMAS,CO",21,71.4,0,08071
+"Total: Total includes all data, including data from rows not currently displayed.","KANABEC,MN",35,68.6,0,27065
+"Total: Total includes all data, including data from rows not currently displayed.","LAKE,OR",33,60.6,0,41037
+"Total: Total includes all data, including data from rows not currently displayed.","STEVENS,MN",30,83.3,0,27149
+"Total: Total includes all data, including data from rows not currently displayed.","SUMMIT,CO",49,67.3,0,08117
+"Total: Total includes all data, including data from rows not currently displayed.","CALAVERAS,CA",5,NA,1,06009
+"Total: Total includes all data, including data from rows not currently displayed.","HEARD,GA",35,45.7,0,13149
+"Total: Total includes all data, including data from rows not currently displayed.","LASSEN,CA",24,58.3,0,06035
+"Total: Total includes all data, including data from rows not currently displayed.","TRAVERSE,MN",30,96.7,0,27155
+"Total: Total includes all data, including data from rows not currently displayed.","WABASHA,MN",5,NA,1,27157
+"Total: Total includes all data, including data from rows not currently displayed.","FAYETTE,TN",5,NA,1,47047
+"Total: Total includes all data, including data from rows not currently displayed.","ROOSEVELT,NM",78,89.7,0,35041
+"Total: Total includes all data, including data from rows not currently displayed.","LAPLATA,CO",25,64,0,08067
+"Total: Total includes all data, including data from rows not currently displayed.","LEWIS,NY",5,NA,1,36049
+"Total: Total includes all data, including data from rows not currently displayed.","DOUGHERTY,GA",47,63.8,0,13095
+"Total: Total includes all data, including data from rows not currently displayed.","CHAFFEE,CO",20,65,0,08015
+"Total: Total includes all data, including data from rows not currently displayed.","HAMBLEN,TN",20,75,0,47063
+"Total: Total includes all data, including data from rows not currently displayed.","PROWERS,CO",16,NA,0,08099
+"Total: Total includes all data, including data from rows not currently displayed.","OLMSTED,MN",5,NA,1,27109
+"Total: Total includes all data, including data from rows not currently displayed.","MARIPOSA,CA",18,88.9,0,06043
+"Total: Total includes all data, including data from rows not currently displayed.","COCKE,TN",29,51.7,0,47029
+"Total: Total includes all data, including data from rows not currently displayed.","TUOLUMNE,CA",12,NA,0,06109
+"Total: Total includes all data, including data from rows not currently displayed.","GUNNISON,CO",61,49.2,0,08051
+"Total: Total includes all data, including data from rows not currently displayed.","BALDWIN,GA",21,NA,0,13009
+"Total: Total includes all data, including data from rows not currently displayed.","DECATUR,TN",26,50,0,47039
+"Total: Total includes all data, including data from rows not currently displayed.","BIGSTONE,MN",20,75,0,27011
+"Total: Total includes all data, including data from rows not currently displayed.","AMADOR,CA",5,NA,1,06005
+"Total: Total includes all data, including data from rows not currently displayed.","PIPESTONE,MN",55,76.4,0,27117
+"Total: Total includes all data, including data from rows not currently displayed.","DICKSON,TN",321,66.7,0,47043
+"Total: Total includes all data, including data from rows not currently displayed.","MONROE,GA",28,57.1,0,13207
+"Total: Total includes all data, including data from rows not currently displayed.","LAKEOFTHEWOODS,MN",29,89.7,0,27077
+"Total: Total includes all data, including data from rows not currently displayed.","SUTTER,CA",19,89.5,0,06101
+"Total: Total includes all data, including data from rows not currently displayed.","BURKE,GA",69,60.9,0,13033
+"Total: Total includes all data, including data from rows not currently displayed.","MEIGS,TN",26,53.8,0,47121
+"Total: Total includes all data, including data from rows not currently displayed.","CIBOLA,NM",5,NA,1,35006
+"Total: Total includes all data, including data from rows not currently displayed.","GRUNDY,TN",33,57.6,0,47061
+"Total: Total includes all data, including data from rows not currently displayed.","EDDY,NM",28,39.3,0,35015
+"Total: Total includes all data, including data from rows not currently displayed.","BLUEEARTH,MN",5,NA,1,27013
+"Total: Total includes all data, including data from rows not currently displayed.","PUTNAM,NY",5,NA,1,36079
+"Total: Total includes all data, including data from rows not currently displayed.","WILLIAMSON,TN",21,66.7,0,47187
+"Total: Total includes all data, including data from rows not currently displayed.","TIFT,GA",33,72.7,0,13277
+"Total: Total includes all data, including data from rows not currently displayed.","GLYNN,GA",5,NA,1,13127
+"Total: Total includes all data, including data from rows not currently displayed.","JASPER,GA",40,57.5,0,13159
+"Total: Total includes all data, including data from rows not currently displayed.","TORRANCE,NM",5,NA,1,35057
+"Total: Total includes all data, including data from rows not currently displayed.","GOODHUE,MN",5,NA,1,27049
+"Total: Total includes all data, including data from rows not currently displayed.","MCDUFFIE,GA",63,63.5,0,13189
+"Total: Total includes all data, including data from rows not currently displayed.","PLUMAS,CA",5,NA,1,06063
+"Total: Total includes all data, including data from rows not currently displayed.","HUERFANO,CO",19,57.9,0,08055
+"Total: Total includes all data, including data from rows not currently displayed.","LAKE,TN",33,69.7,0,47095
+"Total: Total includes all data, including data from rows not currently displayed.","CLINCH,GA",21,NA,0,13065
+"Total: Total includes all data, including data from rows not currently displayed.","LACQUIPARLE,MN",5,NA,1,27073
+"Total: Total includes all data, including data from rows not currently displayed.","COLQUITT,GA",17,NA,0,13071
+"Total: Total includes all data, including data from rows not currently displayed.","FREEBORN,MN",16,NA,0,27047
+"Total: Total includes all data, including data from rows not currently displayed.","THOMAS,GA",26,73.1,0,13275
+"Total: Total includes all data, including data from rows not currently displayed.","HUMPHREYS,TN",126,66.7,0,47085
+"Total: Total includes all data, including data from rows not currently displayed.","MONTGOMERY,TN",29,65.5,0,47125
+"Total: Total includes all data, including data from rows not currently displayed.","ALAMOSA,CO",25,52,0,08003
+"Total: Total includes all data, including data from rows not currently displayed.","RIOGRANDE,CO",12,NA,0,08105
+"Total: Total includes all data, including data from rows not currently displayed.","CHARLTON,GA",15,73.3,0,13049
+"Total: Total includes all data, including data from rows not currently displayed.","COFFEE,GA",14,85.7,0,13069
+"Total: Total includes all data, including data from rows not currently displayed.","LAURENS,GA",29,65.5,0,13175
+"Total: Total includes all data, including data from rows not currently displayed.","SANJUAN,NM",5,NA,1,35045
+"Total: Total includes all data, including data from rows not currently displayed.","YUMA,CO",15,NA,0,08125
+"Total: Total includes all data, including data from rows not currently displayed.","GILPIN,CO",12,NA,0,08047
+"Total: Total includes all data, including data from rows not currently displayed.","BROWN,MN",13,NA,0,27015
+"Total: Total includes all data, including data from rows not currently displayed.","RUTHERFORD,TN",5,NA,1,47149
+"Total: Total includes all data, including data from rows not currently displayed.","JEFFERSON,GA",38,57.9,0,13163
+"Total: Total includes all data, including data from rows not currently displayed.","WASHINGTON,GA",31,61.3,0,13303
+"Total: Total includes all data, including data from rows not currently displayed.","LESUEUR,MN",13,NA,0,27079
+"Total: Total includes all data, including data from rows not currently displayed.","COOK,MN",5,NA,1,27031
+"Total: Total includes all data, including data from rows not currently displayed.","TEHAMA,CA",5,NA,1,06103
+"Total: Total includes all data, including data from rows not currently displayed.","CUMBERLAND,TN",12,NA,0,47035
+"Total: Total includes all data, including data from rows not currently displayed.","ECHOLS,GA",17,NA,0,13101
+"Total: Total includes all data, including data from rows not currently displayed.","HANCOCK,GA",12,NA,0,13141
+"Total: Total includes all data, including data from rows not currently displayed.","BULLOCH,GA",35,48.6,0,13031
+"Total: Total includes all data, including data from rows not currently displayed.","PEACH,GA",17,76.5,0,13225
+"Total: Total includes all data, including data from rows not currently displayed.","HAMILTON,NY",5,NA,1,36041
+"Total: Total includes all data, including data from rows not currently displayed.","TAOS,NM",5,NA,1,35055
+"Total: Total includes all data, including data from rows not currently displayed.","OTERO,NM",19,NA,0,35035
+"Total: Total includes all data, including data from rows not currently displayed.","FRANKLIN,TN",13,NA,0,47051
+"Total: Total includes all data, including data from rows not currently displayed.","CUSTER,CO",5,NA,1,08027
+"Total: Total includes all data, including data from rows not currently displayed.","SOCORRO,NM",5,NA,1,35053
+"Total: Total includes all data, including data from rows not currently displayed.","MONTEZUMA,CO",5,NA,1,08083
+"Total: Total includes all data, including data from rows not currently displayed.","RIOARRIBA,NM",5,NA,1,35039
+"Total: Total includes all data, including data from rows not currently displayed.","LEE,GA",17,82.4,0,13177
+"Total: Total includes all data, including data from rows not currently displayed.","CLEARCREEK,CO",15,86.7,0,08019
+"Total: Total includes all data, including data from rows not currently displayed.","LINCOLN,NM",5,NA,1,35027
+"Total: Total includes all data, including data from rows not currently displayed.","WILKES,GA",22,68.2,0,13317
+"Total: Total includes all data, including data from rows not currently displayed.","SANMIGUEL,NM",5,NA,1,35047
+"Total: Total includes all data, including data from rows not currently displayed.","WHEELER,OR",15,NA,0,41069
+"Total: Total includes all data, including data from rows not currently displayed.","SUMNER,TN",5,NA,1,47165
+"Total: Total includes all data, including data from rows not currently displayed.","BENT,CO",5,NA,1,08011
+"Total: Total includes all data, including data from rows not currently displayed.","SANMIGUEL,CO",5,NA,1,08113
+"Total: Total includes all data, including data from rows not currently displayed.","SIERRA,NM",33,51.5,0,35051
+"Total: Total includes all data, including data from rows not currently displayed.","GRAINGER,TN",5,NA,1,47057
+"Total: Total includes all data, including data from rows not currently displayed.","LINCOLN,MN",11,NA,0,27081
+"Total: Total includes all data, including data from rows not currently displayed.","BLOUNT,TN",5,NA,1,47009
+"Total: Total includes all data, including data from rows not currently displayed.","CROWLEY,CO",5,NA,1,08025
+"Total: Total includes all data, including data from rows not currently displayed.","JEFFERSON,TN",5,NA,1,47089
+"Total: Total includes all data, including data from rows not currently displayed.","NICOLLET,MN",5,NA,1,27103
+"Total: Total includes all data, including data from rows not currently displayed.","KITCARSON,CO",18,NA,0,08063
+"Total: Total includes all data, including data from rows not currently displayed.","LINCOLN,GA",20,NA,0,13181
+"Total: Total includes all data, including data from rows not currently displayed.","EFFINGHAM,GA",5,NA,1,13103
+"Total: Total includes all data, including data from rows not currently displayed.","PHILLIPS,CO",5,NA,1,08095
+"Total: Total includes all data, including data from rows not currently displayed.","INYO,CA",5,NA,1,06027
+"Total: Total includes all data, including data from rows not currently displayed.","JONES,GA",13,NA,0,13169
+"Total: Total includes all data, including data from rows not currently displayed.","MODOC,CA",13,NA,0,06049
+"Total: Total includes all data, including data from rows not currently displayed.","STEELE,MN",5,NA,1,27147
+"Total: Total includes all data, including data from rows not currently displayed.","CAMPBELL,TN",5,NA,1,47013
+"Total: Total includes all data, including data from rows not currently displayed.","EMANUEL,GA",18,61.1,0,13107
+"Total: Total includes all data, including data from rows not currently displayed.","EARLY,GA",5,NA,1,13099
+"Total: Total includes all data, including data from rows not currently displayed.","SEVIER,TN",5,NA,1,47155
+"Total: Total includes all data, including data from rows not currently displayed.","WARE,GA",5,NA,1,13299
+"Total: Total includes all data, including data from rows not currently displayed.","GLENN,CA",5,NA,1,06021
+"Total: Total includes all data, including data from rows not currently displayed.","SUMTER,GA",5,NA,1,13261
+"Total: Total includes all data, including data from rows not currently displayed.","WASHINGTON,CO",5,NA,1,08121
+"Total: Total includes all data, including data from rows not currently displayed.","WILSON,TN",5,NA,1,47189
+"Total: Total includes all data, including data from rows not currently displayed.","ARCHULETA,CO",5,NA,1,08007
+"Total: Total includes all data, including data from rows not currently displayed.","LINCOLN,CO",11,NA,0,08073
+"Total: Total includes all data, including data from rows not currently displayed.","LOSALAMOS,NM",5,NA,1,35028
+"Total: Total includes all data, including data from rows not currently displayed.","SIBLEY,MN",5,NA,1,27143
+"Total: Total includes all data, including data from rows not currently displayed.","TRINITY,CA",5,NA,1,06105
+"Total: Total includes all data, including data from rows not currently displayed.","BENHILL,GA",11,NA,0,13017
+"Total: Total includes all data, including data from rows not currently displayed.","RIOBLANCO,CO",5,NA,1,08103
+"Total: Total includes all data, including data from rows not currently displayed.","BRYAN,GA",5,NA,1,13029
+"Total: Total includes all data, including data from rows not currently displayed.","MONROE,TN",5,NA,1,47123
+"Total: Total includes all data, including data from rows not currently displayed.","CONEJOS,CO",5,NA,1,08021
+"Total: Total includes all data, including data from rows not currently displayed.","LIBERTY,GA",5,NA,1,13179
+"Total: Total includes all data, including data from rows not currently displayed.","DECATUR,GA",11,NA,0,13087
+"Total: Total includes all data, including data from rows not currently displayed.","GILLIAM,OR",5,NA,1,41021
+"Total: Total includes all data, including data from rows not currently displayed.","QUAY,NM",5,NA,1,35037
+"Total: Total includes all data, including data from rows not currently displayed.","LOUDON,TN",5,NA,1,47105
+"Total: Total includes all data, including data from rows not currently displayed.","WATONWAN,MN",5,NA,1,27165
+"Total: Total includes all data, including data from rows not currently displayed.","GRADY,GA",12,NA,0,13131
+"Total: Total includes all data, including data from rows not currently displayed.","CLAIBORNE,TN",5,NA,1,47025
+"Total: Total includes all data, including data from rows not currently displayed.","LAKE,CO",5,NA,1,08065
+"Total: Total includes all data, including data from rows not currently displayed.","MAURY,TN",5,NA,1,47119
+"Total: Total includes all data, including data from rows not currently displayed.","BACA,CO",5,NA,1,08009
+"Total: Total includes all data, including data from rows not currently displayed.","COLFAX,NM",5,NA,1,35007
+"Total: Total includes all data, including data from rows not currently displayed.","CRISP,GA",5,NA,1,13081
+"Total: Total includes all data, including data from rows not currently displayed.","MONO,CA",5,NA,1,06051
+"Total: Total includes all data, including data from rows not currently displayed.","SHERMAN,OR",13,92.3,0,41055
+"Total: Total includes all data, including data from rows not currently displayed.","DODGE,GA",12,NA,0,13091
+"Total: Total includes all data, including data from rows not currently displayed.","WORTH,GA",5,NA,1,13321
+"Total: Total includes all data, including data from rows not currently displayed.","COFFEE,TN",13,NA,0,47031
+"Total: Total includes all data, including data from rows not currently displayed.","ATKINSON,GA",5,NA,1,13003
+"Total: Total includes all data, including data from rows not currently displayed.","COLUSA,CA",24,75,0,06011
+"Total: Total includes all data, including data from rows not currently displayed.","MOWER,MN",5,NA,1,27099
+"Total: Total includes all data, including data from rows not currently displayed.","HICKMAN,TN",57,63.2,0,47081
+"Total: Total includes all data, including data from rows not currently displayed.","PUTNAM,TN",5,NA,1,47141
+"Total: Total includes all data, including data from rows not currently displayed.","TALBOT,GA",5,NA,1,13263
+"Total: Total includes all data, including data from rows not currently displayed.","GRANT,NM",5,NA,1,35017
+"Total: Total includes all data, including data from rows not currently displayed.","JACKSON,CO",16,68.8,0,08057
+"Total: Total includes all data, including data from rows not currently displayed.","SEDGWICK,CO",5,NA,1,08115
+"Total: Total includes all data, including data from rows not currently displayed.","WARREN,TN",5,NA,1,47177
+"Total: Total includes all data, including data from rows not currently displayed.","TOOMBS,GA",11,NA,0,13279
+"Total: Total includes all data, including data from rows not currently displayed.","MITCHELL,GA",5,NA,1,13205
+"Total: Total includes all data, including data from rows not currently displayed.","ANDERSON,TN",5,NA,1,47001
+"Total: Total includes all data, including data from rows not currently displayed.","VANBUREN,TN",5,NA,1,47175
+"Total: Total includes all data, including data from rows not currently displayed.","SEMINOLE,GA",5,NA,1,13253
+"Total: Total includes all data, including data from rows not currently displayed.","COSTILLA,CO",5,NA,1,08023
+"Total: Total includes all data, including data from rows not currently displayed.","CLAY,GA",5,NA,1,13061
+"Total: Total includes all data, including data from rows not currently displayed.","WARREN,GA",15,NA,0,13301
+"Total: Total includes all data, including data from rows not currently displayed.","BLECKLEY,GA",5,NA,1,13023
+"Total: Total includes all data, including data from rows not currently displayed.","OURAY,CO",5,NA,1,08091
+"Total: Total includes all data, including data from rows not currently displayed.","ROANE,TN",5,NA,1,47145
+"Total: Total includes all data, including data from rows not currently displayed.","LUNA,NM",5,NA,1,35029
+"Total: Total includes all data, including data from rows not currently displayed.","JENKINS,GA",13,NA,0,13165
+"Total: Total includes all data, including data from rows not currently displayed.","GUADALUPE,NM",5,NA,1,35019
+"Total: Total includes all data, including data from rows not currently displayed.","CHEATHAM,TN",5,NA,1,47021
+"Total: Total includes all data, including data from rows not currently displayed.","PIERCE,GA",5,NA,1,13229
+"Total: Total includes all data, including data from rows not currently displayed.","LEA,NM",5,NA,1,35025
+"Total: Total includes all data, including data from rows not currently displayed.","SIERRA,CA",5,NA,1,06091
+"Total: Total includes all data, including data from rows not currently displayed.","SAGUACHE,CO",5,NA,1,08109
+"Total: Total includes all data, including data from rows not currently displayed.","IRWIN,GA",5,NA,1,13155
+"Total: Total includes all data, including data from rows not currently displayed.","SCREVEN,GA",5,NA,1,13251
+"Total: Total includes all data, including data from rows not currently displayed.","KIOWA,CO",5,NA,1,08061
+"Total: Total includes all data, including data from rows not currently displayed.","WAYNE,GA",5,NA,1,13305
+"Total: Total includes all data, including data from rows not currently displayed.","BRANTLEY,GA",5,NA,1,13025
+"Total: Total includes all data, including data from rows not currently displayed.","PULASKI,GA",5,NA,1,13235
+"Total: Total includes all data, including data from rows not currently displayed.","WILKINSON,GA",5,NA,1,13319
+"Total: Total includes all data, including data from rows not currently displayed.","TURNER,GA",5,NA,1,13287
+"Total: Total includes all data, including data from rows not currently displayed.","WASECA,MN",5,NA,1,27161
+"Total: Total includes all data, including data from rows not currently displayed.","CRAWFORD,GA",5,NA,1,13079
+"Total: Total includes all data, including data from rows not currently displayed.","WHITE,TN",5,NA,1,47185
+"Total: Total includes all data, including data from rows not currently displayed.","DODGE,MN",5,NA,1,27039
+"Total: Total includes all data, including data from rows not currently displayed.","MACON,GA",5,NA,1,13193
+"Total: Total includes all data, including data from rows not currently displayed.","TALIAFERRO,GA",5,NA,1,13265
+"Total: Total includes all data, including data from rows not currently displayed.","JOHNSON,GA",5,NA,1,13167
+"Total: Total includes all data, including data from rows not currently displayed.","TAYLOR,GA",5,NA,1,13269
+"Total: Total includes all data, including data from rows not currently displayed.","CHEYENNE,CO",5,NA,1,08017
+"Total: Total includes all data, including data from rows not currently displayed.","DOOLY,GA",5,NA,1,13093
+"Total: Total includes all data, including data from rows not currently displayed.","TATTNALL,GA",5,NA,1,13267
+"Total: Total includes all data, including data from rows not currently displayed.","APPLING,GA",5,NA,1,13001
+"Total: Total includes all data, including data from rows not currently displayed.","ROBERTSON,TN",5,NA,1,47147
+"Total: Total includes all data, including data from rows not currently displayed.","TELFAIR,GA",5,NA,1,13271
+"Total: Total includes all data, including data from rows not currently displayed.","WILCOX,GA",5,NA,1,13315
+"Total: Total includes all data, including data from rows not currently displayed.","UNION,NM",5,NA,1,35059
+"Total: Total includes all data, including data from rows not currently displayed.","PERRY,TN",13,NA,0,47135
+"Total: Total includes all data, including data from rows not currently displayed.","ALPINE,CA",5,NA,1,06003
+"Total: Total includes all data, including data from rows not currently displayed.","GLASCOCK,GA",5,NA,1,13125
+"Total: Total includes all data, including data from rows not currently displayed.","HOUSTON,TN",30,66.7,0,47083
+"Total: Total includes all data, including data from rows not currently displayed.","JEFFDAVIS,GA",5,NA,1,13161
+"Total: Total includes all data, including data from rows not currently displayed.","MARION,GA",5,NA,1,13197
+"Total: Total includes all data, including data from rows not currently displayed.","MCINTOSH,GA",5,NA,1,13191
+"Total: Total includes all data, including data from rows not currently displayed.","QUITMAN,GA",5,NA,1,13239
+"Total: Total includes all data, including data from rows not currently displayed.","MILLER,GA",5,NA,1,13201
+"Total: Total includes all data, including data from rows not currently displayed.","TERRELL,GA",5,NA,1,13273
+"Total: Total includes all data, including data from rows not currently displayed.","BACON,GA",5,NA,1,13005
+"Total: Total includes all data, including data from rows not currently displayed.","TWIGGS,GA",5,NA,1,13289
+"Total: Total includes all data, including data from rows not currently displayed.","CALHOUN,GA",5,NA,1,13037
+"Total: Total includes all data, including data from rows not currently displayed.","MORA,NM",5,NA,1,35033
+"Total: Total includes all data, including data from rows not currently displayed.","STEWART,TN",5,NA,1,47161
+"Total: Total includes all data, including data from rows not currently displayed.","FENTRESS,TN",5,NA,1,47049
+"Total: Total includes all data, including data from rows not currently displayed.","SCOTT,TN",5,NA,1,47151
+"Total: Total includes all data, including data from rows not currently displayed.","CATRON,NM",5,NA,1,35003
+"Total: Total includes all data, including data from rows not currently displayed.","LONG,GA",5,NA,1,13183
+"Total: Total includes all data, including data from rows not currently displayed.","CANDLER,GA",5,NA,1,13043
+"Total: Total includes all data, including data from rows not currently displayed.","MONTGOMERY,GA",5,NA,1,13209
+"Total: Total includes all data, including data from rows not currently displayed.","WAYNE,TN",5,NA,1,47181
+"Total: Total includes all data, including data from rows not currently displayed.","TREUTLEN,GA",5,NA,1,13283
+"Total: Total includes all data, including data from rows not currently displayed.","DEBACA,NM",5,NA,1,35011
+"Total: Total includes all data, including data from rows not currently displayed.","BEDFORD,TN",5,NA,1,47003
+"Total: Total includes all data, including data from rows not currently displayed.","EVANS,GA",5,NA,1,13109
+"Total: Total includes all data, including data from rows not currently displayed.","LINCOLN,TN",5,NA,1,47103
+"Total: Total includes all data, including data from rows not currently displayed.","RANDOLPH,GA",5,NA,1,13243
+"Total: Total includes all data, including data from rows not currently displayed.","BAKER,GA",5,NA,1,13007
+"Total: Total includes all data, including data from rows not currently displayed.","SCHLEY,GA",5,NA,1,13249
+"Total: Total includes all data, including data from rows not currently displayed.","CHATTAHOOCHEE,GA",5,NA,1,13053
+"Total: Total includes all data, including data from rows not currently displayed.","OVERTON,TN",5,NA,1,47133
+"Total: Total includes all data, including data from rows not currently displayed.","STEWART,GA",5,NA,1,13259
+"Total: Total includes all data, including data from rows not currently displayed.","UNION,TN",5,NA,1,47173
+"Total: Total includes all data, including data from rows not currently displayed.","LAWRENCE,TN",5,NA,1,47099
+"Total: Total includes all data, including data from rows not currently displayed.","WHEELER,GA",5,NA,1,13309
+"Total: Total includes all data, including data from rows not currently displayed.","DEKALB,TN",5,NA,1,47041
+"Total: Total includes all data, including data from rows not currently displayed.","MORGAN,TN",5,NA,1,47129
+"Total: Total includes all data, including data from rows not currently displayed.","DOLORES,CO",5,NA,1,08033
+"Total: Total includes all data, including data from rows not currently displayed.","MINERAL,CO",5,NA,1,08079
+"Total: Total includes all data, including data from rows not currently displayed.","MARSHALL,TN",5,NA,1,47117
+"Total: Total includes all data, including data from rows not currently displayed.","SMITH,TN",5,NA,1,47159
+"Total: Total includes all data, including data from rows not currently displayed.","GILES,TN",5,NA,1,47055
+"Total: Total includes all data, including data from rows not currently displayed.","HINSDALE,CO",5,NA,1,08053
+"Total: Total includes all data, including data from rows not currently displayed.","HIDALGO,NM",5,NA,1,35023
+"Total: Total includes all data, including data from rows not currently displayed.","JACKSON,TN",5,NA,1,47087
+"Total: Total includes all data, including data from rows not currently displayed.","MACON,TN",5,NA,1,47111
+"Total: Total includes all data, including data from rows not currently displayed.","CANNON,TN",5,NA,1,47015
+"Total: Total includes all data, including data from rows not currently displayed.","LEWIS,TN",5,NA,1,47101
+"Total: Total includes all data, including data from rows not currently displayed.","WEBSTER,GA",5,NA,1,13307
+"Total: Total includes all data, including data from rows not currently displayed.","HARDING,NM",5,NA,1,35021
+"Total: Total includes all data, including data from rows not currently displayed.","PICKETT,TN",5,NA,1,47137
+"Total: Total includes all data, including data from rows not currently displayed.","CLAY,TN",5,NA,1,47027
+"Total: Total includes all data, including data from rows not currently displayed.","SANJUAN,CO",5,NA,1,08111
+"Total: Total includes all data, including data from rows not currently displayed.","MOORE,TN",5,NA,1,47127
+"Total: Total includes all data, including data from rows not currently displayed.","TROUSDALE,TN",5,NA,1,47169
+"Total: Total includes all data, including data from rows not currently displayed.",Noneoftheabove,7968,70.6,0,NA
+"Total: Total includes all data, including data from rows not currently displayed.",Total,304945,77,0,NA
