@@ -3,3 +3,8 @@
 .RData
 .Ruserdata
 *.graph
+data/shapefiles/tl_2010_us_state10.dbf
+data/shapefiles/tl_2010_us_state10.prj
+data/shapefiles/tl_2010_us_state10.shp
+data/shapefiles/tl_2010_us_state10.shx
+data/shapefiles/tl_2010_us_state10.shp.xml

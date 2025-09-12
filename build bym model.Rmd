@@ -163,8 +163,8 @@ for (area in area_names) {
   (p_mean <- ggplot(plot_sf) +
     geom_sf(aes(fill = exp(mean)), color = NA) +
     scale_fill_viridis_c(option = "viridis", na.value = "grey90") +
-    labs(title = paste0(area, " — BYM2 posterior mean"),
-         fill = "Posterior mean") +
+    labs(title = paste0(area, " — BYM2 effects"),
+         fill = "Effect") +
     facet_wrap(~eff) +
     theme_minimal())
   
@@ -250,14 +250,14 @@ for (area in area_names) {
   (p_mean <- ggplot(plot_sf) +
     geom_sf(aes(fill = exp(mean)), color = NA) +
     scale_fill_viridis_c(option = "viridis", na.value = "grey90") +
-    labs(title = paste0(area, " — BYM2 posterior mean"),
-         fill = "Posterior mean") +
+    labs(title = paste0(area, " — BYM2 effects"),
+         fill = "Effect") +
     facet_wrap(~eff) +
     theme_minimal())
   
   print(p_mean)
   
-  ggsave(filename = paste0("outputs/", "bym2_mod2", area, ".png"),
+  ggsave(filename = paste0("outputs/", "bym2_mod2_", area, ".png"),
          plot = p_mean, width = 8, height = 6, dpi = 300)
   
 }
