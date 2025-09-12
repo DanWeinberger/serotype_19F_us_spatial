@@ -1,13 +1,12 @@
 ---
 title: "19F Tile Plots"
-author: "Stephen G Mugel"
 date: "2025-09-11"
 output: html_document
 ---
 
 ```{r}
 if (!require("pacman")) install.packages("pacman")
-pacman::p_load(tidyverse, mgcv)
+pacman::p_load(tidyverse, mgcv, patchwork)
 ```
 
 ```{r}
@@ -15,21 +14,22 @@ data_raw <- read_csv("path-to-data")
 
 data_pre <- data_raw |> 
   mutate(agegroup5yr = cut(AGEYRS,
-                           breaks = seq(0,100, by = 5),
+                           breaks = seq(0, 100, by = 5),
                            right = FALSE,
-                           labels = paste(seq(0, 95, by = 5, seq(4, 99, by = 5), sep = "-")))) |> 
+                           labels = paste(seq(0, 95, by = 5), seq(4, 99, by = 5), sep = "-"))) |> 
   group_by(STATE, CAL_YR, agegroup5yr) |> 
+  filter(!Final_Serotype %in% c("NF", "No DNA", "NO DNA", "Non-viable", "NON-VIABLE", "")) |> 
   summarize(N_IPD = n(), 
-            N_19F = sum(serotype19f == "19F"),
-            mutate(prop.19F =(N_19F/ N_IPD)), 
-            agegrouporder = as.numeric(agegroup5yr))
+            N_19F = sum(Final_Serotype == "19F")) |> 
+  mutate(prop.19F =(N_19F/ N_IPD),
+         agegrouporder = as.numeric(agegroup5yr))
 
 baseline_data <- data_pre |> 
   filter(CAL_YR < 2010) |> 
   group_by(agegroup5yr, STATE) |> 
   summarize(N_IPDbaseline = mean(N_IPD), N_19Fbaseline = mean(N_19F))
 
-data <- data |> 
+data <- data_pre |> 
   filter(CAL_YR >= 2010) |> 
   left_join(baseline_data, by = c("agegroup5yr", "STATE"))  |> 
   mutate(prop.to.baseline = N_19F / N_19Fbaseline,
@@ -38,118 +38,311 @@ data <- data |>
 
 ```{r}
 states <- unique(data$STATE)
+```
+
+## Total IPD cases (raw)
+
+```{r}
+plot_list <- list()
 
 for (s in states) {
-  # Total IPD cases (raw)
   p1_df <- data |> 
     filter(STATE == s)
   
   p1 <- p1_df |> 
     ggplot(aes(x = CAL_YR, y = agegroup5yr, fill = N_IPD)) + 
-    geom_tile() +
-    scale_fill_gradient(low = "white", high = "red") +
+    geom_raster() +
+    scale_fill_gradient2(low = "#4575b4", mid = "#ffffbf", high = "#d73027", na.value = "lightgray") +
     labs(
-      title = paste("N_IPD in", s),
+      title = paste("Total IPD cases in", s),
       x = "Year",
       y = "Age Group",
       fill = "Total IPD cases"
     ) +
-    theme_minimal() +
+    theme_bw() +
     theme(axis.text.x = element_text(angle = 45, hjust = 1))
   
-  filename_p1 <- paste0("outputs/totalipd_raw_", s, ".png")
-  ggsave(filename = filename_p1, plot = p1)
+  filename_p1 <- paste0("SmoothTilePlots/totalipd_raw_", s, ".png")
+  ggsave(filename = here::here(filename_p1), plot = p1, width = 6, height = 4)
+  
+  plot_list[[s]] <- p1
 }
+
+combined_plot <- wrap_plots(plot_list, ncol = 4, nrow = 3)
+
+ggsave(here::here("SmoothTilePlots/totalipd_patchwork.png"),
+       plot = combined_plot,
+       width = 20, height = 15, dpi = 300)
 ```
+
+## Total IPD cases (smoothed)
 
 ```{r}
-ggplot(trend.19F, aes(x = CAL_YR, y = agegroup5yr, fill = (N_19F/N_IPD))) +
-  geom_tile() +
-  scale_fill_gradient(low = "white", high = "red") +  # Color gradient
-  labs(title = "Proportion 19F", x = "Year", y = "Age Group") +
-  theme_minimal() +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1))  # Rotate x-axis labels
+for (s in states) {
+  p2_df <- data |> 
+    filter(STATE == s)
+  
+  gam_p2 <- gam(N_IPD ~ te(CAL_YR, agegrouporder, fx = TRUE), 
+                data = p2_df, 
+                method = "REML")
+  
+  pred_grid <- expand.grid(CAL_YR = unique(p2_df$CAL_YR),
+                           agegrouporder = unique(data$agegrouporder)) |> 
+    left_join(data |> ungroup() |>  distinct(agegroup5yr, agegrouporder), by = "agegrouporder")
+  
+  pred_grid$fit <- predict(gam_p2, newdata = pred_grid, type = "response")
+  
+  p2 <- pred_grid |> 
+    filter(!is.na(agegroup5yr)) |> 
+    ggplot(aes(x = CAL_YR, y = agegroup5yr, fill = fit)) +
+    geom_raster() +
+    scale_fill_gradient2(low = "#4575b4", mid = "#ffffbf", high = "#d73027", na.value = "lightgray") +
+    labs(
+      title = paste("Total IPD cases (smoothed) in", s),
+      x = "Year",
+      y = "Age Group",
+      fill = "Total IPD cases (smoothed)"
+    ) +
+    theme_bw() +
+    theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
-# Spatial smoother on a tile plot 
-gamtest1 <- mgcv::gam((prop.19F) ~ te(CAL_YR, agegrouporder, fx = TRUE), data = trend.19F, family = binomial, method = "REML")
-#summary(gamtest1)
-#plot(gamtest1)
-length(unique(trend.19F$agegrouporder))
+  filename_p2 <- paste0("SmoothTilePlots/totalipd_smooth_", s, ".png")
+  ggsave(filename = filename_p2, plot = p2)
 
-pred_grid <- expand.grid(CAL_YR = unique(trend.19F$CAL_YR),
-                         agegrouporder = unique(trend.19F$agegrouporder)) %>% left_join(trend.19F %>% ungroup() %>% distinct(agegroup5yr, agegrouporder), by = "agegrouporder")
+  plot_list[[s]] <- p2
+}
 
-pred_grid$fit <- predict(gamtest1, newdata = pred_grid, type = "response")
+combined_plot <- wrap_plots(plot_list, ncol = 4, nrow = 3)
 
-ggplot(pred_grid, aes(x = CAL_YR, y = agegroup5yr, fill = fit)) +
-  geom_tile() +
-  scale_fill_gradient(low = "white", high = "red") +  # Color gradient
-  labs(title = "Proportion 19F, smoothed", x = "Year", y = "Age Group") +
-  theme_minimal() +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1))  # Rotate x-axis labels
-
-
+ggsave(here::here("SmoothTilePlots/totalipd_smooth_patchwork.png"),
+       plot = combined_plot,
+       width = 20, height = 15, dpi = 300)
 ```
 
-
-
-
-
-
+## Proportion of 19F/total IPD (raw)
 
 ```{r}
-## ## ## 19F compared to baseline
-ggplot(trend.19F.basecomp, aes(x = CAL_YR, y = agegroup5yr, fill = prop.to.baseline)) +
-  geom_tile() +
-  scale_fill_gradient(low = "white", high = "red") +  # Color gradient
-  labs(title = "Annual 19F compared to baseline (2006 - 2009)", x = "Year", y = "Age Group") +
-  theme_minimal() +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1))  # Rotate x-axis labels
+for (s in states) {
+  p3_df <- data |> 
+    filter(STATE == s)
+  
+  p3 <- p3_df |> 
+    ggplot(aes(x = CAL_YR, y = agegroup5yr, fill = prop.19F)) + 
+    geom_raster() +
+    scale_fill_gradient2(low = "#4575b4", mid = "#ffffbf", high = "#d73027", na.value = "lightgray") +
+    labs(
+      title = paste("Proportion 19F in", s),
+      x = "Year",
+      y = "Age Group",
+      fill = "Proportion 19F"
+    ) +
+    theme_bw() +
+    theme(axis.text.x = element_text(angle = 45, hjust = 1))
+  
+  filename_p3 <- paste0("SmoothTilePlots/prop19F_raw_", s, ".png")
+  ggsave(filename = filename_p3, plot = p3)
+  plot_list[[s]] <- p3
+}
 
-# Spatial smoother on a tile plot 
-gam.prop19Ftobaseline <- mgcv::gam((prop.to.baseline) ~ s(CAL_YR) + s(agegrouporder) + te(CAL_YR, agegrouporder, fx = TRUE), data = trend.19F.basecomp, method = "REML")
-#summary(gamtest1)
-#plot(gamtest1)
+combined_plot <- wrap_plots(plot_list, ncol = 4, nrow = 3)
 
-pred_grid <- expand.grid(CAL_YR = unique(trend.19F.basecomp$CAL_YR),
-                         agegrouporder = unique(trend.19F.basecomp$agegrouporder)) %>% left_join(trend.19F.basecomp %>% ungroup() %>% distinct(agegroup5yr, agegrouporder), by = "agegrouporder")
-
-pred_grid$fit <- predict(gam.prop19Ftobaseline, newdata = pred_grid, type = "response")
-
-ggplot(pred_grid, aes(x = CAL_YR, y = agegroup5yr, fill = fit)) +
-  geom_tile() +
-  scale_fill_gradient(low = "white", high = "red") +  # Color gradient
-  labs(title = "Annual 19F compared to baseline (2006 - 2009), smoothed", x = "Year", y = "Age Group") +
-  theme_minimal() +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1))  # Rotate x-axis labels
-
+ggsave(here::here("SmoothTilePlots/prop19F_raw_patchwork.png"),
+       plot = combined_plot,
+       width = 20, height = 15, dpi = 300)
 ```
+
+## Proportion of 19F/total IPD (smoothed)
 
 ```{r}
-## ## ## Prop19F to a Prop19F in baseline
-ggplot(trend.19F.basecomp, aes(x = CAL_YR, y = agegroup5yr, fill = prop.prop.to.baseline)) +
-  geom_tile() +
-  scale_fill_gradient(low = "white", high = "red") +  # Color gradient
-  labs(title = "Prop 19F compared to baseline (2006 - 2009)", x = "Year", y = "Age Group") +
-  theme_minimal() +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1))  # Rotate x-axis labels
+for (s in states) {
+  p4_df <- data |> 
+    filter(STATE == s)
+  
+  gam_p4 <- gam(prop.19F ~ te(CAL_YR, agegrouporder, fx = TRUE), 
+                data = p4_df, 
+                method = "REML")
+  
+  pred_grid <- expand.grid(CAL_YR = unique(p4_df$CAL_YR),
+                           agegrouporder = unique(data$agegrouporder)) |> 
+    left_join(data |> ungroup() |>  distinct(agegroup5yr, agegrouporder), by = "agegrouporder")
+  
+  pred_grid$fit <- predict(gam_p4, newdata = pred_grid, type = "response")
+  
+  p4 <- pred_grid |> 
+    filter(!is.na(agegroup5yr)) |> 
+    ggplot(aes(x = CAL_YR, y = agegroup5yr, fill = fit)) +
+    geom_raster() +
+    scale_fill_gradient2(low = "#4575b4", mid = "#ffffbf", high = "#d73027", na.value = "lightgray") +
+    labs(
+      title = paste("Proportion 19F (smoothed) in", s),
+      x = "Year",
+      y = "Age Group",
+      fill = "Proportion 19F (smoothed)"
+    ) +
+    theme_bw() +
+    theme(axis.text.x = element_text(angle = 45, hjust = 1))
+  
+  filename_p4 <- paste0("SmoothTilePlots/prop19F_smooth_", s, ".png")
+  ggsave(filename = filename_p4, plot = p4)
+  
+  plot_list[[s]] <- p4
+}
 
-# Spatial smoother on a tile plot 
-gam.propprop19Ftobaseline <- mgcv::gam((prop.prop.to.baseline) ~ s(CAL_YR) + s(agegrouporder) + te(CAL_YR, agegrouporder, fx = TRUE), data = trend.19F.basecomp, method = "REML")
-#summary(gamtest1)
-#plot(gamtest1)
+combined_plot <- wrap_plots(plot_list, ncol = 4, nrow = 3)
 
-pred_grid <- expand.grid(CAL_YR = unique(trend.19F.basecomp$CAL_YR),
-                         agegrouporder = unique(trend.19F.basecomp$agegrouporder)) %>% left_join(trend.19F.basecomp %>% ungroup() %>% distinct(agegroup5yr, agegrouporder), by = "agegrouporder")
-
-pred_grid$fit <- predict(gam.propprop19Ftobaseline, newdata = pred_grid, type = "response")
-
-ggplot(pred_grid, aes(x = CAL_YR, y = agegroup5yr, fill = fit)) +
-  geom_tile() +
-  scale_fill_gradient(low = "white", high = "red") +  # Color gradient
-  labs(title = "Prop 19F compared to baseline (2006 - 2009), smoothed", x = "Year", y = "Age Group") +
-  theme_minimal() +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1))  # Rotate x-axis labels
-
+ggsave(here::here("SmoothTilePlots/prop19F_smooth_patchwork.png"),
+       plot = combined_plot,
+       width = 20, height = 15, dpi = 300)
 ```
 
+## Proportion of 19F cases/baseline 19F cases (raw)
+
+```{r}
+for (s in states) {
+  p5_df <- data |> 
+    filter(STATE == s)
+
+  p5 <- p5_df |> 
+    ggplot(aes(x = CAL_YR, y = agegroup5yr, fill = prop.to.baseline)) +
+    geom_raster() +
+    scale_fill_gradient2(low = "#4575b4", mid = "#ffffbf", high = "#d73027", na.value = "lightgray") +
+    labs(
+      title = paste("Annual 19F compared to baseline (2006 - 2009) in", s),
+      x = "Year",
+      y = "Age Group",
+      fill = "19F cases/baseline cases"
+    ) +
+    theme_bw() +
+    theme(axis.text.x = element_text(angle = 45, hjust = 1))
+  
+  filename_p5 <- paste0("SmoothTilePlots/cases19ftobaseline_raw_", s, ".png")
+  ggsave(filename = filename_p5, plot = p5)
+  
+  plot_list[[s]] <- p5
+}
+
+combined_plot <- wrap_plots(plot_list, ncol = 4, nrow = 3)
+
+ggsave(here::here("SmoothTilePlots/cases19ftobaseline_raw_patchwork.png"),
+       plot = combined_plot,
+       width = 20, height = 15, dpi = 300)
+```
+
+## Proportion of 19F cases/baseline 19F cases (smoothed)
+
+```{r}
+for (s in states) {
+  p6_df <- data |> 
+    filter(STATE == s)
+  
+  gam_p6 <- gam(prop.to.baseline ~ te(CAL_YR, agegrouporder, fx = TRUE), 
+                data = p6_df, 
+                method = "REML")
+  
+  pred_grid <- expand.grid(CAL_YR = unique(p6_df$CAL_YR),
+                           agegrouporder = unique(data$agegrouporder)) |> 
+    left_join(data |> ungroup() |>  distinct(agegroup5yr, agegrouporder), by = "agegrouporder")
+  
+  pred_grid$fit <- predict(gam_p6, newdata = pred_grid, type = "response")
+  
+  p6 <- pred_grid |> 
+    ggplot(aes(x = CAL_YR, y = agegroup5yr, fill = fit)) +
+    geom_raster() +
+    scale_fill_gradient2(low = "#4575b4", mid = "#ffffbf", high = "#d73027", na.value = "lightgray") +
+    labs(
+      title = paste("Annual 19F compared to baseline (2006 - 2009, smoothed) in ", s),
+      x = "Year",
+      y = "Age Group",
+      fill = "19F cases/baseline cases (smoothed)"
+    ) +
+    theme_bw() +
+    theme(axis.text.x = element_text(angle = 45, hjust = 1))
+  
+  filename_p6 <- paste0("SmoothTilePlots/cases19ftobaseline_smoothed_", s, ".png")
+  ggsave(filename = filename_p6, plot = p6)
+  
+  plot_list[[s]] <- p6
+}
+
+combined_plot <- wrap_plots(plot_list, ncol = 4, nrow = 3)
+
+ggsave(here::here("SmoothTilePlots/cases19ftobaseline_smoothed_patchwork.png"),
+       plot = combined_plot,
+       width = 20, height = 15, dpi = 300)
+```
+
+## Proportion of 19F/total current / 19F/total baseline 19F cases (raw)
+
+```{r}
+for (s in states) {
+  p7_df <- data |> 
+    filter(STATE == s)
+
+  p7 <- p7_df |> 
+    ggplot(aes(x = CAL_YR, y = agegroup5yr, fill = prop.prop.to.baseline)) +
+    geom_raster() +
+    scale_fill_gradient2(low = "#4575b4", mid = "#ffffbf", high = "#d73027", na.value = "lightgray") +
+    labs(
+      title = paste("Prop 19F compared to baseline (2006 - 2009) in", s),
+      x = "Year",
+      y = "Age Group",
+      fill = "19F prop/baseline prop"
+    ) +
+    theme_bw() +
+    theme(axis.text.x = element_text(angle = 45, hjust = 1))
+  
+  filename_p7 <- paste0("SmoothTilePlots/prop19ftobaseline_raw_", s, ".png")
+  ggsave(filename = filename_p7, plot = p7)
+  
+  plot_list[[s]] <- p7
+}
+
+combined_plot <- wrap_plots(plot_list, ncol = 4, nrow = 3)
+
+ggsave(here::here("SmoothTilePlots/prop19ftobaseline_raw_patchwork.png"),
+       plot = combined_plot,
+       width = 20, height = 15, dpi = 300)
+```
+
+## Proportion of 19F/total current / 19F/total baseline 19F cases (smoothed)
+
+```{r}
+for (s in states) {
+  p8_df <- data |> 
+    filter(STATE == s)
+  
+  gam_p8 <- gam(prop.prop.to.baseline ~ te(CAL_YR, agegrouporder, fx = TRUE), 
+                data = p8_df, 
+                method = "REML")
+  
+  pred_grid <- expand.grid(CAL_YR = unique(p8_df$CAL_YR),
+                           agegrouporder = unique(data$agegrouporder)) |> 
+    left_join(data |> ungroup() |>  distinct(agegroup5yr, agegrouporder), by = "agegrouporder")
+  
+  pred_grid$fit <- predict(gam_p8, newdata = pred_grid, type = "response")
+  
+  p8 <- pred_grid |> 
+    ggplot(aes(x = CAL_YR, y = agegroup5yr, fill = fit)) +
+    geom_raster() +
+    scale_fill_gradient2(low = "#4575b4", mid = "#ffffbf", high = "#d73027", na.value = "lightgray") +
+    labs(
+      title = paste("Prop 19F compared to baseline (2006 - 2009, smoothed) in", s),
+      x = "Year",
+      y = "Age Group",
+      fill = "19F prop/baseline prop (smoothed)"
+    ) +
+    theme_bw() +
+    theme(axis.text.x = element_text(angle = 45, hjust = 1))
+  
+  filename_p8 <- paste0("SmoothTilePlots/prop19ftobaseline_smoothed_", s, ".png")
+  ggsave(filename = filename_p8, plot = p8)
+  
+  plot_list[[s]] <- p8
+}
+
+combined_plot <- wrap_plots(plot_list, ncol = 4, nrow = 3)
+
+ggsave(here::here("SmoothTilePlots/prop19ftobaseline_smoothed_patchwork.png"),
+       plot = combined_plot,
+       width = 20, height = 15, dpi = 300)
+```
