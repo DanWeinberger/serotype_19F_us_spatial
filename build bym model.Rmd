@@ -1,0 +1,287 @@
+---
+title: "bym mod structure"
+author: "Paloma Cárcamo"
+date: "2025-09-11"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+if (!require("pacman")) install.packages("pacman")
+# pacman::p_unload(pacman::p_loaded(), character.only = TRUE)
+pacman::p_load(tidyverse, sf, INLA, spdep, ggplot2, broom)
+```
+
+## Format census tract shp
+
+```{r}
+census_tracts <- read_sf("data/shapefiles/all_census_tracts.shp")
+
+ct_areas <- census_tracts |> 
+  filter(GEO_ID != "1400000US06075017902" &
+           GEO_ID != "1400000US06075980401") |> 
+  mutate(state = case_when(STATE == 35 ~ "NewMexico",
+                           STATE == 41 ~ "Oregon",
+                           STATE == "06" ~ "California",
+                           STATE == "08" ~ "Colorado",
+                           STATE == 27 ~ "Minnesota",
+                           STATE == 47 ~ "Tennessee",
+                           STATE == 13 ~ "Georgia",
+                           STATE == 24 ~ "Maryland",
+                           STATE == 36 ~ "New York",
+                           STATE == "09" ~ "Connecticut",
+                           .default = "check"),
+         area = case_when(STATE == 47 & COUNTY %in% c("021", "037", "043", "147", "149", "165", "187", "189") ~ "Tennessee_1",
+                          STATE == 47 & COUNTY == "065" ~ "Tennessee_2",
+                          STATE == 47 & COUNTY == "113" ~ "Tennessee_3",
+                          STATE == 47 & COUNTY == "157" ~ "Tennessee_4",
+                          STATE == 47 & COUNTY %in% c("001", "009", "057", "089", "093", "105", "145", "155", "173") ~ "Tennessee_5",
+                          STATE == 36 & COUNTY %in% c("037", "051", "055", "069", "073", "117", "123") ~ "NewYork_1",
+                          STATE == 36 & !COUNTY %in% c("037", "051", "055", "069", "073", "117", "123") ~ "NewYork_2",
+                          .default = state)) |> 
+  filter(area %in% c("NewMexico", "Oregon")) |> # Get rid of this line for real model
+  group_by(area) |> 
+  mutate(bym_id = row_number()) |> 
+  ungroup() |> 
+  pivot_wider(names_from = area, values_from = bym_id)
+```
+
+## Create dummy dataset
+
+```{r}
+years <- 2010:2015
+
+serotypes <- c("19F", "3")
+
+n_obs <- 15000
+
+set.seed(1234)
+
+data_dummy <- tibble(year = sample(years, n_obs, replace = TRUE),
+                     census_tract_full = sample(census_tracts$GEO_ID, n_obs, replace = TRUE),
+                     st = sample(serotypes, n_obs, replace = TRUE)) |> 
+  mutate(census_tract = substr(census_tract_full, 10, 20)) |> 
+  left_join(ct_areas, by = c("census_tract_full" = "GEO_ID")) |> 
+  filter(!is.na(NewMexico) | !is.na(Oregon))
+```
+
+## Clean dataset
+
+(would use data_raw instead of data_dummy for real analysis)
+
+```{r}
+data_raw <- read_csv("data/spn_dummy.csv") |> 
+  dplyr::select(year = CAL_YR, census_tract = GEO_CTNO2010, st = Final_Serotype)
+
+data <- data_dummy |> 
+  filter(!st %in% c("NF", "No DNA", "NO DNA", "Non-viable", "NON-VIABLE", "")) |> 
+  group_by(year, census_tract_full) |> 
+  summarise(n_ipd = n(),
+            n_19F = sum(st == "19F"), 
+            .groups = "drop") |> 
+  left_join(ct_areas |> st_drop_geometry(), by = c("census_tract_full" = "GEO_ID"))
+
+ct_areas_nogeom <- ct_areas |> 
+  st_drop_geometry()
+```
+
+## Create neighborhood and adjacency matrices
+
+```{r}
+# area_names <- c("NewMexico", "Oregon", "California", "Colorado", "Minnesota",
+#                 "Georgia", "Maryland", "Connecticut", "Tennessee_1", "Tennessee_2",
+#                 "Tennessee_3", "Tennessee_4", "Tennessee_5", "NewYork_1", "NewYork_2")
+area_names <- c("NewMexico", "Oregon")
+
+adj_mats <- list()
+
+for (area in area_names) {
+  
+  message("Processing ", area, " ...")
+  
+  shp_area <- ct_areas |> 
+    dplyr::filter(!is.na(.data[[area]]))
+  
+  nb <- poly2nb(shp_area)
+  
+  adj_mat_name <- paste0("data/adj_mat_", area, ".graph")
+  nb2INLA(file = adj_mat_name, nb = nb)
+  
+  adj_mats[[area]] <- inla.read.graph(adj_mat_name)
+}
+```
+
+## Binomial model
+
+```{r}
+# define formula
+f_terms <- lapply(area_names, function(area) {
+  paste0("f(", area, ", model='bym2', graph=adj_mats[['", area, "']])" #,
+    #", group=year, control.group=list(model='ar1'))"
+  )
+})
+
+f_mod1 <- as.formula(paste("n_19F ~ 1 + year +", 
+                           paste(f_terms, collapse = " + ")))
+
+# run mod (takes ~20 seconds for mod with just new mexico + oregon)
+out_mod1 <- inla(f_mod1,
+                 family = "binomial",
+                 data = data,
+                 Ntrials = data$n_ipd,
+                 control.predictor = list(compute = TRUE),
+                 control.compute = list(dic = TRUE, waic = TRUE),
+                 verbose = TRUE)
+
+summary(out_mod1)
+```
+### Plot effects
+
+u = besag
+v = iid 
+
+```{r}
+for (area in area_names) {
+  n_ids <- length(unique(ct_areas[[area]]))-1
+  sr <- out_mod1$summary.random[[area]] |> 
+    as_tibble() |> 
+    rename(ir_pre = ID, mean = mean, sd = sd,
+           lower = `0.025quant`, upper = `0.975quant`) |> 
+    mutate(ID = rep(1:n_ids, 2)) |> 
+    mutate(eff = rep(c("v+u", "u"), each = n_ids))
+  
+  join_df <- ct_areas |> 
+    select(GEO_ID, !!rlang::sym(area)) |> 
+    st_as_sf() |> 
+    rename(ID = !!rlang::sym(area))
+  
+  plot_sf <- join_df |> 
+    left_join(sr, by = "ID") |> 
+    filter(!is.na(mean))
+  
+  (p_mean <- ggplot(plot_sf) +
+    geom_sf(aes(fill = exp(mean)), color = NA) +
+    scale_fill_viridis_c(option = "viridis", na.value = "grey90") +
+    labs(title = paste0(area, " — BYM2 posterior mean"),
+         fill = "Posterior mean") +
+    facet_wrap(~eff) +
+    theme_minimal())
+  
+  print(p_mean)
+  
+  ggsave(filename = paste0("outputs/", "bym2_mod1_", area, ".png"),
+         plot = p_mean, width = 8, height = 6, dpi = 300)
+  
+}
+```
+```{r}
+# year
+fe_year_mod1 <- out_mod1$summary.fixed["year", ]
+beta_year_mod1 <- fe_year_mod1[, "mean"]
+beta_year_l_mod1 <- fe_year_mod1[, "0.025quant"]
+beta_year_u_mod1 <- fe_year_mod1[, "0.975quant"]
+
+or_df <- tibble(year = year_grid) |>
+  mutate(diff = year - t0,
+         effect = exp(beta_year_mod1 * diff),
+         lower  = exp(beta_year_l_mod1 * diff),
+         upper  = exp(beta_year_u_mod1 * diff))
+
+or_df |>
+  ggplot(aes(x = year, y = effect)) +
+  geom_line() +
+  geom_ribbon(aes(ymin = lower, ymax = upper), alpha = 0.2) +
+  geom_hline(yintercept = 1, linetype = 2, color = "red") +
+  labs(x = "Year",
+       y = "OR") +
+  theme_bw()
+```
+
+## Poisson model
+
+```{r}
+# define formula
+f_mod2 <- as.formula(paste("obs ~ -1 + Intercept + year +", 
+                           paste(f_terms, collapse = " + "), "+ offset(log(n_ipd+0.1))"))
+
+# create stack
+stack_mod2 <- inla.stack(data = list(obs = data$n_19F),
+                         A = list(1),
+                         effects = list(c(Intercept = 1,
+                                          data[, c(names(data) != "n_19F")])),
+                         tag = "stdata")
+
+# run mod (takes ~30sec for mod with just new mexico + oregon)
+out_mod2 <- inla(f_mod2,
+                 family = "poisson",
+                 data = inla.stack.data(stack_mod2),
+                 control.predictor = list(compute = TRUE),
+                 control.compute = list(config = TRUE, dic = TRUE, waic = TRUE),
+                 verbose = TRUE)
+
+summary(out_mod2)
+```
+
+### Plot effects
+
+u = besag
+v = iid 
+
+```{r}
+for (area in area_names) {
+  n_ids <- length(unique(ct_areas[[area]]))-1
+  sr <- out_mod2$summary.random[[area]] |> 
+    as_tibble() |> 
+    rename(ir_pre = ID, mean = mean, sd = sd,
+           lower = `0.025quant`, upper = `0.975quant`) |> 
+    mutate(ID = rep(1:n_ids, 2)) |> 
+    mutate(eff = rep(c("v+u", "u"), each = n_ids))
+  
+  join_df <- ct_areas |> 
+    select(GEO_ID, !!rlang::sym(area)) |> 
+    st_as_sf() |> 
+    rename(ID = !!rlang::sym(area))
+  
+  plot_sf <- join_df |> 
+    left_join(sr, by = "ID") |> 
+    filter(!is.na(mean))
+  
+  (p_mean <- ggplot(plot_sf) +
+    geom_sf(aes(fill = exp(mean)), color = NA) +
+    scale_fill_viridis_c(option = "viridis", na.value = "grey90") +
+    labs(title = paste0(area, " — BYM2 posterior mean"),
+         fill = "Posterior mean") +
+    facet_wrap(~eff) +
+    theme_minimal())
+  
+  print(p_mean)
+  
+  ggsave(filename = paste0("outputs/", "bym2_mod2", area, ".png"),
+         plot = p_mean, width = 8, height = 6, dpi = 300)
+  
+}
+```
+
+```{r}
+fe_year_mod2 <- out_mod2$summary.fixed["year", ]
+beta_year_mod2 <- fe_year_mod2[, "mean"]
+beta_year_l_mod2 <- fe_year_mod2[, "0.025quant"]
+beta_year_u_mod2 <- fe_year_mod2[, "0.975quant"]
+
+rr_df <- tibble(year = year_grid) |>
+  mutate(diff = year - t0,
+         effect = exp(beta_year_mod2 * diff),
+         lower  = exp(beta_year_l_mod2 * diff),
+         upper  = exp(beta_year_u_mod2 * diff))
+
+rr_df |>
+  ggplot(aes(x = year, y = effect)) +
+  geom_line() +
+  geom_ribbon(aes(ymin = lower, ymax = upper), alpha = 0.2) +
+  geom_hline(yintercept = 1, linetype = 2, color = "red") +
+  labs(x = "Year",
+       y = "RR") +
+  theme_bw()
+```
+
