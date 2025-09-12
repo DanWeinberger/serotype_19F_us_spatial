@@ -1,0 +1,21 @@
+---
+title: "compile colorado immunization data"
+author: "Paloma Cárcamo"
+date: "2025-09-12"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+if (!require("pacman")) install.packages("pacman")
+pacman::p_load(readxl, dplyr, stringr)
+```
+
+```{r}
+files <- list.files("data/", pattern = "^CO_Child_Rates.*\\.xlsx$", full.names = TRUE)
+
+all_data <- files |>
+  lapply(read_excel) |>
+  bind_rows()
+
+write_csv(all_data, "data/combined_CO_Child_Rates.csv")
+```
