@@ -6,8 +6,10 @@ output: html_document
 
 ```{r}
 if (!require("pacman")) install.packages("pacman")
-pacman::p_load(tidyverse, mgcv, patchwork)
+pacman::p_load(tidyverse, mgcv, patchwork, spdep)
 ```
+
+## Preprocess data
 
 ```{r}
 data_raw <- read_csv("path-to-data")
@@ -345,4 +347,86 @@ combined_plot <- wrap_plots(plot_list, ncol = 4, nrow = 3)
 ggsave(here::here("SmoothTilePlots/prop19ftobaseline_smoothed_patchwork.png"),
        plot = combined_plot,
        width = 20, height = 15, dpi = 300)
+```
+
+## Test with BYM smoothing
+
+```{r}
+data_mrf <- data_raw |> 
+  mutate(agegroup5yr = cut(AGEYRS,
+                           breaks = seq(0, 100, by = 5),
+                           right = FALSE,
+                           labels = paste(seq(0, 95, by = 5), seq(4, 99, by = 5), sep = "-"))) |> 
+  group_by(CAL_YR, agegroup5yr) |> 
+  filter(!Final_Serotype %in% c("NF", "No DNA", "NO DNA", "Non-viable", "NON-VIABLE", "")) |> 
+  summarize(N_IPD = n(), 
+            N_19F = sum(Final_Serotype == "19F")) |> 
+  mutate(prop.19F =(N_19F/ N_IPD),
+         agegrouporder = as.numeric(agegroup5yr))
+```
+
+```{r}
+grid_df <- expand.grid(
+  CAL_YR = unique(data_mrf$CAL_YR),
+  agegrouporder = seq_along(unique(data_mrf$agegroup5yr))
+)
+
+make_square <- function(x, y) {
+  st_polygon(list(matrix(
+    c(
+      x,   y,
+      x+1, y,
+      x+1, y+1,
+      x,   y+1,
+      x,   y
+    ),
+    ncol = 2,
+    byrow = TRUE
+  )))
+}
+
+grid_sf <- grid_df |> 
+  rowwise() |> 
+  mutate(geometry = st_sfc(make_square(CAL_YR, agegrouporder))) |> 
+  ungroup() |> 
+  st_as_sf() |> 
+  arrange(CAL_YR, agegrouporder) |> 
+  mutate(region.id = factor(row_number()))
+
+nb <- poly2nb(grid_sf, queen = FALSE)
+names(nb) <- grid_sf$region.id
+
+bym_mod_df <- data_mrf |> 
+  left_join(grid_sf |> st_drop_geometry(), by = c("CAL_YR", "agegrouporder")) |> 
+  ungroup()
+
+gam_mrf <- gam(prop.19F ~ s(region.id, bs = "mrf", xt = list(nb = nb)) +
+                s(region.id, bs = "re"),
+               data = bym_mod_df, 
+               method = "REML")
+
+pred_grid <- grid_sf |>
+  st_drop_geometry() |>
+  left_join(data_mrf |> distinct(agegroup5yr, agegrouporder), 
+            by = "agegrouporder")
+
+pred_grid$fit <- predict(gam_mrf, newdata = pred_grid, type = "response")
+```
+
+```{r}
+pred_grid |>
+  ggplot(aes(x = CAL_YR, y = agegroup5yr, fill = fit)) +
+  geom_raster() +
+  scale_fill_gradient2(
+    low = "#4575b4", mid = "#ffffbf", high = "#d73027", 
+    na.value = "lightgray"
+  ) +
+  labs(
+    title = "Prop 19F (mrf+re smoothed)",
+    x = "Year",
+    y = "Age Group",
+    fill = "19F prop (smoothed)"
+  ) +
+  theme_classic() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
 ```

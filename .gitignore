@@ -9,3 +9,4 @@ data/shapefiles/tl_2010_us_state10.shp
 data/shapefiles/tl_2010_us_state10.shx
 data/shapefiles/tl_2010_us_state10.shp.xml
 02_small bym mod.R
+bash mrf.Rmd
