@@ -10,6 +10,9 @@ knitr::opts_chunk$set(echo = TRUE)
 
 if (!require("pacman")) install.packages("pacman")
 # pacman::p_unload(pacman::p_loaded(), character.only = TRUE)
+
+# if INLA has not been previously installed, run following line
+# install.packages("INLA",repos=c(getOption("repos"),INLA="https://inla.r-inla-download.org/R/stable"), dep=TRUE)
 pacman::p_load(tidyverse, sf, INLA, spdep, ggplot2, broom)
 ```
 
@@ -284,4 +287,3 @@ rr_df |>
        y = "RR") +
   theme_bw()
 ```
-

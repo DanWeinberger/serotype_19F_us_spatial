@@ -34,8 +34,8 @@ baseline_data <- data_pre |>
 data <- data_pre |> 
   filter(CAL_YR >= 2010) |> 
   left_join(baseline_data, by = c("agegroup5yr", "STATE"))  |> 
-  mutate(prop.to.baseline = N_19F / N_19Fbaseline,
-         prop.prop.to.baseline = (N_19F / (N_IPD + 0.05) / (N_19Fbaseline / (N_IPDbaseline + 0.05))))
+  mutate(prop.to.baseline = N_19F / (N_19Fbaseline + 0.05),
+         prop.prop.to.baseline = (N_19F / (N_IPD + 0.05)) / ((N_19Fbaseline + 0.05) / (N_IPDbaseline + 0.05)))
 ```
 
 ```{r}
