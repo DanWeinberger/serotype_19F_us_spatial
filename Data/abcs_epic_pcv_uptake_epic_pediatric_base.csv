@@ -1,0 +1,726 @@
+county_name,age,pct_pcv
+"BIG STONE, MN",Less than 1,-
+,? 1 and < 2,-
+,? 2 and < 3,100%
+,? 3 and < 4,-
+,"Total: Total includes all data under the BIG STONE, MN bucket, including data from rows not currently displayed.",28.4%
+"CLATSOP, OR",Less than 1,-
+,? 1 and < 2,-
+,? 2 and < 3,-
+,? 3 and < 4,-
+,"Total: Total includes all data under the CLATSOP, OR bucket, including data from rows not currently displayed.",28.1%
+"GILPIN, CO",Less than 1,-
+,? 1 and < 2,-
+,? 2 and < 3,-
+,? 3 and < 4,-
+,"Total: Total includes all data under the GILPIN, CO bucket, including data from rows not currently displayed.",29.6%
+"HUERFANO, CO",Less than 1,-
+,? 1 and < 2,-
+,? 2 and < 3,-
+,? 3 and < 4,-
+,"Total: Total includes all data under the HUERFANO, CO bucket, including data from rows not currently displayed.",-
+"OLMSTED, MN",Less than 1,-
+,? 1 and < 2,-
+,? 2 and < 3,-
+,? 3 and < 4,92.9%
+,"Total: Total includes all data under the OLMSTED, MN bucket, including data from rows not currently displayed.",35.8%
+"YUMA, CO",Less than 1,-
+,? 1 and < 2,-
+,? 2 and < 3,-
+,? 3 and < 4,-
+,"Total: Total includes all data under the YUMA, CO bucket, including data from rows not currently displayed.",40.7%
+"DOUGLAS, OR",Less than 1,47.2%
+,? 1 and < 2,91.3%
+,? 2 and < 3,75.9%
+,? 3 and < 4,84.2%
+,"Total: Total includes all data under the DOUGLAS, OR bucket, including data from rows not currently displayed.",25.6%
+"ISANTI, MN",Less than 1,55.4%
+,? 1 and < 2,78.5%
+,? 2 and < 3,88.6%
+,? 3 and < 4,94.2%
+,"Total: Total includes all data under the ISANTI, MN bucket, including data from rows not currently displayed.",30.5%
+"MARSHALL, MN",Less than 1,59.6%
+,? 1 and < 2,84.5%
+,? 2 and < 3,88.7%
+,? 3 and < 4,89.7%
+,"Total: Total includes all data under the MARSHALL, MN bucket, including data from rows not currently displayed.",23.4%
+"MESA, CO",Less than 1,50.4%
+,? 1 and < 2,55.9%
+,? 2 and < 3,72.7%
+,? 3 and < 4,83.7%
+,"Total: Total includes all data under the MESA, CO bucket, including data from rows not currently displayed.",27.5%
+"EAGLE, CO",Less than 1,-
+,? 1 and < 2,-
+,? 2 and < 3,100%
+,? 3 and < 4,-
+,"Total: Total includes all data under the EAGLE, CO bucket, including data from rows not currently displayed.",33.3%
+"GOODHUE, MN",Less than 1,-
+,? 1 and < 2,-
+,? 2 and < 3,-
+,? 3 and < 4,-
+,"Total: Total includes all data under the GOODHUE, MN bucket, including data from rows not currently displayed.",24.8%
+"LAC QUI PARLE, MN",Less than 1,-
+,? 1 and < 2,-
+,? 2 and < 3,91.7%
+,? 3 and < 4,-
+,"Total: Total includes all data under the LAC QUI PARLE, MN bucket, including data from rows not currently displayed.",31.1%
+"PINE, MN",Less than 1,64.5%
+,? 1 and < 2,93.3%
+,? 2 and < 3,85.9%
+,? 3 and < 4,97.1%
+,"Total: Total includes all data under the PINE, MN bucket, including data from rows not currently displayed.",33.2%
+"MALHEUR, OR",Less than 1,74.3%
+,? 1 and < 2,91%
+,? 2 and < 3,91.4%
+,? 3 and < 4,95.2%
+,"Total: Total includes all data under the MALHEUR, OR bucket, including data from rows not currently displayed.",32.4%
+"ROCK, MN",Less than 1,65.9%
+,? 1 and < 2,88.2%
+,? 2 and < 3,89.8%
+,? 3 and < 4,93.3%
+,"Total: Total includes all data under the ROCK, MN bucket, including data from rows not currently displayed.",18.8%
+"MAHNOMEN, MN",Less than 1,58.1%
+,? 1 and < 2,75.7%
+,? 2 and < 3,95.9%
+,? 3 and < 4,97.8%
+,"Total: Total includes all data under the MAHNOMEN, MN bucket, including data from rows not currently displayed.",27.9%
+"MOFFAT, CO",Less than 1,68.2%
+,? 1 and < 2,83.1%
+,? 2 and < 3,83.2%
+,? 3 and < 4,91.6%
+,"Total: Total includes all data under the MOFFAT, CO bucket, including data from rows not currently displayed.",30.6%
+"MORROW, OR",Less than 1,78.8%
+,? 1 and < 2,92.5%
+,? 2 and < 3,96.9%
+,? 3 and < 4,98.6%
+,"Total: Total includes all data under the MORROW, OR bucket, including data from rows not currently displayed.",36.8%
+"WADENA, MN",Less than 1,52%
+,? 1 and < 2,64.3%
+,? 2 and < 3,72.5%
+,? 3 and < 4,86.5%
+,"Total: Total includes all data under the WADENA, MN bucket, including data from rows not currently displayed.",25.4%
+"HARNEY, OR",Less than 1,50.9%
+,? 1 and < 2,70.8%
+,? 2 and < 3,77.8%
+,? 3 and < 4,86.4%
+,"Total: Total includes all data under the HARNEY, OR bucket, including data from rows not currently displayed.",30.1%
+"CROOK, OR",Less than 1,64%
+,? 1 and < 2,80.3%
+,? 2 and < 3,83%
+,? 3 and < 4,89.7%
+,"Total: Total includes all data under the CROOK, OR bucket, including data from rows not currently displayed.",26.7%
+"HOOD RIVER, OR",Less than 1,77.3%
+,? 1 and < 2,89.1%
+,? 2 and < 3,93.3%
+,? 3 and < 4,86.8%
+,"Total: Total includes all data under the HOOD RIVER, OR bucket, including data from rows not currently displayed.",27.5%
+"ARAPAHOE, CO",Less than 1,78.6%
+,? 1 and < 2,94.6%
+,? 2 and < 3,96.3%
+,? 3 and < 4,96.5%
+,"Total: Total includes all data under the ARAPAHOE, CO bucket, including data from rows not currently displayed.",33.6%
+"COOS, OR",Less than 1,64.9%
+,? 1 and < 2,85.2%
+,? 2 and < 3,91.3%
+,? 3 and < 4,89.2%
+,"Total: Total includes all data under the COOS, OR bucket, including data from rows not currently displayed.",33.3%
+"MILLE LACS, MN",Less than 1,62.5%
+,? 1 and < 2,81.1%
+,? 2 and < 3,88.8%
+,? 3 and < 4,90.6%
+,"Total: Total includes all data under the MILLE LACS, MN bucket, including data from rows not currently displayed.",27.4%
+"ROSEAU, MN",Less than 1,63%
+,? 1 and < 2,87.7%
+,? 2 and < 3,88.8%
+,? 3 and < 4,87.8%
+,"Total: Total includes all data under the ROSEAU, MN bucket, including data from rows not currently displayed.",31.1%
+"UMATILLA, OR",Less than 1,72.3%
+,? 1 and < 2,90.2%
+,? 2 and < 3,97.4%
+,? 3 and < 4,98%
+,"Total: Total includes all data under the UMATILLA, OR bucket, including data from rows not currently displayed.",37.3%
+"WASCO, OR",Less than 1,63.6%
+,? 1 and < 2,84.1%
+,? 2 and < 3,92.7%
+,? 3 and < 4,85.9%
+,"Total: Total includes all data under the WASCO, OR bucket, including data from rows not currently displayed.",29.5%
+"ANOKA, MN",Less than 1,70.1%
+,? 1 and < 2,89.7%
+,? 2 and < 3,90.7%
+,? 3 and < 4,92.9%
+,"Total: Total includes all data under the ANOKA, MN bucket, including data from rows not currently displayed.",28.2%
+"JEFFERSON, OR",Less than 1,66.3%
+,? 1 and < 2,84.5%
+,? 2 and < 3,91.5%
+,? 3 and < 4,93.7%
+,"Total: Total includes all data under the JEFFERSON, OR bucket, including data from rows not currently displayed.",29.6%
+"WELD, CO",Less than 1,73.4%
+,? 1 and < 2,91.2%
+,? 2 and < 3,93.4%
+,? 3 and < 4,94.6%
+,"Total: Total includes all data under the WELD, CO bucket, including data from rows not currently displayed.",31.7%
+"CHISAGO, MN",Less than 1,64.3%
+,? 1 and < 2,88.5%
+,? 2 and < 3,90.1%
+,? 3 and < 4,94.5%
+,"Total: Total includes all data under the CHISAGO, MN bucket, including data from rows not currently displayed.",27.9%
+"LANE, OR",Less than 1,67%
+,? 1 and < 2,87.1%
+,? 2 and < 3,87.5%
+,? 3 and < 4,89.9%
+,"Total: Total includes all data under the LANE, OR bucket, including data from rows not currently displayed.",27%
+"ADAMS, CO",Less than 1,77.2%
+,? 1 and < 2,94.3%
+,? 2 and < 3,93.9%
+,? 3 and < 4,96.2%
+,"Total: Total includes all data under the ADAMS, CO bucket, including data from rows not currently displayed.",33.3%
+"CLEARWATER, MN",Less than 1,55.3%
+,? 1 and < 2,76.6%
+,? 2 and < 3,91.3%
+,? 3 and < 4,90.4%
+,"Total: Total includes all data under the CLEARWATER, MN bucket, including data from rows not currently displayed.",22.2%
+"LAKE, OR",Less than 1,63.2%
+,? 1 and < 2,71.4%
+,? 2 and < 3,77.4%
+,? 3 and < 4,74.1%
+,"Total: Total includes all data under the LAKE, OR bucket, including data from rows not currently displayed.",27.7%
+"MARTIN, MN",Less than 1,66.7%
+,? 1 and < 2,91%
+,? 2 and < 3,93.2%
+,? 3 and < 4,89.6%
+,"Total: Total includes all data under the MARTIN, MN bucket, including data from rows not currently displayed.",27.6%
+"RICE, MN",Less than 1,75%
+,? 1 and < 2,88.9%
+,? 2 and < 3,90.3%
+,? 3 and < 4,90.9%
+,"Total: Total includes all data under the RICE, MN bucket, including data from rows not currently displayed.",40%
+"STEVENS, MN",Less than 1,-
+,? 1 and < 2,91.3%
+,? 2 and < 3,95.2%
+,? 3 and < 4,100%
+,"Total: Total includes all data under the STEVENS, MN bucket, including data from rows not currently displayed.",22.5%
+"SUMMIT, CO",Less than 1,-
+,? 1 and < 2,90.9%
+,? 2 and < 3,-
+,? 3 and < 4,-
+,"Total: Total includes all data under the SUMMIT, CO bucket, including data from rows not currently displayed.",43%
+"TRAVERSE, MN",Less than 1,95%
+,? 1 and < 2,100%
+,? 2 and < 3,100%
+,? 3 and < 4,94.1%
+,"Total: Total includes all data under the TRAVERSE, MN bucket, including data from rows not currently displayed.",22.1%
+"UNION, OR",Less than 1,-
+,? 1 and < 2,-
+,? 2 and < 3,87.5%
+,? 3 and < 4,91.7%
+,"Total: Total includes all data under the UNION, OR bucket, including data from rows not currently displayed.",35.7%
+"YAMHILL, OR",Less than 1,72.5%
+,? 1 and < 2,88%
+,? 2 and < 3,92.9%
+,? 3 and < 4,91.9%
+,"Total: Total includes all data under the YAMHILL, OR bucket, including data from rows not currently displayed.",30.6%
+"MARION, OR",Less than 1,56.4%
+,? 1 and < 2,77.4%
+,? 2 and < 3,82.1%
+,? 3 and < 4,88.1%
+,"Total: Total includes all data under the MARION, OR bucket, including data from rows not currently displayed.",27.3%
+"LINN, OR",Less than 1,69.4%
+,? 1 and < 2,86.5%
+,? 2 and < 3,86%
+,? 3 and < 4,89.8%
+,"Total: Total includes all data under the LINN, OR bucket, including data from rows not currently displayed.",27.6%
+"DENVER, CO",Less than 1,80.8%
+,? 1 and < 2,96%
+,? 2 and < 3,95.9%
+,? 3 and < 4,96.4%
+,"Total: Total includes all data under the DENVER, CO bucket, including data from rows not currently displayed.",30.7%
+"HENNEPIN, MN",Less than 1,74.3%
+,? 1 and < 2,91.7%
+,? 2 and < 3,91.9%
+,? 3 and < 4,93.8%
+,"Total: Total includes all data under the HENNEPIN, MN bucket, including data from rows not currently displayed.",33.9%
+"MULTNOMAH, OR",Less than 1,74.4%
+,? 1 and < 2,90.3%
+,? 2 and < 3,91%
+,? 3 and < 4,92.6%
+,"Total: Total includes all data under the MULTNOMAH, OR bucket, including data from rows not currently displayed.",30.3%
+"WASHINGTON, OR",Less than 1,77.7%
+,? 1 and < 2,94.3%
+,? 2 and < 3,95.1%
+,? 3 and < 4,95.7%
+,"Total: Total includes all data under the WASHINGTON, OR bucket, including data from rows not currently displayed.",29.3%
+"RAMSEY, MN",Less than 1,75%
+,? 1 and < 2,94.8%
+,? 2 and < 3,95.5%
+,? 3 and < 4,96%
+,"Total: Total includes all data under the RAMSEY, MN bucket, including data from rows not currently displayed.",33.6%
+"EL PASO, CO",Less than 1,66.7%
+,? 1 and < 2,81.3%
+,? 2 and < 3,84%
+,? 3 and < 4,85.4%
+,"Total: Total includes all data under the EL PASO, CO bucket, including data from rows not currently displayed.",29.7%
+"PUEBLO, CO",Less than 1,56.1%
+,? 1 and < 2,75.9%
+,? 2 and < 3,92.5%
+,? 3 and < 4,96.9%
+,"Total: Total includes all data under the PUEBLO, CO bucket, including data from rows not currently displayed.",29.5%
+"LINCOLN, OR",Less than 1,69.4%
+,? 1 and < 2,85.9%
+,? 2 and < 3,90.4%
+,? 3 and < 4,90.3%
+,"Total: Total includes all data under the LINCOLN, OR bucket, including data from rows not currently displayed.",29.2%
+"BELTRAMI, MN",Less than 1,64.3%
+,? 1 and < 2,86.4%
+,? 2 and < 3,90.8%
+,? 3 and < 4,91.4%
+,"Total: Total includes all data under the BELTRAMI, MN bucket, including data from rows not currently displayed.",21.4%
+"BROOMFIELD, CO",Less than 1,74.1%
+,? 1 and < 2,91.6%
+,? 2 and < 3,97.9%
+,? 3 and < 4,93.3%
+,"Total: Total includes all data under the BROOMFIELD, CO bucket, including data from rows not currently displayed.",33.8%
+"DESCHUTES, OR",Less than 1,67.2%
+,? 1 and < 2,86.5%
+,? 2 and < 3,89.2%
+,? 3 and < 4,90.7%
+,"Total: Total includes all data under the DESCHUTES, OR bucket, including data from rows not currently displayed.",26.9%
+"FARIBAULT, MN",Less than 1,75.9%
+,? 1 and < 2,82.1%
+,? 2 and < 3,97.1%
+,? 3 and < 4,91.1%
+,"Total: Total includes all data under the FARIBAULT, MN bucket, including data from rows not currently displayed.",18.8%
+"TILLAMOOK, OR",Less than 1,-
+,? 1 and < 2,89.5%
+,? 2 and < 3,96%
+,? 3 and < 4,83.9%
+,"Total: Total includes all data under the TILLAMOOK, OR bucket, including data from rows not currently displayed.",17%
+"WALLOWA, OR",Less than 1,71%
+,? 1 and < 2,72%
+,? 2 and < 3,84.2%
+,? 3 and < 4,88.4%
+,"Total: Total includes all data under the WALLOWA, OR bucket, including data from rows not currently displayed.",25%
+"BOULDER, CO",Less than 1,74.7%
+,? 1 and < 2,93.4%
+,? 2 and < 3,95.5%
+,? 3 and < 4,94.9%
+,"Total: Total includes all data under the BOULDER, CO bucket, including data from rows not currently displayed.",32%
+"CROW WING, MN",Less than 1,62.7%
+,? 1 and < 2,83.2%
+,? 2 and < 3,86.9%
+,? 3 and < 4,90.4%
+,"Total: Total includes all data under the CROW WING, MN bucket, including data from rows not currently displayed.",25.2%
+"DAKOTA, MN",Less than 1,74.6%
+,? 1 and < 2,91.5%
+,? 2 and < 3,93.7%
+,? 3 and < 4,91.9%
+,"Total: Total includes all data under the DAKOTA, MN bucket, including data from rows not currently displayed.",29.7%
+"POLK, MN",Less than 1,67.5%
+,? 1 and < 2,87%
+,? 2 and < 3,88.8%
+,? 3 and < 4,89.8%
+,"Total: Total includes all data under the POLK, MN bucket, including data from rows not currently displayed.",23.8%
+"CLAY, MN",Less than 1,72%
+,? 1 and < 2,91.3%
+,? 2 and < 3,93.7%
+,? 3 and < 4,94.4%
+,"Total: Total includes all data under the CLAY, MN bucket, including data from rows not currently displayed.",21.3%
+"CARLTON, MN",Less than 1,75.3%
+,? 1 and < 2,91.9%
+,? 2 and < 3,93.6%
+,? 3 and < 4,96.8%
+,"Total: Total includes all data under the CARLTON, MN bucket, including data from rows not currently displayed.",29.6%
+"WASHINGTON, MN",Less than 1,70.5%
+,? 1 and < 2,93.7%
+,? 2 and < 3,94.4%
+,? 3 and < 4,96.3%
+,"Total: Total includes all data under the WASHINGTON, MN bucket, including data from rows not currently displayed.",26.4%
+"JEFFERSON, CO",Less than 1,74.7%
+,? 1 and < 2,91.9%
+,? 2 and < 3,94.6%
+,? 3 and < 4,95.9%
+,"Total: Total includes all data under the JEFFERSON, CO bucket, including data from rows not currently displayed.",30.1%
+"HOUSTON, MN",Less than 1,67%
+,? 1 and < 2,91.3%
+,? 2 and < 3,96.2%
+,? 3 and < 4,90.7%
+,"Total: Total includes all data under the HOUSTON, MN bucket, including data from rows not currently displayed.",24.4%
+"KITTSON, MN",Less than 1,61.5%
+,? 1 and < 2,85.7%
+,? 2 and < 3,93.8%
+,? 3 and < 4,93.9%
+,"Total: Total includes all data under the KITTSON, MN bucket, including data from rows not currently displayed.",24.1%
+"LYON, MN",Less than 1,70%
+,? 1 and < 2,92.1%
+,? 2 and < 3,88%
+,? 3 and < 4,97.3%
+,"Total: Total includes all data under the LYON, MN bucket, including data from rows not currently displayed.",18.1%
+"MORGAN, CO",Less than 1,69%
+,? 1 and < 2,82.1%
+,? 2 and < 3,92.3%
+,? 3 and < 4,93.9%
+,"Total: Total includes all data under the MORGAN, CO bucket, including data from rows not currently displayed.",32.9%
+"REDWOOD, MN",Less than 1,80%
+,? 1 and < 2,87%
+,? 2 and < 3,85.9%
+,? 3 and < 4,92.6%
+,"Total: Total includes all data under the REDWOOD, MN bucket, including data from rows not currently displayed.",21%
+"TELLER, CO",Less than 1,40.5%
+,? 1 and < 2,71.1%
+,? 2 and < 3,75%
+,? 3 and < 4,68.2%
+,"Total: Total includes all data under the TELLER, CO bucket, including data from rows not currently displayed.",23.8%
+"WRIGHT, MN",Less than 1,63.5%
+,? 1 and < 2,82.1%
+,? 2 and < 3,91%
+,? 3 and < 4,91.5%
+,"Total: Total includes all data under the WRIGHT, MN bucket, including data from rows not currently displayed.",24.6%
+"LARIMER, CO",Less than 1,74.4%
+,? 1 and < 2,91.3%
+,? 2 and < 3,92.6%
+,? 3 and < 4,95.1%
+,"Total: Total includes all data under the LARIMER, CO bucket, including data from rows not currently displayed.",28.1%
+"BECKER, MN",Less than 1,63.7%
+,? 1 and < 2,81.2%
+,? 2 and < 3,86.8%
+,? 3 and < 4,86.9%
+,"Total: Total includes all data under the BECKER, MN bucket, including data from rows not currently displayed.",21.6%
+"HUBBARD, MN",Less than 1,70%
+,? 1 and < 2,79.4%
+,? 2 and < 3,81.7%
+,? 3 and < 4,86.8%
+,"Total: Total includes all data under the HUBBARD, MN bucket, including data from rows not currently displayed.",22.3%
+"SAINT LOUIS, MN",Less than 1,71.1%
+,? 1 and < 2,89.5%
+,? 2 and < 3,92.3%
+,? 3 and < 4,94.4%
+,"Total: Total includes all data under the SAINT LOUIS, MN bucket, including data from rows not currently displayed.",28%
+"SCOTT, MN",Less than 1,74%
+,? 1 and < 2,90.7%
+,? 2 and < 3,86.1%
+,? 3 and < 4,92.3%
+,"Total: Total includes all data under the SCOTT, MN bucket, including data from rows not currently displayed.",28.1%
+"STEARNS, MN",Less than 1,72%
+,? 1 and < 2,90.2%
+,? 2 and < 3,92.6%
+,? 3 and < 4,94.6%
+,"Total: Total includes all data under the STEARNS, MN bucket, including data from rows not currently displayed.",21.1%
+"DOUGLAS, CO",Less than 1,69.9%
+,? 1 and < 2,95.1%
+,? 2 and < 3,95.7%
+,? 3 and < 4,97.8%
+,"Total: Total includes all data under the DOUGLAS, CO bucket, including data from rows not currently displayed.",27%
+"COLUMBIA, OR",Less than 1,67.6%
+,? 1 and < 2,86.2%
+,? 2 and < 3,91.8%
+,? 3 and < 4,88.3%
+,"Total: Total includes all data under the COLUMBIA, OR bucket, including data from rows not currently displayed.",29.9%
+"MORRISON, MN",Less than 1,61.3%
+,? 1 and < 2,87%
+,? 2 and < 3,89.7%
+,? 3 and < 4,92.7%
+,"Total: Total includes all data under the MORRISON, MN bucket, including data from rows not currently displayed.",26.3%
+"PENNINGTON, MN",Less than 1,77.3%
+,? 1 and < 2,84.8%
+,? 2 and < 3,92.9%
+,? 3 and < 4,94.2%
+,"Total: Total includes all data under the PENNINGTON, MN bucket, including data from rows not currently displayed.",23%
+"CLACKAMAS, OR",Less than 1,66.8%
+,? 1 and < 2,85.2%
+,? 2 and < 3,88.5%
+,? 3 and < 4,91.2%
+,"Total: Total includes all data under the CLACKAMAS, OR bucket, including data from rows not currently displayed.",25%
+"JACKSON, OR",Less than 1,61.6%
+,? 1 and < 2,82.9%
+,? 2 and < 3,86.8%
+,? 3 and < 4,84.8%
+,"Total: Total includes all data under the JACKSON, OR bucket, including data from rows not currently displayed.",25.5%
+"BENTON, OR",Less than 1,76.1%
+,? 1 and < 2,89.5%
+,? 2 and < 3,89%
+,? 3 and < 4,89.1%
+,"Total: Total includes all data under the BENTON, OR bucket, including data from rows not currently displayed.",26.5%
+"OTTER TAIL, MN",Less than 1,65.8%
+,? 1 and < 2,83.7%
+,? 2 and < 3,87%
+,? 3 and < 4,89.8%
+,"Total: Total includes all data under the OTTER TAIL, MN bucket, including data from rows not currently displayed.",20.4%
+"CHIPPEWA, MN",Less than 1,62.9%
+,? 1 and < 2,82.8%
+,? 2 and < 3,95%
+,? 3 and < 4,93.9%
+,"Total: Total includes all data under the CHIPPEWA, MN bucket, including data from rows not currently displayed.",24.7%
+"DOUGLAS, MN",Less than 1,64.8%
+,? 1 and < 2,91.3%
+,? 2 and < 3,87.3%
+,? 3 and < 4,94.9%
+,"Total: Total includes all data under the DOUGLAS, MN bucket, including data from rows not currently displayed.",17.9%
+"KLAMATH, OR",Less than 1,70.1%
+,? 1 and < 2,85.8%
+,? 2 and < 3,86.5%
+,? 3 and < 4,88.9%
+,"Total: Total includes all data under the KLAMATH, OR bucket, including data from rows not currently displayed.",18.9%
+"LAKE, MN",Less than 1,69.2%
+,? 1 and < 2,87.9%
+,? 2 and < 3,95.2%
+,? 3 and < 4,92%
+,"Total: Total includes all data under the LAKE, MN bucket, including data from rows not currently displayed.",28.5%
+"NOBLES, MN",Less than 1,71.9%
+,? 1 and < 2,96%
+,? 2 and < 3,95%
+,? 3 and < 4,97.2%
+,"Total: Total includes all data under the NOBLES, MN bucket, including data from rows not currently displayed.",24.8%
+"RED LAKE, MN",Less than 1,69.6%
+,? 1 and < 2,87.5%
+,? 2 and < 3,92.3%
+,? 3 and < 4,100%
+,"Total: Total includes all data under the RED LAKE, MN bucket, including data from rows not currently displayed.",20.7%
+"ROUTT, CO",Less than 1,69.9%
+,? 1 and < 2,87.1%
+,? 2 and < 3,93.3%
+,? 3 and < 4,94.1%
+,"Total: Total includes all data under the ROUTT, CO bucket, including data from rows not currently displayed.",29.7%
+"CASS, MN",Less than 1,56.7%
+,? 1 and < 2,77.8%
+,? 2 and < 3,80.8%
+,? 3 and < 4,88.1%
+,"Total: Total includes all data under the CASS, MN bucket, including data from rows not currently displayed.",26.8%
+"BENTON, MN",Less than 1,68%
+,? 1 and < 2,89.9%
+,? 2 and < 3,91%
+,? 3 and < 4,93.5%
+,"Total: Total includes all data under the BENTON, MN bucket, including data from rows not currently displayed.",20.4%
+"ITASCA, MN",Less than 1,61%
+,? 1 and < 2,83.7%
+,? 2 and < 3,86.2%
+,? 3 and < 4,89.3%
+,"Total: Total includes all data under the ITASCA, MN bucket, including data from rows not currently displayed.",26.6%
+"SHERBURNE, MN",Less than 1,68.7%
+,? 1 and < 2,86.4%
+,? 2 and < 3,88%
+,? 3 and < 4,91.3%
+,"Total: Total includes all data under the SHERBURNE, MN bucket, including data from rows not currently displayed.",20.8%
+"TODD, MN",Less than 1,67.2%
+,? 1 and < 2,87.8%
+,? 2 and < 3,94.4%
+,? 3 and < 4,93.1%
+,"Total: Total includes all data under the TODD, MN bucket, including data from rows not currently displayed.",23.8%
+"AITKIN, MN",Less than 1,78.8%
+,? 1 and < 2,87.3%
+,? 2 and < 3,91.3%
+,? 3 and < 4,91.4%
+,"Total: Total includes all data under the AITKIN, MN bucket, including data from rows not currently displayed.",31.5%
+"CARVER, MN",Less than 1,-
+,? 1 and < 2,92.6%
+,? 2 and < 3,97.1%
+,? 3 and < 4,100%
+,"Total: Total includes all data under the CARVER, MN bucket, including data from rows not currently displayed.",29.2%
+"RENVILLE, MN",Less than 1,59.3%
+,? 1 and < 2,90.7%
+,? 2 and < 3,91.4%
+,? 3 and < 4,92.9%
+,"Total: Total includes all data under the RENVILLE, MN bucket, including data from rows not currently displayed.",23.5%
+"MEEKER, MN",Less than 1,59.6%
+,? 1 and < 2,85%
+,? 2 and < 3,85.7%
+,? 3 and < 4,95.7%
+,"Total: Total includes all data under the MEEKER, MN bucket, including data from rows not currently displayed.",19.7%
+"KANDIYOHI, MN",Less than 1,73.6%
+,? 1 and < 2,90%
+,? 2 and < 3,90.5%
+,? 3 and < 4,93.6%
+,"Total: Total includes all data under the KANDIYOHI, MN bucket, including data from rows not currently displayed.",21.7%
+"YELLOW MEDICINE, MN",Less than 1,79.2%
+,? 1 and < 2,89.3%
+,? 2 and < 3,88.4%
+,? 3 and < 4,100%
+,"Total: Total includes all data under the YELLOW MEDICINE, MN bucket, including data from rows not currently displayed.",20%
+"BAKER, OR",Less than 1,65.1%
+,? 1 and < 2,79.4%
+,? 2 and < 3,83.3%
+,? 3 and < 4,86.7%
+,"Total: Total includes all data under the BAKER, OR bucket, including data from rows not currently displayed.",27.1%
+"MURRAY, MN",Less than 1,68.4%
+,? 1 and < 2,88%
+,? 2 and < 3,91.4%
+,? 3 and < 4,95.9%
+,"Total: Total includes all data under the MURRAY, MN bucket, including data from rows not currently displayed.",20.3%
+"KOOCHICHING, MN",Less than 1,65.3%
+,? 1 and < 2,79.8%
+,? 2 and < 3,83.7%
+,? 3 and < 4,85.7%
+,"Total: Total includes all data under the KOOCHICHING, MN bucket, including data from rows not currently displayed.",22.3%
+"GRANT, MN",Less than 1,81.5%
+,? 1 and < 2,91.9%
+,? 2 and < 3,85.3%
+,? 3 and < 4,91.3%
+,"Total: Total includes all data under the GRANT, MN bucket, including data from rows not currently displayed.",20.2%
+"WINONA, MN",Less than 1,73.5%
+,? 1 and < 2,90.3%
+,? 2 and < 3,89.2%
+,? 3 and < 4,95.1%
+,"Total: Total includes all data under the WINONA, MN bucket, including data from rows not currently displayed.",28.8%
+"SWIFT, MN",Less than 1,81.4%
+,? 1 and < 2,93.5%
+,? 2 and < 3,94.5%
+,? 3 and < 4,90.1%
+,"Total: Total includes all data under the SWIFT, MN bucket, including data from rows not currently displayed.",20.9%
+"COTTONWOOD, MN",Less than 1,60.7%
+,? 1 and < 2,82.4%
+,? 2 and < 3,90%
+,? 3 and < 4,94%
+,"Total: Total includes all data under the COTTONWOOD, MN bucket, including data from rows not currently displayed.",14.4%
+"ALAMOSA, CO",Less than 1,-
+,? 1 and < 2,-
+,? 2 and < 3,-
+,? 3 and < 4,-
+,"Total: Total includes all data under the ALAMOSA, CO bucket, including data from rows not currently displayed.",-
+"BLUE EARTH, MN",Less than 1,-
+,? 1 and < 2,-
+,? 2 and < 3,-
+,? 3 and < 4,-
+,"Total: Total includes all data under the BLUE EARTH, MN bucket, including data from rows not currently displayed.",30%
+"CONEJOS, CO",Less than 1,-
+,? 1 and < 2,-
+,? 2 and < 3,-
+,? 3 and < 4,-
+,"Total: Total includes all data under the CONEJOS, CO bucket, including data from rows not currently displayed.",-
+"CURRY, OR",Less than 1,-
+,? 1 and < 2,71.9%
+,? 2 and < 3,90.3%
+,? 3 and < 4,88.6%
+,"Total: Total includes all data under the CURRY, OR bucket, including data from rows not currently displayed.",32.2%
+"DELTA, CO",Less than 1,-
+,? 1 and < 2,-
+,? 2 and < 3,-
+,? 3 and < 4,-
+,"Total: Total includes all data under the DELTA, CO bucket, including data from rows not currently displayed.",-
+"ELBERT, CO",Less than 1,70.8%
+,? 1 and < 2,87%
+,? 2 and < 3,91.4%
+,? 3 and < 4,95.9%
+,"Total: Total includes all data under the ELBERT, CO bucket, including data from rows not currently displayed.",29.8%
+"FILLMORE, MN",Less than 1,75.8%
+,? 1 and < 2,87.1%
+,? 2 and < 3,81.1%
+,? 3 and < 4,90.6%
+,"Total: Total includes all data under the FILLMORE, MN bucket, including data from rows not currently displayed.",25.7%
+"FREEBORN, MN",Less than 1,-
+,? 1 and < 2,89.5%
+,? 2 and < 3,-
+,? 3 and < 4,-
+,"Total: Total includes all data under the FREEBORN, MN bucket, including data from rows not currently displayed.",20.7%
+"GARFIELD, CO",Less than 1,-
+,? 1 and < 2,-
+,? 2 and < 3,-
+,? 3 and < 4,-
+,"Total: Total includes all data under the GARFIELD, CO bucket, including data from rows not currently displayed.",29.3%
+"GRAND, CO",Less than 1,80%
+,? 1 and < 2,90.9%
+,? 2 and < 3,95%
+,? 3 and < 4,93.3%
+,"Total: Total includes all data under the GRAND, CO bucket, including data from rows not currently displayed.",41.2%
+"GRANT, OR",Less than 1,-
+,? 1 and < 2,70.6%
+,? 2 and < 3,86.7%
+,? 3 and < 4,91.7%
+,"Total: Total includes all data under the GRANT, OR bucket, including data from rows not currently displayed.",27.5%
+"GUNNISON, CO",Less than 1,58.2%
+,? 1 and < 2,90.6%
+,? 2 and < 3,-
+,? 3 and < 4,-
+,"Total: Total includes all data under the GUNNISON, CO bucket, including data from rows not currently displayed.",38.3%
+"JACKSON, MN",Less than 1,66.7%
+,? 1 and < 2,88.1%
+,? 2 and < 3,92.6%
+,? 3 and < 4,94%
+,"Total: Total includes all data under the JACKSON, MN bucket, including data from rows not currently displayed.",16.5%
+"LAKE OF THE WOODS, MN",Less than 1,75%
+,? 1 and < 2,81.8%
+,? 2 and < 3,77.8%
+,? 3 and < 4,92%
+,"Total: Total includes all data under the LAKE OF THE WOODS, MN bucket, including data from rows not currently displayed.",38.5%
+"LAKE, CO",Less than 1,-
+,? 1 and < 2,-
+,? 2 and < 3,-
+,? 3 and < 4,-
+,"Total: Total includes all data under the LAKE, CO bucket, including data from rows not currently displayed.",25.6%
+"LAS ANIMAS, CO",Less than 1,-
+,? 1 and < 2,-
+,? 2 and < 3,-
+,? 3 and < 4,-
+,"Total: Total includes all data under the LAS ANIMAS, CO bucket, including data from rows not currently displayed.",-
+"LE SUEUR, MN",Less than 1,-
+,? 1 and < 2,-
+,? 2 and < 3,-
+,? 3 and < 4,-
+,"Total: Total includes all data under the LE SUEUR, MN bucket, including data from rows not currently displayed.",32.8%
+"LINCOLN, MN",Less than 1,-
+,? 1 and < 2,84.6%
+,? 2 and < 3,84.6%
+,? 3 and < 4,-
+,"Total: Total includes all data under the LINCOLN, MN bucket, including data from rows not currently displayed.",23.3%
+"LOGAN, CO",Less than 1,-
+,? 1 and < 2,-
+,? 2 and < 3,78.6%
+,? 3 and < 4,-
+,"Total: Total includes all data under the LOGAN, CO bucket, including data from rows not currently displayed.",32.3%
+"MCLEOD, MN",Less than 1,-
+,? 1 and < 2,-
+,? 2 and < 3,-
+,? 3 and < 4,-
+,"Total: Total includes all data under the MCLEOD, MN bucket, including data from rows not currently displayed.",31.8%
+"NORMAN, MN",Less than 1,67.3%
+,? 1 and < 2,83.9%
+,? 2 and < 3,93.7%
+,? 3 and < 4,94.7%
+,"Total: Total includes all data under the NORMAN, MN bucket, including data from rows not currently displayed.",23.5%
+"PARK, CO",Less than 1,-
+,? 1 and < 2,-
+,? 2 and < 3,-
+,? 3 and < 4,100%
+,"Total: Total includes all data under the PARK, CO bucket, including data from rows not currently displayed.",28.8%
+"POLK, OR",Less than 1,57.1%
+,? 1 and < 2,73.5%
+,? 2 and < 3,89.3%
+,? 3 and < 4,90.6%
+,"Total: Total includes all data under the POLK, OR bucket, including data from rows not currently displayed.",35.2%
+"POPE, MN",Less than 1,76.5%
+,? 1 and < 2,100%
+,? 2 and < 3,100%
+,? 3 and < 4,88.2%
+,"Total: Total includes all data under the POPE, MN bucket, including data from rows not currently displayed.",21.5%
+"RIO BLANCO, CO",Less than 1,-
+,? 1 and < 2,-
+,? 2 and < 3,-
+,? 3 and < 4,-
+,"Total: Total includes all data under the RIO BLANCO, CO bucket, including data from rows not currently displayed.",23.9%
+"RIO GRANDE, CO",Less than 1,-
+,? 1 and < 2,-
+,? 2 and < 3,-
+,? 3 and < 4,-
+,"Total: Total includes all data under the RIO GRANDE, CO bucket, including data from rows not currently displayed.",-
+"SAN MIGUEL, CO",Less than 1,-
+,? 1 and < 2,-
+,? 2 and < 3,-
+,? 3 and < 4,-
+,"Total: Total includes all data under the SAN MIGUEL, CO bucket, including data from rows not currently displayed.",-
+"WABASHA, MN",Less than 1,-
+,? 1 and < 2,-
+,? 2 and < 3,94.4%
+,? 3 and < 4,100%
+,"Total: Total includes all data under the WABASHA, MN bucket, including data from rows not currently displayed.",31.4%
+"WILKIN, MN",Less than 1,72.5%
+,? 1 and < 2,92.4%
+,? 2 and < 3,87.9%
+,? 3 and < 4,93.2%
+,"Total: Total includes all data under the WILKIN, MN bucket, including data from rows not currently displayed.",22.1%
+None of the above,Less than 1,71.3%
+,? 1 and < 2,85.7%
+,? 2 and < 3,89.4%
+,? 3 and < 4,91.5%
+,"Total: Total includes all data under the None of the above bucket, including data from rows not currently displayed.",26.7%
+Total,Less than 1,71.9%
+,? 1 and < 2,89.7%
+,? 2 and < 3,91.7%
+,? 3 and < 4,93.3%
+,"Total: Total includes all data under the Total bucket, including data from rows not currently displayed.",28.1%

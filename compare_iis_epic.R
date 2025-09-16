@@ -74,13 +74,22 @@ iis_combined <- bind_rows(mn_iis, colorado_iis, oregon_iis)
 
 
 #Limited to base patient, has any encounters, has an immunization registry query
-epic <- read.csv('./Data/abcs_epic_pcv_uptake.csv') %>%
-  filter(age=='age_1_2y' ) %>%
+epic <- read.csv('./Data/abcs_epic_pcv_uptake_epic_pediatric_base.csv') %>%
+  mutate(county_name = if_else(county_name=='', NA_character_,county_name)) %>%
+  tidyr::fill( .,  county_name, .direction = "down") %>%
+  filter(age=='? 1 and < 2' ) %>%
   rename(pct_pcv_epic = pct_pcv) %>%
-  mutate(state =sub(".*,", "", county_name))
+  mutate(state =sub(".*,", "", county_name)) %>%
+  separate(county_name, into = c("county", "state"), sep = ",\\s*") %>%
+  left_join(cw, by=c('state', 'county'))%>%
+  mutate(fips = as.numeric(fips),
+         pct_pcv_epic = gsub('%','', pct_pcv_epic),
+         pct_pcv_epic = as.numeric(pct_pcv_epic)
+         )
+
 
 compare <- epic %>%
-  right_join(iis_combined, by=c('fips', 'state')) %>%
+  full_join(iis_combined, by=c('fips', 'state')) %>%
   filter(time == '2018-01-01')
 
 #
