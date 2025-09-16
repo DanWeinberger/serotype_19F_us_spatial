@@ -120,7 +120,7 @@ for (area in area_names) {
 ```{r}
 # define formula
 f_terms <- lapply(area_names, function(area) {
-  paste0("f(", area, ", model='bym2', graph=adj_mats[['", area, "']])" #,
+  paste0("f(", area, ", model='bym2', graph=adj_mats[['", area, "']], constr = T,scale.model=T)" #,
     #", group=year, control.group=list(model='ar1'))"
   )
 })
