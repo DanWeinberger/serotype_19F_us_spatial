@@ -74,11 +74,12 @@ iis_combined <- bind_rows(mn_iis, colorado_iis, oregon_iis)
 
 
 #Limited to base patient, has any encounters, has an immunization registry query
-epic <- read.csv('./Data/abcs_epic_pcv_uptake_epic_pediatric_base.csv') %>%
-  mutate(county_name = if_else(county_name=='', NA_character_,county_name)) %>%
+epic <- read_csv('./Data/abcs_epic_pcv_uptake_epic_pediatric_base_1_4.csv', skip=11) %>%
+  rename(county_name = "County of Residence" ,
+         pct_pcv_epic = "Percentage with Immunizations: PCV (%)",
+         N_patients = "Number of Patients" 
+         )%>%
   tidyr::fill( .,  county_name, .direction = "down") %>%
-  filter(age=='? 1 and < 2' ) %>%
-  rename(pct_pcv_epic = pct_pcv) %>%
   mutate(state =sub(".*,", "", county_name)) %>%
   separate(county_name, into = c("county", "state"), sep = ",\\s*") %>%
   left_join(cw, by=c('state', 'county'))%>%
@@ -88,15 +89,19 @@ epic <- read.csv('./Data/abcs_epic_pcv_uptake_epic_pediatric_base.csv') %>%
          )
 
 
+iis_combined_last <- iis_combined %>%
+  filter(time == '2020-01-01')
+
 compare <- epic %>%
-  full_join(iis_combined, by=c('fips', 'state')) %>%
-  filter(time == '2018-01-01')
+  full_join(iis_combined_last, by=c('fips', 'state'))%>%
+  mutate(time=factor(time))
 
 #
 ggplot(compare) +
-  geom_point(aes(x=pct_pcv_epic, y=pct_pcv_iis, color=state)) +
+  geom_point(aes(x=pct_pcv_epic, y=pct_pcv_iis, color=state, shape=time)) +
   theme_classic()+
   ggtitle('Comparison of IIS data with Epic Cosmos')+
   facet_wrap(~state)+
   ylim(40,90)+
-xlim(40,90)
+xlim(40,90)+
+  geom_abline(aes(intercept=0, slope=1), lty=2)
