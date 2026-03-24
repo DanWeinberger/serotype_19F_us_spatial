@@ -95,6 +95,7 @@ ct_areas_nogeom <- ct_areas |>
 # area_names <- c("NewMexico", "Oregon", "California", "Colorado", "Minnesota",
 #                 "Georgia", "Maryland", "Connecticut", "Tennessee_1", "Tennessee_2",
 #                 "Tennessee_3", "Tennessee_4", "Tennessee_5", "NewYork_1", "NewYork_2")
+
 area_names <- c("NewMexico", "Oregon")
 
 adj_mats <- list()
@@ -118,6 +119,98 @@ for (area in area_names) {
 ## Binomial model
 
 ```{r}
+# # define formula
+# f_terms <- lapply(area_names, function(area) {
+#   paste0("f(", area, ", model='bym2', graph=adj_mats[['", area, "']], constr = T,scale.model=T)" #,
+#     #", group=year, control.group=list(model='ar1'))"
+#   )
+# })
+# 
+# f_mod1 <- as.formula(paste("n_19F ~ 1 + year +", 
+#                            paste(f_terms, collapse = " + ")))
+# 
+# # run mod (takes ~20 seconds for mod with just new mexico + oregon)
+# out_mod1 <- inla(f_mod1,
+#                  family = "binomial",
+#                  data = data,
+#                  Ntrials = data$n_ipd,
+#                  control.predictor = list(compute = TRUE),
+#                  control.compute = list(dic = TRUE, waic = TRUE),
+#                  verbose = TRUE)
+# 
+# summary(out_mod1)
+```
+
+### Plot effects
+
+u = besag
+v = iid 
+
+```{r}
+# for (area in area_names) {
+#   n_ids <- length(unique(ct_areas[[area]]))-1
+#   sr <- out_mod1$summary.random[[area]] |> 
+#     as_tibble() |> 
+#     rename(ir_pre = ID, mean = mean, sd = sd,
+#            lower = `0.025quant`, upper = `0.975quant`) |> 
+#     mutate(ID = rep(1:n_ids, 2)) |> 
+#     mutate(eff = rep(c("v+u", "u"), each = n_ids))
+#   
+#   join_df <- ct_areas |> 
+#     select(GEO_ID, !!rlang::sym(area)) |> 
+#     st_as_sf() |> 
+#     rename(ID = !!rlang::sym(area))
+#   
+#   plot_sf <- join_df |> 
+#     left_join(sr, by = "ID") |> 
+#     filter(!is.na(mean))
+#   
+#   (p_mean <- ggplot(plot_sf) +
+#     geom_sf(aes(fill = exp(mean)), color = NA) +
+#     scale_fill_viridis_c(option = "viridis", na.value = "grey90") +
+#     labs(title = paste0(area, " — BYM2 effects"),
+#          fill = "Effect") +
+#     facet_wrap(~eff) +
+#     theme_minimal())
+#   
+#   print(p_mean)
+#   
+#   ggsave(filename = paste0("outputs/", "bym2_mod1_", area, ".png"),
+#          plot = p_mean, width = 8, height = 6, dpi = 300)
+#   
+# }
+```
+
+```{r}
+# # year
+# fe_year_mod1 <- out_mod1$summary.fixed["year", ]
+# beta_year_mod1 <- fe_year_mod1[, "mean"]
+# beta_year_l_mod1 <- fe_year_mod1[, "0.025quant"]
+# beta_year_u_mod1 <- fe_year_mod1[, "0.975quant"]
+# 
+# year_grid <- seq(min(data$year, na.rm = TRUE), max(data$year, na.rm = TRUE), by = 1)
+# 
+# t0 <- min(data$year, na.rm = TRUE)
+# 
+# or_df <- tibble(year = year_grid) |>
+#   mutate(diff = year - t0,
+#          effect = exp(beta_year_mod1 * diff),
+#          lower  = exp(beta_year_l_mod1 * diff),
+#          upper  = exp(beta_year_u_mod1 * diff))
+# 
+# or_df |>
+#   ggplot(aes(x = year, y = effect)) +
+#   geom_line() +
+#   geom_ribbon(aes(ymin = lower, ymax = upper), alpha = 0.2) +
+#   geom_hline(yintercept = 1, linetype = 2, color = "red") +
+#   labs(x = "Year",
+#        y = "OR") +
+#   theme_bw()
+```
+
+## Poisson model
+
+```{r}
 # define formula
 f_terms <- lapply(area_names, function(area) {
   paste0("f(", area, ", model='bym2', graph=adj_mats[['", area, "']], constr = T,scale.model=T)" #,
@@ -125,89 +218,6 @@ f_terms <- lapply(area_names, function(area) {
   )
 })
 
-f_mod1 <- as.formula(paste("n_19F ~ 1 + year +", 
-                           paste(f_terms, collapse = " + ")))
-
-# run mod (takes ~20 seconds for mod with just new mexico + oregon)
-out_mod1 <- inla(f_mod1,
-                 family = "binomial",
-                 data = data,
-                 Ntrials = data$n_ipd,
-                 control.predictor = list(compute = TRUE),
-                 control.compute = list(dic = TRUE, waic = TRUE),
-                 verbose = TRUE)
-
-summary(out_mod1)
-```
-### Plot effects
-
-u = besag
-v = iid 
-
-```{r}
-for (area in area_names) {
-  n_ids <- length(unique(ct_areas[[area]]))-1
-  sr <- out_mod1$summary.random[[area]] |> 
-    as_tibble() |> 
-    rename(ir_pre = ID, mean = mean, sd = sd,
-           lower = `0.025quant`, upper = `0.975quant`) |> 
-    mutate(ID = rep(1:n_ids, 2)) |> 
-    mutate(eff = rep(c("v+u", "u"), each = n_ids))
-  
-  join_df <- ct_areas |> 
-    select(GEO_ID, !!rlang::sym(area)) |> 
-    st_as_sf() |> 
-    rename(ID = !!rlang::sym(area))
-  
-  plot_sf <- join_df |> 
-    left_join(sr, by = "ID") |> 
-    filter(!is.na(mean))
-  
-  (p_mean <- ggplot(plot_sf) +
-    geom_sf(aes(fill = exp(mean)), color = NA) +
-    scale_fill_viridis_c(option = "viridis", na.value = "grey90") +
-    labs(title = paste0(area, " — BYM2 effects"),
-         fill = "Effect") +
-    facet_wrap(~eff) +
-    theme_minimal())
-  
-  print(p_mean)
-  
-  ggsave(filename = paste0("outputs/", "bym2_mod1_", area, ".png"),
-         plot = p_mean, width = 8, height = 6, dpi = 300)
-  
-}
-```
-```{r}
-# year
-fe_year_mod1 <- out_mod1$summary.fixed["year", ]
-beta_year_mod1 <- fe_year_mod1[, "mean"]
-beta_year_l_mod1 <- fe_year_mod1[, "0.025quant"]
-beta_year_u_mod1 <- fe_year_mod1[, "0.975quant"]
-
-year_grid <- seq(min(data$year, na.rm = TRUE), max(data$year, na.rm = TRUE), by = 1)
-
-t0 <- min(data$year, na.rm = TRUE)
-
-or_df <- tibble(year = year_grid) |>
-  mutate(diff = year - t0,
-         effect = exp(beta_year_mod1 * diff),
-         lower  = exp(beta_year_l_mod1 * diff),
-         upper  = exp(beta_year_u_mod1 * diff))
-
-or_df |>
-  ggplot(aes(x = year, y = effect)) +
-  geom_line() +
-  geom_ribbon(aes(ymin = lower, ymax = upper), alpha = 0.2) +
-  geom_hline(yintercept = 1, linetype = 2, color = "red") +
-  labs(x = "Year",
-       y = "OR") +
-  theme_bw()
-```
-
-## Poisson model
-
-```{r}
 # define formula
 f_mod2 <- as.formula(paste("obs ~ -1 + Intercept + year +", 
                            paste(f_terms, collapse = " + "), "+ offset(log(n_ipd+0.1))"))
