@@ -10,7 +10,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 if (!require("pacman")) install.packages("pacman")
 # pacman::p_unload(pacman::p_loaded(), character.only = TRUE)
-pacman::p_load(tidyverse, readxl)
+pacman::p_load(tidyverse, readxl, sf)
 ```
 
 Colorado
@@ -36,7 +36,8 @@ abcs_counties_full <- readxl::read_xlsx("data/ABCsCountyFIPS.xlsx")
 ## Epic data
 
 ```{r}
-epic_raw <- read_csv("data/data_epic_county.csv")
+# epic_raw <- read_csv("data/data_epic_county.csv")
+epic_raw <- read_csv("data/data_county_base_pt.csv")
 
 epic_under5 <- epic_raw |> 
   filter(age == "≥ 2 and < 5 Years")
@@ -52,11 +53,22 @@ epic_under1 <- epic_raw |>
   dplyr::select(pct_pcv_under1, geography)
 ```
 
-## Minnesota
+## County shapefiles
 
 ```{r}
 mn_counties <- tigris::counties(state = "MN")
+co_counties <- tigris::counties(state = "CO")
+or_counties <- tigris::counties(state = "OR")
+ga_counties <- tigris::counties(state = "GA")
+ct_counties <- tigris::counties(state = "CT")
+md_counties <- tigris::counties(state = "MD")
+ny_counties <- tigris::counties(state = "NY")
+ca_counties <- tigris::counties(state = "CA")
+nm_counties <- tigris::counties(state = "NM")
+tn_counties <- tigris::counties(state = "TN")
 ```
+
+## Minnesota
 
 ```{r, fig.width = 8, fig.height = 8}
 mn_compare <- mn_raw |> 
@@ -142,10 +154,6 @@ mn_sf |>
 ```
 
 ## Colorado
-
-```{r}
-co_counties <- tigris::counties(state = "CO")
-```
 
 ```{r, fig.width = 8, fig.height = 8}
 co_compare <- co_raw |> 
@@ -233,10 +241,6 @@ co_sf |>
 
 ## Oregon
 
-```{r}
-or_counties <- tigris::counties(state = "OR")
-```
-
 ```{r, fig.width = 8, fig.height = 8}
 or_compare <- bind_rows(or_raw) |> 
   rename(vax = 1) |> 
@@ -317,10 +321,6 @@ or_sf |>
 ```
 
 ## Georgia
-
-```{r}
-ga_counties <- tigris::counties(state = "GA")
-```
 
 ```{r, fig.width = 8, fig.height = 8}
 ga_compare <- bind_rows(ga_raw, .id = "df") |> 
@@ -413,6 +413,210 @@ ga_sf |>
   labs(fill = "% children\nwith 4 doses", 
        title = "Georgia PCV coverage") +
   facet_wrap(~year) +
+  theme_void()
+```
+
+## Connecticut
+
+```{r}
+ct_sf <- ct_counties |>  
+  left_join(epic_under5, by = c("GEOID" = "geography")) |> 
+  left_join(epic_under2, by = c("GEOID" = "geography")) |> 
+  left_join(epic_under1, by = c("GEOID" = "geography"))
+
+ct_sf |> 
+  ggplot() +
+  geom_sf(aes(fill = pct_pcv)) +
+  scale_fill_viridis_c(option = "B") +
+  labs(fill = "% PCV 2-5 yo (Epic)", 
+       title = "Connecticut PCV coverage") +
+  theme_void()
+
+ct_sf |> 
+  ggplot() +
+  geom_sf(aes(fill = pct_pcv_under2)) +
+  scale_fill_viridis_c(option = "B") +
+  labs(fill = "% PCV 1-2 yo (Epic)", 
+       title = "Connecticut PCV coverage") +
+  theme_void()
+
+ct_sf |> 
+  ggplot() +
+  geom_sf(aes(fill = pct_pcv_under1)) +
+  scale_fill_viridis_c(option = "B") +
+  labs(fill = "% PCV <1 yo (Epic)", 
+       title = "Connecticut PCV coverage") +
+  theme_void()
+```
+
+## Maryland
+
+```{r}
+md_sf <- md_counties |>  
+  left_join(epic_under5, by = c("GEOID" = "geography")) |> 
+  left_join(epic_under2, by = c("GEOID" = "geography")) |> 
+  left_join(epic_under1, by = c("GEOID" = "geography"))
+
+md_sf |> 
+  ggplot() +
+  geom_sf(aes(fill = pct_pcv)) +
+  scale_fill_viridis_c(option = "B") +
+  labs(fill = "% PCV 2-5 yo (Epic)", 
+       title = "Maryland PCV coverage") +
+  theme_void()
+
+md_sf |> 
+  ggplot() +
+  geom_sf(aes(fill = pct_pcv_under2)) +
+  scale_fill_viridis_c(option = "B") +
+  labs(fill = "% PCV 1-2 yo (Epic)", 
+       title = "Maryland PCV coverage") +
+  theme_void()
+
+md_sf |> 
+  ggplot() +
+  geom_sf(aes(fill = pct_pcv_under1)) +
+  scale_fill_viridis_c(option = "B") +
+  labs(fill = "% PCV <1 yo (Epic)", 
+       title = "Maryland PCV coverage") +
+  theme_void()
+```
+
+## New York
+
+```{r}
+ny_sf <- ny_counties |>  
+  left_join(epic_under5, by = c("GEOID" = "geography")) |> 
+  left_join(epic_under2, by = c("GEOID" = "geography")) |> 
+  left_join(epic_under1, by = c("GEOID" = "geography"))
+
+ny_sf |> 
+  ggplot() +
+  geom_sf(aes(fill = pct_pcv)) +
+  scale_fill_viridis_c(option = "B") +
+  labs(fill = "% PCV 2-5 yo (Epic)", 
+       title = "New York PCV coverage") +
+  theme_void()
+
+ny_sf |> 
+  ggplot() +
+  geom_sf(aes(fill = pct_pcv_under2)) +
+  scale_fill_viridis_c(option = "B") +
+  labs(fill = "% PCV 1-2 yo (Epic)", 
+       title = "New York PCV coverage") +
+  theme_void()
+
+ny_sf |> 
+  ggplot() +
+  geom_sf(aes(fill = pct_pcv_under1)) +
+  scale_fill_viridis_c(option = "B") +
+  labs(fill = "% PCV <1 yo (Epic)", 
+       title = "New York PCV coverage") +
+  theme_void()
+```
+
+## California
+
+```{r}
+ca_sf <- ca_counties |>  
+  left_join(epic_under5, by = c("GEOID" = "geography")) |> 
+  left_join(epic_under2, by = c("GEOID" = "geography")) |> 
+  left_join(epic_under1, by = c("GEOID" = "geography"))
+
+ca_sf |> 
+  ggplot() +
+  geom_sf(aes(fill = pct_pcv)) +
+  scale_fill_viridis_c(option = "B") +
+  labs(fill = "% PCV 2-5 yo (Epic)", 
+       title = "California PCV coverage") +
+  theme_void()
+
+ca_sf |> 
+  ggplot() +
+  geom_sf(aes(fill = pct_pcv_under2)) +
+  scale_fill_viridis_c(option = "B") +
+  labs(fill = "% PCV 1-2 yo (Epic)", 
+       title = "California PCV coverage") +
+  theme_void()
+
+ca_sf |> 
+  ggplot() +
+  geom_sf(aes(fill = pct_pcv_under1)) +
+  scale_fill_viridis_c(option = "B") +
+  labs(fill = "% PCV <1 yo (Epic)", 
+       title = "California PCV coverage") +
+  theme_void()
+```
+
+## New Mexico
+
+```{r}
+nm_sf <- nm_counties |>  
+  left_join(epic_under5, by = c("GEOID" = "geography")) |> 
+  left_join(epic_under2, by = c("GEOID" = "geography")) |> 
+  left_join(epic_under1, by = c("GEOID" = "geography"))
+
+nm_sf |> 
+  filter(GEOID %in% abcs_counties_full$FIPS) |> 
+  ggplot() +
+  geom_sf(aes(fill = pct_pcv)) +
+  scale_fill_viridis_c(option = "B") +
+  labs(fill = "% PCV 2-5 yo (Epic)", 
+       title = "New Mexico PCV coverage") +
+  theme_void()
+
+nm_sf |> 
+  filter(GEOID %in% abcs_counties_full$FIPS) |> 
+  ggplot() +
+  geom_sf(aes(fill = pct_pcv_under2)) +
+  scale_fill_viridis_c(option = "B") +
+  labs(fill = "% PCV 1-2 yo (Epic)", 
+       title = "New Mexico PCV coverage") +
+  theme_void()
+
+nm_sf |> 
+  filter(GEOID %in% abcs_counties_full$FIPS) |> 
+  ggplot() +
+  geom_sf(aes(fill = pct_pcv_under1)) +
+  scale_fill_viridis_c(option = "B") +
+  labs(fill = "% PCV <1 yo (Epic)", 
+       title = "New Mexico PCV coverage") +
+  theme_void()
+```
+
+## Tennessee
+
+```{r}
+tn_sf <- tn_counties |>  
+  left_join(epic_under5, by = c("GEOID" = "geography")) |> 
+  left_join(epic_under2, by = c("GEOID" = "geography")) |> 
+  left_join(epic_under1, by = c("GEOID" = "geography"))
+
+tn_sf |> 
+  filter(GEOID %in% abcs_counties_full$FIPS) |> 
+  ggplot() +
+  geom_sf(aes(fill = pct_pcv)) +
+  scale_fill_viridis_c(option = "B") +
+  labs(fill = "% PCV 2-5 yo (Epic)", 
+       title = "Tennessee PCV coverage") +
+  theme_void()
+
+tn_sf |> 
+  filter(GEOID %in% abcs_counties_full$FIPS) |> 
+  ggplot() +
+  geom_sf(aes(fill = pct_pcv_under2)) +
+  scale_fill_viridis_c(option = "B") +
+  labs(fill = "% PCV 1-2 yo (Epic)", 
+       title = "Tennessee PCV coverage") +
+  theme_void()
+
+tn_sf |> 
+  filter(GEOID %in% abcs_counties_full$FIPS) |> 
+  ggplot() +
+  geom_sf(aes(fill = pct_pcv_under1)) +
+  scale_fill_viridis_c(option = "B") +
+  labs(fill = "% PCV <1 yo (Epic)", 
+       title = "Tennessee PCV coverage") +
   theme_void()
 ```
 
