@@ -194,7 +194,7 @@ co_compare |>
   labs(x = "Registry", y = "Epic - 2-5 yo", title = "Colorado") +
   facet_wrap(~Period) +
   theme_classic() +
-  coord_equal(xlim = c(39, 100), ylim = c(39, 100))
+  coord_equal(xlim = c(75, 95), ylim = c(75, 95))
 
 co_compare |> 
   filter(GEOID %in% abcs_counties_full$FIPS) |> 
@@ -204,7 +204,7 @@ co_compare |>
   labs(x = "Registry", y = "Epic - 1-2 yo", title = "Colorado") +
   facet_wrap(~Period) +
   theme_classic() +
-  coord_equal(xlim = c(30, 100), ylim = c(30, 100))
+  coord_equal(xlim = c(75, 95), ylim = c(75, 95))
 
 co_compare |> 
   filter(GEOID %in% abcs_counties_full$FIPS) |> 
@@ -214,7 +214,7 @@ co_compare |>
   labs(x = "Registry", y = "Epic - <1 yo", title = "Colorado") +
   facet_wrap(~Period) +
   theme_classic() +
-  coord_equal(xlim = c(30, 100), ylim = c(30, 100))
+  coord_equal(xlim = c(70, 90), ylim = c(70, 90))
 ```
 
 ```{r}
