@@ -1,0 +1,418 @@
+---
+title: "comparing epic to vax registry"
+author: "Paloma Cárcamo"
+date: "2026-03-24"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+if (!require("pacman")) install.packages("pacman")
+# pacman::p_unload(pacman::p_loaded(), character.only = TRUE)
+pacman::p_load(tidyverse, readxl)
+```
+
+Colorado
+Georgia: https://dph.georgia.gov/immunizations/immunization-study-reports
+Oregon
+Minnesota
+
+## Registry data
+
+```{r}
+co_raw <- read_csv("data/colorado_immunization_county/combined_CO_Child_Rates.csv")
+mn_raw <- read_csv("data/Minnesota immunizations.csv")
+
+filenames_or <- list.files("data/oregon_immunization_county/staging", pattern="*.xlsx", full.names = TRUE)
+or_raw <- lapply(filenames_or, read_xlsx)
+
+filenames_ga <- list.files("data/georgia-immun/", full.names = TRUE)
+ga_raw <- lapply(filenames_ga, read_csv)
+
+abcs_counties_full <- readxl::read_xlsx("data/ABCsCountyFIPS.xlsx")
+```
+
+## Epic data
+
+```{r}
+epic_raw <- read_csv("data/data_epic_county.csv")
+
+epic_under5 <- epic_raw |> 
+  filter(age == "≥ 2 and < 5 Years")
+
+epic_under2 <- epic_raw |> 
+  filter(age == "≥ 1 and < 2 Years") |> 
+  rename(pct_pcv_under2 = pct_pcv) |> 
+  dplyr::select(pct_pcv_under2, geography)
+
+epic_under1 <- epic_raw |> 
+  filter(age == "Less than 1 Years") |> 
+  rename(pct_pcv_under1 = pct_pcv) |> 
+  dplyr::select(pct_pcv_under1, geography)
+```
+
+## Minnesota
+
+```{r}
+mn_counties <- tigris::counties(state = "MN")
+```
+
+```{r, fig.width = 8, fig.height = 8}
+mn_compare <- mn_raw |> 
+  mutate(fips = as.character(fips)) |> 
+  left_join(epic_under5, by = c("fips" = "geography")) |> 
+  left_join(epic_under2, by = c("fips" = "geography")) |> 
+  left_join(epic_under1, by = c("fips" = "geography"))
+
+mn_compare |> 
+  filter(!is.na(year)) |> 
+  ggplot(aes(x = percent, y = pct_pcv, size = population)) +
+  geom_point(alpha = 0.5) +
+  labs(x = "Registry", y = "Epic - 2-5 yo", title = "Minnesota") +
+  facet_wrap(~year) +
+  theme_classic() +
+  coord_equal(xlim = c(50, 100), ylim = c(50, 100))
+
+mn_compare |> 
+  filter(!is.na(year)) |> 
+  ggplot(aes(x = percent, y = pct_pcv_under2, size = population)) +
+  geom_point(alpha = 0.5) +
+  labs(x = "Registry", y = "Epic - 1-2 yo", title = "Minnesota") +
+  facet_wrap(~year) +
+  theme_classic() +
+  coord_equal(xlim = c(50, 100), ylim = c(50, 100))
+
+mn_compare |> 
+  filter(!is.na(year)) |> 
+  ggplot(aes(x = percent, y = pct_pcv_under1, size = population)) +
+  geom_point(alpha = 0.5) +
+  labs(x = "Registry", y = "Epic - <1 yo", title = "Minnesota") +
+  facet_wrap(~year) +
+  theme_classic() +
+  coord_equal(xlim = c(50, 100), ylim = c(50, 100))
+```
+
+```{r}
+# 87 counties in ABCs catchment area
+mn_compare |> 
+  filter(!is.na(year)) |> 
+  filter(fips %in% abcs_counties_full$FIPS) |> 
+  ggplot(aes(x = percent, y = pct_pcv, size = population)) +
+  geom_point(alpha = 0.5) +
+  labs(x = "Registry", y = "Epic - 2-5 yo", title = "Minnesota") +
+  facet_wrap(~year) +
+  theme_classic() +
+  coord_equal(xlim = c(50, 100), ylim = c(50, 100))
+
+mn_compare |> 
+  filter(!is.na(year)) |> 
+  filter(fips %in% abcs_counties_full$FIPS) |> 
+  ggplot(aes(x = percent, y = pct_pcv_under2, size = population)) +
+  geom_point(alpha = 0.5) +
+  labs(x = "Registry", y = "Epic - 1-2 yo", title = "Minnesota") +
+  facet_wrap(~year) +
+  theme_classic() +
+  coord_equal(xlim = c(50, 100), ylim = c(50, 100))
+
+mn_compare |> 
+  filter(!is.na(year)) |> 
+  filter(fips %in% abcs_counties_full$FIPS) |> 
+  ggplot(aes(x = percent, y = pct_pcv_under1, size = population)) +
+  geom_point(alpha = 0.5) +
+  labs(x = "Registry", y = "Epic - <1 yo", title = "Minnesota") +
+  facet_wrap(~year) +
+  theme_classic() +
+  coord_equal(xlim = c(50, 100), ylim = c(50, 100))
+```
+
+```{r}
+mn_sf <- mn_counties |> 
+  right_join(mn_compare, by = c("GEOID" = "fips"))
+
+mn_sf |> 
+  filter(!is.na(year)) |> 
+  ggplot() +
+  geom_sf(aes(fill = percent)) +
+  scale_fill_viridis_c(option = "B") +
+  labs(fill = "% children\nwith 4 doses", 
+       title = "Minnesota PCV coverage") +
+  facet_wrap(~year) +
+  theme_void()
+```
+
+## Colorado
+
+```{r}
+co_counties <- tigris::counties(state = "CO")
+```
+
+```{r, fig.width = 8, fig.height = 8}
+co_compare <- co_raw |> 
+  left_join(co_counties |> 
+              dplyr::select(GEOID, NAME) |> 
+              st_drop_geometry(), by = c("County" = "NAME")) |> 
+  left_join(epic_under5, by = c("GEOID" = "geography")) |> 
+  left_join(epic_under2, by = c("GEOID" = "geography")) |> 
+  left_join(epic_under1, by = c("GEOID" = "geography"))
+
+co_compare |> 
+  filter(!is.na(Period)) |> 
+  ggplot(aes(x = `Up-To-Date Percent`, y = pct_pcv)) +
+  geom_point(alpha = 0.5) +
+  labs(x = "Registry", y = "Epic - 2-5 yo", title = "Colorado") +
+  facet_wrap(~Period) +
+  theme_classic() +
+  coord_equal(xlim = c(39, 100), ylim = c(39, 100))
+
+co_compare |> 
+  filter(!is.na(Period)) |> 
+  ggplot(aes(x = `Up-To-Date Percent`, y = pct_pcv_under2)) +
+  geom_point(alpha = 0.5) +
+  labs(x = "Registry", y = "Epic - 1-2 yo", title = "Colorado") +
+  facet_wrap(~Period) +
+  theme_classic() +
+  coord_equal(xlim = c(30, 100), ylim = c(30, 100))
+
+co_compare |> 
+  filter(!is.na(Period)) |> 
+  ggplot(aes(x = `Up-To-Date Percent`, y = pct_pcv_under1)) +
+  geom_point(alpha = 0.5) +
+  labs(x = "Registry", y = "Epic - <1 yo", title = "Colorado") +
+  facet_wrap(~Period) +
+  theme_classic() +
+  coord_equal(xlim = c(30, 100), ylim = c(30, 100))
+```
+
+```{r}
+# 5 counties in ABCs catchment area
+co_compare |> 
+  filter(GEOID %in% abcs_counties_full$FIPS) |> 
+  filter(!is.na(Period)) |> 
+  ggplot(aes(x = `Up-To-Date Percent`, y = pct_pcv)) +
+  geom_point(alpha = 0.5) +
+  labs(x = "Registry", y = "Epic - 2-5 yo", title = "Colorado") +
+  facet_wrap(~Period) +
+  theme_classic() +
+  coord_equal(xlim = c(39, 100), ylim = c(39, 100))
+
+co_compare |> 
+  filter(GEOID %in% abcs_counties_full$FIPS) |> 
+  filter(!is.na(Period)) |> 
+  ggplot(aes(x = `Up-To-Date Percent`, y = pct_pcv_under2)) +
+  geom_point(alpha = 0.5) +
+  labs(x = "Registry", y = "Epic - 1-2 yo", title = "Colorado") +
+  facet_wrap(~Period) +
+  theme_classic() +
+  coord_equal(xlim = c(30, 100), ylim = c(30, 100))
+
+co_compare |> 
+  filter(GEOID %in% abcs_counties_full$FIPS) |> 
+  filter(!is.na(Period)) |> 
+  ggplot(aes(x = `Up-To-Date Percent`, y = pct_pcv_under1)) +
+  geom_point(alpha = 0.5) +
+  labs(x = "Registry", y = "Epic - <1 yo", title = "Colorado") +
+  facet_wrap(~Period) +
+  theme_classic() +
+  coord_equal(xlim = c(30, 100), ylim = c(30, 100))
+```
+
+```{r}
+co_sf <- co_counties |> 
+  right_join(co_compare, by = c("GEOID"))
+
+co_sf |> 
+  ggplot() +
+  geom_sf(aes(fill = `Up-To-Date Percent`)) +
+  scale_fill_viridis_c(option = "B") +
+  labs(fill = "% children\nwith 4 doses", 
+       title = "Colorado PCV coverage") +
+  facet_wrap(~Period) +
+  theme_void()
+```
+
+## Oregon
+
+```{r}
+or_counties <- tigris::counties(state = "OR")
+```
+
+```{r, fig.width = 8, fig.height = 8}
+or_compare <- bind_rows(or_raw) |> 
+  rename(vax = 1) |> 
+  filter(vax == "4 doses PCV") |> 
+  pivot_longer(cols = c(3:9), names_to = "year", values_to = "pct_prop") |> 
+  mutate(County = if_else(County == "HoodRiver", "Hood River", County),
+         percent = pct_prop*100) |> 
+  left_join(or_counties |> 
+              dplyr::select(GEOID, NAME) |> 
+              st_drop_geometry(), by = c("County" = "NAME")) |> 
+  left_join(epic_under5, by = c("GEOID" = "geography")) |> 
+  left_join(epic_under2, by = c("GEOID" = "geography")) |> 
+  left_join(epic_under1, by = c("GEOID" = "geography"))
+
+or_compare |> 
+  filter(!is.na(year)) |> 
+  ggplot(aes(x = percent, y = pct_pcv)) +
+  geom_point(alpha = 0.5) +
+  labs(x = "Registry", y = "Epic - 2-5 yo", title = "Oregon") +
+  facet_wrap(~year) +
+  theme_classic() +
+  coord_equal(xlim = c(40, 100), ylim = c(40, 100))
+
+or_compare |> 
+  filter(!is.na(year)) |> 
+  ggplot(aes(x = percent, y = pct_pcv_under2)) +
+  geom_point(alpha = 0.5) +
+  labs(x = "Registry", y = "Epic - 1-2 yo", title = "Oregon") +
+  facet_wrap(~year) +
+  theme_classic() +
+  coord_equal(xlim = c(40, 100), ylim = c(40, 100))
+
+or_compare |> 
+  filter(!is.na(year)) |> 
+  ggplot(aes(x = percent, y = pct_pcv_under1)) +
+  geom_point(alpha = 0.5) +
+  labs(x = "Registry", y = "Epic - <1 yo", title = "Oregon") +
+  facet_wrap(~year) +
+  theme_classic() +
+  coord_equal(xlim = c(40, 100), ylim = c(40, 100))
+```
+
+```{r}
+# 3 counties in ABCs catchment area
+or_compare |> 
+  filter(GEOID %in% abcs_counties_full$FIPS) |> 
+  filter(!is.na(year)) |> 
+  ggplot(aes(x = percent, y = pct_pcv)) +
+  geom_point(alpha = 0.5) +
+  labs(x = "Registry", y = "Epic - 2-5 yo", title = "Oregon") +
+  facet_wrap(~year) +
+  theme_classic() +
+  coord_equal(xlim = c(75, 95), ylim = c(75, 95))
+
+or_compare |> 
+  filter(GEOID %in% abcs_counties_full$FIPS) |> 
+  filter(!is.na(year)) |> 
+  ggplot(aes(x = percent, y = pct_pcv_under2)) +
+  geom_point(alpha = 0.5) +
+  labs(x = "Registry", y = "Epic - 1-2 yo", title = "Oregon") +
+  facet_wrap(~year) +
+  theme_classic() +
+  coord_equal(xlim = c(75, 95), ylim = c(75, 95))
+```
+
+```{r}
+or_sf <- or_counties |> 
+  right_join(or_compare, by = c("GEOID"))
+
+or_sf |> 
+  ggplot() +
+  geom_sf(aes(fill = percent)) +
+  scale_fill_viridis_c(option = "B") +
+  labs(fill = "% children\nwith 4 doses", 
+       title = "Oregon PCV coverage") +
+  facet_wrap(~year) +
+  theme_void()
+```
+
+## Georgia
+
+```{r}
+ga_counties <- tigris::counties(state = "GA")
+```
+
+```{r, fig.width = 8, fig.height = 8}
+ga_compare <- bind_rows(ga_raw, .id = "df") |> 
+  mutate(year = case_when(df == 1 ~ 2020,
+                          df == 2 ~ 2021,
+                          df == 3 ~ 2022,
+                          df == 4 ~ 2023)) |> 
+  dplyr::select(year, County, PCV) |> 
+  mutate(County = stringr::str_to_sentence(County),
+         percent = as.numeric(str_remove_all(PCV, "%"))) |> 
+  filter(!is.na(County)) |> 
+  left_join(ga_counties |> 
+              dplyr::select(GEOID, NAME) |> 
+              st_drop_geometry() |> 
+              mutate(NAME = stringr::str_to_sentence(NAME)), 
+            by = c("County" = "NAME")) |> 
+  left_join(epic_under5, by = c("GEOID" = "geography")) |> 
+  left_join(epic_under2, by = c("GEOID" = "geography")) |> 
+  left_join(epic_under1, by = c("GEOID" = "geography"))
+
+ga_compare |> 
+  filter(!is.na(year)) |> 
+  ggplot(aes(x = percent, y = pct_pcv)) +
+  geom_point(alpha = 0.5) +
+  labs(x = "Registry", y = "Epic - 2-5 yo", title = "Georgia") +
+  facet_wrap(~year) +
+  theme_classic() +
+  coord_equal(xlim = c(40, 100), ylim = c(40, 100))
+
+ga_compare |> 
+  filter(!is.na(year)) |> 
+  ggplot(aes(x = percent, y = pct_pcv_under2)) +
+  geom_point(alpha = 0.5) +
+  labs(x = "Registry", y = "Epic - 1-2 yo", title = "Georgia") +
+  facet_wrap(~year) +
+  theme_classic() +
+  coord_equal(xlim = c(40, 100), ylim = c(40, 100))
+
+ga_compare |> 
+  filter(!is.na(year)) |> 
+  ggplot(aes(x = percent, y = pct_pcv_under1)) +
+  geom_point(alpha = 0.5) +
+  labs(x = "Registry", y = "Epic - <1 yo", title = "Georgia") +
+  facet_wrap(~year) +
+  theme_classic() +
+  coord_equal(xlim = c(40, 100), ylim = c(40, 100))
+```
+
+```{r}
+# 20 counties in ABCs catchment area
+ga_compare |> 
+  filter(GEOID %in% abcs_counties_full$FIPS) |> 
+  filter(!is.na(year)) |> 
+  ggplot(aes(x = percent, y = pct_pcv)) +
+  geom_point(alpha = 0.5) +
+  labs(x = "Registry", y = "Epic - 2-5 yo", title = "Georgia") +
+  facet_wrap(~year) +
+  theme_classic() +
+  coord_equal(xlim = c(88, 98), ylim = c(88, 98))
+
+ga_compare |> 
+  filter(GEOID %in% abcs_counties_full$FIPS) |> 
+  filter(!is.na(year)) |> 
+  ggplot(aes(x = percent, y = pct_pcv_under2)) +
+  geom_point(alpha = 0.5) +
+  labs(x = "Registry", y = "Epic - 1-2 yo", title = "Georgia") +
+  facet_wrap(~year) +
+  theme_classic() +
+  coord_equal(xlim = c(85, 98), ylim = c(85, 98))
+
+ga_compare |> 
+  filter(GEOID %in% abcs_counties_full$FIPS) |> 
+  filter(!is.na(year)) |> 
+  ggplot(aes(x = percent, y = pct_pcv_under1)) +
+  geom_point(alpha = 0.5) +
+  labs(x = "Registry", y = "Epic - <1 yo", title = "Georgia") +
+  facet_wrap(~year) +
+  theme_classic() +
+  coord_equal(xlim = c(65, 95), ylim = c(65, 95))
+```
+
+```{r}
+ga_sf <- ga_counties |> 
+  right_join(ga_compare, by = c("GEOID"))
+
+ga_sf |> 
+  ggplot() +
+  geom_sf(aes(fill = percent)) +
+  scale_fill_viridis_c(option = "B") +
+  labs(fill = "% children\nwith 4 doses", 
+       title = "Georgia PCV coverage") +
+  facet_wrap(~year) +
+  theme_void()
+```
+
