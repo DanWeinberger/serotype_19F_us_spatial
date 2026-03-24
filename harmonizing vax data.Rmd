@@ -1,0 +1,252 @@
+---
+title: "harmonizing vax data ct"
+author: "Paloma Cárcamo"
+date: "2026-03-23"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+if (!require("pacman")) install.packages("pacman")
+# pacman::p_unload(pacman::p_loaded(), character.only = TRUE)
+pacman::p_load(tidyverse, sf)
+sf::sf_use_s2(TRUE)
+```
+
+## Load vaccination data from epic cosmos
+
+```{r}
+vax_raw <- read_csv("data/vax-ct-georgia.csv")
+abcs_counties <- readxl::read_xlsx("data/ABCsCountyFIPS.xlsx") |> 
+  filter(STATE %in% c("CT", "MD", "NY", "CA", "NM", "TN"))
+```
+
+## Geocode by zipcode
+
+```{r}
+zips_in_data <- unique(vax_raw$geography)
+
+zctas_sf <- tigris::zctas(year = 2020, cb = TRUE) |>
+  filter(ZCTA5CE20 %in% zips_in_data) |>
+  dplyr::select(geography = ZCTA5CE20, geometry) |>
+  st_transform(4326)
+
+states_sf <- tigris::states(cb = TRUE, year = 2020) |>
+  dplyr::select(state_name = NAME, geometry) |>
+  st_transform(4326)
+
+zcta_centroids <- zctas_sf |>
+  st_centroid() |>
+  st_join(states_sf, join = st_within) |>
+  st_drop_geometry() |>
+  dplyr::select(geography, state_name)
+
+zctas_sf <- zctas_sf |>
+  left_join(zcta_centroids, by = "geography")
+
+map_data <- zctas_sf |>
+  left_join(vax_raw, by = "geography")
+```
+
+## Get census tracts
+
+```{r}
+census_tracts <- tigris::tracts(state = "CT", year = "2010") |> 
+  st_transform(4326) |> 
+  dplyr::select(GEOID10, geometry)
+```
+
+## Intersect zipcodes with census tracts (CT)
+
+```{r}
+ct_zipcode <- map_data |> 
+  filter(state_name == "Connecticut" & age == "≥ 2 and < 5 Years") |> 
+  filter(!is.na(pct_pcv))
+
+zcta_tract_intersection <- st_intersection(census_tracts, ct_zipcode)
+```
+
+```{r}
+zcta_tract_intersection_areas <- zcta_tract_intersection |>
+  st_make_valid() |> 
+  mutate(intersect_area = st_area(geometry)) |>
+  group_by(GEOID10) |>
+  mutate(tract_area = sum(intersect_area),
+         weight = as.numeric(intersect_area / tract_area)) |>
+  ungroup()
+
+tract_vax <- zcta_tract_intersection_areas |>
+  st_drop_geometry() |> 
+  group_by(GEOID10) |>
+  summarise(pct_pcv_weighted = sum(pct_pcv * weight, na.rm = TRUE),
+            .groups = "drop")
+
+census_tracts_vax <- census_tracts |>
+  left_join(tract_vax, by = "GEOID10")
+
+# write_rds(census_tracts_vax, "data/connecticut-vax-census-tract.rds")
+```
+
+```{r}
+ct_zipcode |> 
+  ggplot() +
+  geom_sf(aes(fill = pct_pcv)) +
+  scale_fill_viridis_c(option = "H", limits = c(0, 100)) +
+  theme_bw()
+
+census_tracts_vax |> 
+  ggplot() +
+  geom_sf(aes(fill = pct_pcv_weighted)) +
+  scale_fill_viridis_c(option = "H", limits = c(0, 100)) +
+  theme_bw()
+```
+
+## Intersect census tracts with zipcodes
+
+```{r}
+tract_zipcode_intersection <- st_intersection(ct_zipcode, census_tracts)
+
+tract_zipcode_intersection_areas <- tract_zipcode_intersection |> 
+  st_make_valid() |> 
+  mutate(intersect_area = st_area(geometry)) |>
+  group_by(geography) |>
+  mutate(zipcode_area = sum(intersect_area),
+         weight = as.numeric(intersect_area / zipcode_area)) |>
+  ungroup()
+```
+
+## Intersect zipcodes with census tracts (GA)
+
+```{r}
+ga_zipcode <- map_data |> 
+  filter(state_name == "Georgia" & age == "≥ 2 and < 5 Years") |> 
+  filter(!is.na(pct_pcv))
+
+census_tracts_ga <- tigris::tracts(state = "GA", year = "2010") |> 
+  st_transform(4326) |> 
+  dplyr::select(GEOID10, geometry)
+
+zcta_tract_intersection_ga <- st_intersection(census_tracts_ga, ga_zipcode)
+```
+
+```{r}
+zcta_tract_intersection_ga_areas <- zcta_tract_intersection_ga |>
+  st_make_valid() |> 
+  mutate(intersect_area = st_area(geometry)) |>
+  group_by(GEOID10) |>
+  mutate(tract_area = sum(intersect_area),
+         weight = as.numeric(intersect_area / tract_area)) |>
+  ungroup()
+
+tract_vax_ga <- zcta_tract_intersection_ga_areas |>
+  st_drop_geometry() |> 
+  group_by(GEOID10) |>
+  summarise(pct_pcv_weighted = sum(pct_pcv * weight, na.rm = TRUE),
+            .groups = "drop")
+
+census_tracts_vax_ga <- census_tracts_ga |>
+  left_join(tract_vax_ga, by = "GEOID10")
+
+# write_rds(census_tracts_vax_ga, "data/georgia-vax-census-tract.rds")
+```
+
+## Get age-stratified population
+
+(dictionary pulled from https://www.census.gov/programs-surveys/acs/technical-documentation/table-shells.2021.html#list-tab-79594641)
+
+```{r}
+pacman::p_load(tidycensus)
+var_dict_raw <- read_csv("data/act-variables.csv")
+
+var_dict <- var_dict_raw |> 
+  filter(age_group == "Under 5 years")
+```
+
+### 1-yr acs
+
+```{r}
+# # change:
+# census_api_key("KEY", install = TRUE)
+
+age_data_list <- list()
+
+for (year in 2006:2019) {
+  age_data_list[[as.character(year)]] <- get_acs(
+    geography = "county",
+    state = c("CT", "MD", "NY", "CA", "NM", "TN"),
+    table = "B01001",
+    year = year,
+    survey = "acs1",
+    output = "tidy",
+    cache_table = TRUE
+  )
+}
+
+for (year in 2021:2023) {
+  age_data_list[[as.character(year)]] <- get_acs(
+    geography = "county",
+    state = c("CT", "MD", "NY", "CA", "NM", "TN"),
+    table = "B01001",
+    year = year,
+    survey = "acs1",
+    output = "tidy",
+    cache_table = TRUE
+  )
+}
+
+age_data_all <- bind_rows(age_data_list, .id = "year") |> 
+  filter(variable %in% var_dict$var) |> 
+  group_by(year, GEOID, NAME) |> 
+  summarise(pop_under5 = sum(estimate),
+            .groups = "drop")
+
+age_data_full <- cross_join(data.frame(year = as.character(c(2006:2024))),
+                            data.frame(GEOID = unique(age_data_all$GEOID))) |> 
+  left_join(age_data_all, by = c("year", "GEOID")) |> 
+  arrange(year) |> 
+  group_by(GEOID) |> 
+  mutate(pop_under5_complete = zoo::na.approx(pop_under5, rule = 2)) |> 
+  filter(!(!year %in% c(2020, 2024) & is.na(NAME)))
+
+# write_rds(age_data_full, "data/county-population-under5.rds")
+```
+
+### 5-yr acs
+
+```{r}
+age_data_list2 <- list()
+
+for (year in seq(from = 2009, to = 2023, by = 5)) {
+  age_data_list2[[as.character(year)]] <- get_acs(
+    geography = "county",
+    state = c("CT", "MD", "NY", "CA", "NM", "TN"),
+    table = "B01001",
+    year = year,
+    survey = "acs5",
+    output = "tidy",
+    cache_table = TRUE
+  )
+}
+
+age_data_all2 <- bind_rows(age_data_list2, .id = "year") |> 
+  filter(variable %in% var_dict$var) |> 
+  group_by(year, GEOID, NAME) |> 
+  summarise(pop_under5 = sum(estimate),
+            .groups = "drop")
+
+county_names <- age_data_all2 |> 
+  distinct(GEOID, NAME) |> 
+  ungroup()
+
+age_data_full2 <- cross_join(data.frame(year = as.character(c(2005:2024))),
+                             data.frame(GEOID = unique(age_data_all2$GEOID))) |> 
+  left_join(age_data_all2, by = c("year", "GEOID")) |> 
+  arrange(year) |> 
+  group_by(GEOID) |> 
+  mutate(pop_under5_complete = zoo::na.approx(pop_under5, rule = 2)) |> 
+  filter(GEOID %in% abcs_counties$FIPS) |> 
+  dplyr::select(-NAME)
+
+# write_rds(age_data_full2, "data/county-population-under5-acs5.rds")
+```
