@@ -20,7 +20,7 @@ Minnesota
 
 ## Registry data
 
-```{r}
+```{r, error=FALSE, warning=FALSE, message=FALSE}
 co_raw <- read_csv("data/colorado_immunization_county/combined_CO_Child_Rates.csv")
 mn_raw <- read_csv("data/Minnesota immunizations.csv")
 
@@ -35,7 +35,7 @@ abcs_counties_full <- readxl::read_xlsx("data/ABCsCountyFIPS.xlsx")
 
 ## Epic data
 
-```{r}
+```{r, error=FALSE, warning=FALSE, message=FALSE}
 # epic_raw <- read_csv("data/data_epic_county.csv")
 epic_raw <- read_csv("data/data_county_base_pt.csv")
 
@@ -55,17 +55,17 @@ epic_under1 <- epic_raw |>
 
 ## County shapefiles
 
-```{r}
-mn_counties <- tigris::counties(state = "MN")
-co_counties <- tigris::counties(state = "CO")
-or_counties <- tigris::counties(state = "OR")
-ga_counties <- tigris::counties(state = "GA")
-ct_counties <- tigris::counties(state = "CT")
-md_counties <- tigris::counties(state = "MD")
-ny_counties <- tigris::counties(state = "NY")
-ca_counties <- tigris::counties(state = "CA")
-nm_counties <- tigris::counties(state = "NM")
-tn_counties <- tigris::counties(state = "TN")
+```{r, error=FALSE, warning=FALSE, message=FALSE}
+mn_counties <- tigris::counties(state = "MN", progress_bar = FALSE)
+co_counties <- tigris::counties(state = "CO", progress_bar = FALSE)
+or_counties <- tigris::counties(state = "OR", progress_bar = FALSE)
+ga_counties <- tigris::counties(state = "GA", progress_bar = FALSE)
+ct_counties <- tigris::counties(state = "CT", progress_bar = FALSE)
+md_counties <- tigris::counties(state = "MD", progress_bar = FALSE)
+ny_counties <- tigris::counties(state = "NY", progress_bar = FALSE)
+ca_counties <- tigris::counties(state = "CA", progress_bar = FALSE)
+nm_counties <- tigris::counties(state = "NM", progress_bar = FALSE)
+tn_counties <- tigris::counties(state = "TN", progress_bar = FALSE)
 ```
 
 ## Minnesota
