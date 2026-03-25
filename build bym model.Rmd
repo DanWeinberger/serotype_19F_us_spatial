@@ -43,7 +43,10 @@ ct_areas <- census_tracts |>
                           STATE == 36 & COUNTY %in% c("037", "051", "055", "069", "073", "117", "123") ~ "NewYork_1",
                           STATE == 36 & !COUNTY %in% c("037", "051", "055", "069", "073", "117", "123") ~ "NewYork_2",
                           .default = state)) |> 
-  filter(area %in% c("NewMexico", "Oregon")) |> # Get rid of this line for real model
+  mutate(GEOID = paste0(STATE, COUNTY)) |> 
+  group_by(GEOID, area) |> 
+  summarise(geometry = st_union(geometry)) |> 
+  ungroup() |> 
   group_by(area) |> 
   mutate(bym_id = row_number()) |> 
   ungroup() |> 

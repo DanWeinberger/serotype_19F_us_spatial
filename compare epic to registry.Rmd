@@ -68,6 +68,56 @@ nm_counties <- tigris::counties(state = "NM", progress_bar = FALSE)
 tn_counties <- tigris::counties(state = "TN", progress_bar = FALSE)
 ```
 
+## Export clean registry data
+
+```{r}
+# co_clean <- co_raw |> 
+#   left_join(co_counties |> 
+#               dplyr::select(GEOID, NAME) |> 
+#               st_drop_geometry(), 
+#             by = c("County" = "NAME")) |> 
+#   rename(percent_pcv = `Up-To-Date Percent`)
+# 
+# mn_clean <- mn_raw |> 
+#   mutate(fips = as.character(fips)) |> 
+#   left_join(mn_counties |> 
+#               dplyr::select(GEOID, NAME) |> 
+#               st_drop_geometry(), 
+#             by = c("fips" = "GEOID")) |> 
+#   rename(percent_pcv = percent)
+# 
+# or_clean <- bind_rows(or_raw) |> 
+#   rename(vax = 1) |> 
+#   filter(vax == "4 doses PCV") |> 
+#   pivot_longer(cols = c(3:9), names_to = "year", values_to = "pct_prop") |> 
+#   mutate(County = if_else(County == "HoodRiver", "Hood River", County),
+#          percent_pcv = pct_prop*100) |> 
+#   left_join(or_counties |> 
+#               dplyr::select(GEOID, NAME) |> 
+#               st_drop_geometry(), 
+#             by = c("County" = "NAME"))
+# 
+# ga_clean <- bind_rows(ga_raw, .id = "df") |> 
+#   mutate(year = case_when(df == 1 ~ 2020,
+#                           df == 2 ~ 2021,
+#                           df == 3 ~ 2022,
+#                           df == 4 ~ 2023)) |> 
+#   dplyr::select(year, County, PCV) |> 
+#   mutate(County = stringr::str_to_sentence(County),
+#          percent_pcv = as.numeric(str_remove_all(PCV, "%"))) |> 
+#   filter(!is.na(County)) |> 
+#   left_join(ga_counties |> 
+#               dplyr::select(GEOID, NAME) |> 
+#               st_drop_geometry() |> 
+#               mutate(NAME = stringr::str_to_sentence(NAME)), 
+#             by = c("County" = "NAME"))
+# 
+# # write_rds(co_clean, "data/colorado-vax-registry.rds")
+# # write_rds(mn_clean, "data/minnesota-vax-registry.rds")
+# # write_rds(or_clean, "data/oregon-vax-registry.rds")
+# # write_rds(ga_clean, "data/georgia-vax-registry.rds")
+```
+
 ## Minnesota
 
 ```{r, fig.width = 8, fig.height = 8}
@@ -230,6 +280,8 @@ co_sf <- co_counties |>
   right_join(co_compare, by = c("GEOID"))
 
 co_sf |> 
+    filter(GEOID %in% abcs_counties_full$FIPS) |> 
+
   ggplot() +
   geom_sf(aes(fill = `Up-To-Date Percent`)) +
   scale_fill_viridis_c(option = "B") +
@@ -310,7 +362,8 @@ or_compare |>
 or_sf <- or_counties |> 
   right_join(or_compare, by = c("GEOID"))
 
-or_sf |> 
+or_sf |>
+  filter(GEOID %in% abcs_counties_full$FIPS) |> 
   ggplot() +
   geom_sf(aes(fill = percent)) +
   scale_fill_viridis_c(option = "B") +
@@ -407,12 +460,30 @@ ga_sf <- ga_counties |>
   right_join(ga_compare, by = c("GEOID"))
 
 ga_sf |> 
+  filter(GEOID %in% abcs_counties_full$FIPS) |>
   ggplot() +
   geom_sf(aes(fill = percent)) +
   scale_fill_viridis_c(option = "B") +
   labs(fill = "% children\nwith 4 doses", 
        title = "Georgia PCV coverage") +
   facet_wrap(~year) +
+  theme_void()
+```
+
+```{r}
+ga_sf_mean <- ga_counties |> 
+  right_join(ga_compare |> 
+               group_by(year, GEOID) |> 
+               summarise(percent = mean(percent)), 
+             by = c("GEOID"))
+
+ga_sf_mean |> 
+  filter(GEOID %in% abcs_counties_full$FIPS) |> 
+  ggplot() +
+  geom_sf(aes(fill = percent)) +
+  scale_fill_viridis_c(option = "B") +
+  labs(fill = "% children\nwith 4 doses", 
+       title = "Georgia PCV coverage") +
   theme_void()
 ```
 
